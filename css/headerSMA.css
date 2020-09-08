@@ -1,0 +1,32 @@
+body {
+    background-color: #562438;
+}
+#logo {
+    width: 15%;
+    height: 15%;
+    
+    padding: 1% 2% 0% 1%;
+}
+.comprensivo {
+    background-color: #7E4E4F;
+
+}
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+   
+}
+.sectionHeader article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    
+
+}
+
