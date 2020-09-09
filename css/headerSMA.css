@@ -2,8 +2,8 @@ body {
     background-color: #562438;
 }
 #logo {
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
     
     padding: 1% 2% 0% 1%;
 }
@@ -25,8 +25,21 @@ body {
     justify-content: space-between;
     justify-content: space-around;
     align-items: center;
-    padding: 1%;
+    padding: 1% ;
+    margin-right: 3%;
+    flex-wrap: wrap;
     
 
 }
+.titulo{
+    font-size: 150%;
+    font-weight: bolder;
 
+
+}
+.titulo1{
+    font-size: 150%;
+    font-weight: bolder;
+    margin-left: 6%;
+
+}
