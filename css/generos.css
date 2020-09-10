@@ -1,0 +1,6 @@
+/*voy armando el contenido, cuando tengamos header y footer lo copio*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
