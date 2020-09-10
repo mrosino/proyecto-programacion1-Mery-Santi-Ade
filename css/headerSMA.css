@@ -2,13 +2,14 @@ body {
     background-color: #562438;
 }
 #logo {
-    width: 10%;
-    height: 10%;
+    width: 5%;
+    height: 5%;
     
-    padding: 1% 2% 0% 1%;
+    padding: 1% 2% 1% 1%;
 }
 .comprensivo {
     background-color: #7E4E4F;
+    position: fixed;
 
 }
 .sectionHeader {
@@ -32,13 +33,13 @@ body {
 
 }
 .titulo{
-    font-size: 150%;
+    font-size: 110%;
     font-weight: bolder;
 
 
 }
 .titulo1{
-    font-size: 150%;
+    font-size: 110%;
     font-weight: bolder;
     margin-left: 6%;
 
