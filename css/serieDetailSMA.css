@@ -1,0 +1,9 @@
+.poster{
+display: flex;
+margin-left: 2%;
+margin-top: 7%;
+
+}
+img{
+    width: 25%;
+}
