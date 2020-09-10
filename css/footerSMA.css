@@ -1,4 +1,5 @@
 .footer{
     background-color: #7E4E4F;
-
+    position: fixed;
+    bottom: 0;
 }
