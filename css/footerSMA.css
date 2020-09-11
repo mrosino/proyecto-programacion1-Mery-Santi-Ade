@@ -1,10 +1,11 @@
 .footer {
     display: flex;
-    background-color: #7E4E4F;
+    background-color: #985D5E;
     bottom: 0;
     width: 100%;
     height: 10%;
     justify-content: center;
+    margin-top: 1%;
 }
 .sectionFooter {
     display: flex;
@@ -26,6 +27,7 @@
 }
 .titulo2{
     font-size: 100%;
+    
 
 
 }
@@ -36,7 +38,7 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 3%;
-    margin-top: 2%;
+    margin-top: 1%;
     width: 50%;
 }
 .redes a{ 

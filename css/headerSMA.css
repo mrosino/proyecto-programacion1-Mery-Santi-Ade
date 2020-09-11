@@ -1,5 +1,7 @@
 body {
-    background-color: #562438;
+    background-color: #652A42;
+    width: 100%;
+    
 }
 #logo {
     width: 5%;
@@ -8,14 +10,18 @@ body {
     padding: 1% 2% 1% 1%;
 }
 .comprensivo {
-    background-color: #7E4E4F;
+    background-color: #985D5E;
     position: fixed;
+    
+    
+    
 
 }
 .sectionHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
     
     
    
@@ -42,5 +48,10 @@ body {
     font-size: 110%;
     font-weight: bolder;
     margin-left: 6%;
+    
 
+}
+a {
+    color: black;
+   justify-content: center;
 }
