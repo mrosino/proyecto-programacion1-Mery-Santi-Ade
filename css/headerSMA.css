@@ -8,11 +8,13 @@ body {
     width: 100%;
     
 }
-#logo {
-    width: 5%;
-    height: 5%;
+img {
+    width:  100%;
+}
+
+.divLogo {
+    width: 10%;
     
-    padding: 1% 2% 1% 1%;
 }
 .comprensivo {
     background-color: #985D5E;
