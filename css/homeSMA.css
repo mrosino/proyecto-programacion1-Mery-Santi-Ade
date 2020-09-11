@@ -1,4 +1,4 @@
-body {
+img{
     width: 100%;
 }
 .banner{
@@ -17,4 +17,24 @@ body {
 }
 h1 {
     color: black;
+}
+.mejoresPuntuadas{
+    display: flex;
+    
+}
+.enTendencia{
+    display: flex;
+    
+}
+.añadidasRecientemente{
+    display: flex;
+    
+}
+.imgTendencia{
+    display: flex;
+
+}
+.titulos{
+    display: flex;
+    
 }
