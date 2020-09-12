@@ -49,6 +49,8 @@ img {
     font-size: 110%;
     font-weight: bolder;
     text-align: center;
+    align-content: center;
+    margin: auto ;
     
 }
 .titulo {
