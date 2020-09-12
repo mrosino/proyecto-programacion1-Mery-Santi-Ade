@@ -1,83 +1,75 @@
-/*Pueba login
-
-.register-account{
-        background: url(http://cdn.paper4pc.com/images/grunge-texture-wallpaper-5.jpg) no-repeat center top;
-        background-color: #652A42;
-        background-image: url(http://cdn.paper4pc.com/images/grunge-texture-wallpaper-5.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center top;
-        background-clip: border-box;
-        background-origin: padding-box;
-        background-size: auto auto;
-        background-size: cover;
-        padding: 200px 0 150px;
-        padding-top: 200px;
-        padding-right: 0px;
-        padding-bottom: 150px;
-        padding-left: 0px;
-        width: auto;
-
+img {
+  width: 100%;
+}
+#bodyId {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  box-sizing: border-box;
+  margin: 0 0;
+}
+.divLogo {
+  width: 7%;
+  align-content: center;
+  
 }
 
-.login-form input{
-    width: 100%;
-    border: 1px solid #dddddd;
-    padding: 0.7em;
-    margin: 0.6em 0;
+.registrarse{
+        
+        background-color: #652A42;
+        
+}
+
+.formularioIS input{
+    width: 90%;
+    padding: 1%;
+    margin: 0,1;
     border-radius: 0;
     margin-bottom: 15px;
   }
-  .login-form{
-    margin-bottom: 30px;
+  .formularioIS{
+    border-bottom: #652A42;
+    
+        
   } 
-  .signform {
-    background-color: #FFF;
-    padding-bottom: 40px;
-    padding-top: 35px;
+  .formularios {
+    background-color: rgba(170, 107, 126, 0.61);
+    padding: 5%;
     margin: 0 auto;
     margin-top: auto;
   }
-  .bts {
+  .r2 {
+    color:  #070606;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: right;
+    
+    
+  }
+  .sociales {
     padding: 2em;
     margin: 0.6em 0;
-    margin-top: 
+    margin-top: 1%; 
   }
-  .bts-a:hover{
+  .cuenaNo {
     color:  #985D5E;
     text-decoration: none;
-    background: white;   
+    
+     
   }
-  .bts span {
+  .sociales span {
     text-align: center; 
     font-size: .9em;
-    font-family: 'Arimo', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     font-style: normal;
   }
   .social{
-    transition: background 200ms ease-in-out 0s;
-    -webkit-transition: background 200ms ease-in-out 0s;
-    -moz-transition: background 200ms ease-in-out 0s;
-    -o-transition: background 200ms ease-in-out 0s;
-    -ms-transition: background 200ms ease-in-out 0s;
-    
+       
     margin-top: 12px;
-    -webkit-border-top-left-radius:1px;
-    -moz-border-radius-topleft:1px;
-    border-top-left-radius:1px;
-    -webkit-border-top-right-radius:1px;
-    -moz-border-radius-topright:1px;
-    border-top-right-radius:1px;
-    -webkit-border-bottom-right-radius:1px;
-    -moz-border-radius-bottomright:1px;
-    border-bottom-right-radius:1px;
-    -webkit-border-bottom-left-radius:1px;
-    -moz-border-radius-bottomleft:1px;
-    border-bottom-left-radius:1px;
     text-indent:0;
     display:block;
-    color:#ffffff;
+    color:#000000;
     height:50px;
     line-height:50px;
     width: 100%;
@@ -93,129 +85,64 @@
   }
   .fblogin:active {
     position:relative;
-    top:1px;
+    top:2px;
   }
-  .gplogin {  
+  .goologin {  
     background-color: #985D5E; 
   }
-  .gplogin:hover {
+  .goologin:hover {
     background-color: #985D5E;
   }
-  .gplogin:active {
+  .goologin:active {
     position:relative;
-    top:1px;
+    top:2px;
   }
   .twlogin { 
     background-color: #985D5E;  
   }
   .twlogin:hover {
-    background-color:#4cbde6;
+    background-color:#985D5E;
   }
   .twlogin:active {
     position:relative;
-    top:1px;
+    top:2px;
   }
-  .login-form input:focus, .login-form input:active {
-    border-bottom: 2px solid #79B42B;
-    outline: none;
-  }
-  .subbt:hover {
-    background-color: #79b42b;
-  }
-  .subbt {
-   
-    text-shadow: 0 1px 0 rgba(122, 122, 122, 0.85);
-    transition: background 500ms ease-in-out 0s;
-    -webkit-transition: background 500ms ease-in-out 0s;
-    -moz-transition: background 500ms ease-in-out 0s;
-    -o-transition: background 500ms ease-in-out 0s;
-    -ms-transition: background 500ms ease-in-out 0s;
-    background-color: #79b42b;
-    border: none;
-    color: #FFF;
-    padding: 10px 15px 10px 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: .9em;
-    border-radius: 3px;
-    width: 218px;
-    font-family: 'Arimo', sans-serif;
-    font-weight: 700;
-    font-style: normal;
   
-  }
-  .right a {
+ 
+  .registra2 a {
     position: relative;
     color: #b6b6b6;
     text-decoration: none;
-    font-family: 'Arimo', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: .9em;
+    font-size: 5px;
     float: right;
     margin-top:5px;
   }
-  .headit { 
+  .irA { 
     position: relative; 
     top: -10px;
   }
-  .headit h4{
-    color: #474646;
+  .irA h3{
+    color: #000000;
   }
-  .bts a:hover{
+  .sociales a:hover{
     text-decoration: none;
-    color: white;
+    color: black;
   }
-  .bts a:active{
-    color: white;
-    text-decoration: none;
-  }
-  .bts a:focus{
-    text-decoration: none;
-    color: white;
-  }
-  .headit a {
+ 
+  .irA a {
   text-decoration: none;
   }
+
   
-  .fa.fa-check-square {
-  padding-right: 19px;
-  }
-  form#login-form:before {
-    content: 'or';
-    color: #79b42b;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    height: 0.5em;
-    width: 0.5em;
-    left: 1.5em;
-   
-    z-index: 900;
-  }
-  form#login-form:after {
-    content: '';
-    position: absolute;
-    background: rgba(128, 128, 128, 0.3);
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 15px;
-    margin: auto;  
-    height: 3.25em;
-    width: 0.1em;
-    left: 2.15em;
-   
-    -moz-box-shadow: 0 8.8em 0 0 rgba(128, 128, 128, 0.3);
-    -webkit-box-shadow: 0 8.8em 0 0 rgba(128, 128, 128, 0.3);
-    box-shadow: 0 8.8em 0 0 rgba(128, 128, 128, 0.3);
-  }
-  */
-  /*
-                Media Query
+footer {
+height: fit-content;
+}
+
+  
+        /*        Media Query
 
   @media screen  and (min-width: 1400px) {
   .signform { width: 680px; left: 25%; }
@@ -245,13 +172,8 @@
   }
   
   @media screen  and (min-width: 640px) {
-    .left {   
-    width: 47%;
-    display: inline-table;
-    margin-left: 20px;
-    float: right;
-    }
-    .right {
+   
+    .registra2 {
     width: 40%;
     display: inline-table;
     margin-left: 50px; 
@@ -259,12 +181,8 @@
   }
   
   @media screen  and (max-width: 640px) {
-    .left { 
-      width: 100%;
-      display: inline-table;  
-      margin-bottom: 25px;
-    }
-    .right {
+    
+    .registra2 {
       width: 85%;
       display: inline-table;
       margin-left: 20px;  
@@ -273,7 +191,7 @@
       width: 50%;
       min-width:255px;
     }
-    form#login-form:before {
+    form#formularioIS:before {
       content: ''; 
       position: absolute;
       top: 0;
@@ -283,7 +201,7 @@
       margin: auto;
      
   }
-    form#login-form:after {
+    form#formularioIS:after {
       content: '';
       position: absolute;   
       top: 0;
@@ -299,7 +217,7 @@
     }
   }
   @media screen  and (max-width: 1500px) and (min-width: 650px) {
-  form#login-form::before {
+  form#formularioIS::before {
       content: 'or';
       color: #79b42b;
       position: absolute;   
@@ -314,7 +232,7 @@
       top: 4.2em;
       z-index: 900;
     }
-    form#login-form::after {
+    form#formularioIS::after {
       content: '';
       position: absolute;
       background: rgba(128, 128, 128, 0.3);
@@ -352,7 +270,7 @@
      left: 1%;
       }
   }
-  .bts i{ 
+  .sociales i{ 
       margin: 15px 15px 15px 20px;
       float: left;
       width: 5%;

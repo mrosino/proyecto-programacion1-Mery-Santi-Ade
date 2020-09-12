@@ -45,13 +45,18 @@ img {
     
 
 }
+.login {
+    font-size: 110%;
+    font-weight: bolder;
+    text-align: center;
+    
+}
 .titulo {
     font-size: 110%;
     font-weight: bolder;
-    
-
-
 }
+
+
 .titulo1{
     font-size: 110%;
     font-weight: bolder;

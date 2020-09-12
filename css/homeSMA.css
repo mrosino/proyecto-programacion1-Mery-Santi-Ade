@@ -21,6 +21,7 @@ h1 {
 }
 .mejoresPuntuadas{
     display: flex;
+    /*probar <animation> y que roten así*/
     
 }
 .enTendencia{
