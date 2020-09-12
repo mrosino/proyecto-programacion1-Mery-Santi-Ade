@@ -9,11 +9,12 @@ img{
 }
 .banners1 {
     margin-top: 10%;
-   
+    width: 50%;
    
 }
 .banners2 { 
     margin-top: 10%;
+    width: 50%;
 }
 h1 {
     color: black;
