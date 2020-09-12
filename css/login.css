@@ -11,6 +11,11 @@ img {
 .divLogo {
   width: 7%;
   align-content: center;
+    
+}
+.volver {
+  color: #000000;
+  font-weight: bolder;
   
 }
 
