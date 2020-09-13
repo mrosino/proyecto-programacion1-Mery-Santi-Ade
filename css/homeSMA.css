@@ -21,6 +21,7 @@ h1 {
 }
 .mejoresPuntuadas{
     display: flex;
+    
     /*probar <animation> y que roten así*/
     
 }
@@ -38,5 +39,6 @@ h1 {
 }
 .titulos{
     display: flex;
+    
     
 }
