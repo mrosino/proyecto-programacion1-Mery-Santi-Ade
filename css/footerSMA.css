@@ -37,7 +37,7 @@
 .redes{
     display: flex;
     justify-content: flex-end;
-    padding-right: 3%;
+    padding-right: 5%;
     margin-top: 1%;
     width: 50%;
 }
