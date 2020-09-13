@@ -1,6 +1,37 @@
-/*voy armando el contenido, cuando tengamos header y footer lo copio*/
+.gSegun {
+    display: grid;
+}
 
-body {
-    display: flex;
-    flex-direction: column;
+.gCinema {
+    display: grid;
+}
+
+.tiempo {
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr;
+    gap: 1%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sonoras {
+    display: grid;
+    grid-column: 1fr 1fr;
+    gap: 1%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.color {
+ display: grid;
+ grid-column: 1fr 1fr;
+ gap: 1%;
+ justify-content: space-around;
+ align-items: center;
+ background-color: black;
+}
+
+.color1 {
+    height: 50%;
+    background-color: lightcoral;
 }
