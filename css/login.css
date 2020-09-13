@@ -26,14 +26,16 @@ img {
 }
 
 .formularioIS input{
-    width: 90%;
+    width: 30%;
     padding: 1%;
     margin: 0,1;
     border-radius: 0;
     margin-bottom: 15px;
+
   }
   .formularioIS{
     border-bottom: #652A42;
+  
     
         
   } 
@@ -55,6 +57,7 @@ img {
     padding: 2em;
     margin: 0.6em 0;
     margin-top: 1%; 
+    
   }
   .cuenaNo {
     color:  #985D5E;
@@ -83,7 +86,9 @@ img {
   }
   
   .fblogin {   
-    background-color:#985D5E;  
+    background-color:#985D5E;
+    width: 30%;
+   
   }
   .fblogin:hover {
     background-color: #985D5E;
@@ -94,6 +99,7 @@ img {
   }
   .goologin {  
     background-color: #985D5E; 
+    width: 30%;
   }
   .goologin:hover {
     background-color: #985D5E;
@@ -103,7 +109,8 @@ img {
     top:2px;
   }
   .twlogin { 
-    background-color: #985D5E;  
+    background-color: #985D5E; 
+    width: 30%; 
   }
   .twlogin:hover {
     background-color:#985D5E;

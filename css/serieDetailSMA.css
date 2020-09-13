@@ -1,9 +1,15 @@
-.poster{
-display: flex;
-margin-left: 2%;
-margin-top: 7%;
-
-}
-img{
+.seriePoster {
     width: 25%;
+  
+}
+
+.imgRecomendadas {
+    display: flex;
+    
+}
+.nombre {
+    border-style: solid;
+    width: 25%;
+    margin-top: 2%;
+    
 }
