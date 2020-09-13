@@ -1,3 +1,5 @@
+
+
 .gSegun {
     display: grid;
 }
@@ -19,7 +21,7 @@
     grid-column: 1fr 1fr;
     gap: 1%;
     justify-content: space-around;
-    align-items: center;
+    align-items: left;
 }
 
 .color {
@@ -27,11 +29,11 @@
  grid-column: 1fr 1fr;
  gap: 1%;
  justify-content: space-around;
- align-items: center;
- background-color: black;
+ align-items:right;
+ 
 }
 
 .color1 {
     height: 50%;
-    background-color: lightcoral;
+  
 }
