@@ -1,5 +1,15 @@
+.foto {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    
+    
+
+}
 .seriePoster {
-    width: 25%;
+    margin-top: 10%;
+    width: 10%;
+    
   
 }
 
@@ -7,9 +17,13 @@
     display: flex;
     
 }
-.nombre {
+.info {
     border-style: solid;
-    width: 25%;
-    margin-top: 2%;
+    width: 30%;
     
+    
+    
+}
+.video {
+    display: flex;
 }
