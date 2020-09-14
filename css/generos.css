@@ -10,9 +10,9 @@ body {
     overflow-x: hidden;
 }
 .header {
-    height: 100%;
+    height: 900px;
     display: flex;
-    align-items: center;
+    align-content: center;
     color: black;
 
 }
