@@ -149,6 +149,16 @@ main {
 height: fit-content;
 }
 
+.botonIS {
+  background-color:#985D5E ;
+  width: 10%;
+}
+
+.botonIs :active {
+  position: relative; 
+  bottom: 3px;
+}
+
   
         /*        Media Query
 
