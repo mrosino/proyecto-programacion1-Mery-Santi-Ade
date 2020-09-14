@@ -32,7 +32,8 @@
 
 }
 .titulo3{
-    align-items: flex-end;
+    margin-right: 15px;
+    padding-bottom: 10px;
 }
 .redes{
     display: flex;
@@ -40,8 +41,10 @@
     padding-right: 5%;
     margin-top: 1%;
     width: 50%;
+
 }
 .redes a{ 
     color: black;
+
     
 }
