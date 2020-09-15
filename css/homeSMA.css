@@ -13,6 +13,7 @@ img{
 .banners1 {
     margin-top: 10%;
     width: 50%;
+    
    
 }
 .banners2 { 
@@ -42,8 +43,10 @@ h1 {
 }
 .imagenes{
     padding: 5px;
-    width: 100%
-    ;
+    width: 100%;
+    border-color:rgb(0, 0, 0);
+    border-width:10px;
+    border-style:solid;
 }
 .titulos{
     display: flex;

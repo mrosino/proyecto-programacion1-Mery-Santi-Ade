@@ -16,10 +16,12 @@ img {
 .divLogo {
     width: 7%;
     
+    
 }
 .comprensivo {
     background-color: #985D5E;
     position: fixed;
+   border-collapse: separate;
     
     
     
@@ -44,6 +46,7 @@ img {
     margin-right: 3%;
     flex-wrap: wrap;
     
+    
 
 }
 .hrefHeader {
@@ -54,10 +57,12 @@ img {
     margin: auto ;
     text-decoration: none;
     
+    
 }
 .titulo {
     font-size: 110%;
     font-weight: bolder;
+    
 }
 
 
@@ -74,6 +79,9 @@ a {
 }
 .buscador{
     color: #b6b6b6;
-    
-
+    border-color:rgb(0, 0, 0);
+    border-width:1px;
+    border-bottom-style: hidden;
+    height: 2em;
 }
+    
