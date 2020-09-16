@@ -1,5 +1,6 @@
 *{
     font-family: 'IBM Plex Sans', sans-serif;
+    
 }
 img{
     width: 100%;
@@ -11,13 +12,13 @@ img{
     justify-content: center;
 }
 .banners1 {
-    margin-top: 10%;
+    margin-top: 5%;
     width: 50%;
     
    
 }
 .banners2 { 
-    margin-top: 10%;
+    margin-top: 5%;
     width: 50%;
 }
 h1 {
@@ -44,9 +45,7 @@ h1 {
 .imagenes{
     padding: 5px;
     width: 100%;
-    border-color:rgb(0, 0, 0);
-    border-width:10px;
-    border-style:solid;
+    
 }
 .titulos{
     display: flex;

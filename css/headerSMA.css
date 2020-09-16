@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    font-size: large;
 }
 body {
     background-image:linear-gradient(#985D5E, #652A42) ;
@@ -19,8 +20,7 @@ img {
     
 }
 .comprensivo {
-    background-color: #985D5E;
-    
+    background-color: #985D5E;    
    border-collapse: separate;
     
     
