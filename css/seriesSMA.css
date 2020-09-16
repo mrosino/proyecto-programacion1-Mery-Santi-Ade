@@ -1,0 +1,23 @@
+img{
+    width: 100%;
+}
+.series1 { 
+    display: flex;
+    
+}
+.series2 {
+    display: flex;
+}
+.series3 {
+    display: flex;
+}
+.series4 {
+    display: flex;
+}
+.serieCompleto{
+    margin-top: 2%;
+
+}
+.imagenesSerie {
+    padding: 3px;
+}
