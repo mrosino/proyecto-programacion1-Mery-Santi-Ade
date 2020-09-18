@@ -79,7 +79,9 @@
 .recomendadas{
     display: flex;
     margin-top: 5%;
+    
 }
 .imgreco {
-    padding: 3px;
+    padding: 5px;
+    width: 100%;
 }
