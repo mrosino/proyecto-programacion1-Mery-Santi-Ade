@@ -5,6 +5,9 @@
 img {
   width: 100%;
 }
+.box {
+  text-align: start;
+}
 #bodyId {
   text-align: center;
   align-items: center;
