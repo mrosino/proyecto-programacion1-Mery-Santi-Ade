@@ -34,7 +34,7 @@
 }
 .video {
     display: flex;
-    padding-left: 10%;
+    padding-left: 3%;
     
 }
 .serieInfo {
@@ -53,4 +53,18 @@
     height: 80%;
     margin-top: 5%;
     justify-content: center;
+}
+.temp {
+    margin-left: 5%;
+    
+
+}
+.sinop {
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.elenco {
+    margin-left: 5%;
+    margin-top: 2%;
 }
