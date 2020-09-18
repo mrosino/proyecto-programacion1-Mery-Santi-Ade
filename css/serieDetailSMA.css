@@ -56,8 +56,6 @@
 }
 .temp {
     margin-left: 5%;
-    
-
 }
 .sinop {
     width: 40%;
@@ -84,4 +82,12 @@
 .imgreco {
     padding: 5px;
     width: 100%;
+}
+.primerCol {
+    display: flex;
+    flex-direction: column;
+}
+.segundaCol {
+    display: flex;
+    flex-direction: column;
 }
