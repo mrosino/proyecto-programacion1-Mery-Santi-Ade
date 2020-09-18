@@ -68,3 +68,18 @@
     margin-left: 5%;
     margin-top: 2%;
 }
+.genres {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.puntu {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.recomendadas{
+    display: flex;
+    margin-top: 5%;
+}
+.imgreco {
+    padding: 3px;
+}
