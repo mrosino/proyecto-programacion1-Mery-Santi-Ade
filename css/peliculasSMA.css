@@ -1,0 +1,12 @@
+img{
+    width: 100%;
+}
+.peliculas{
+    display: flex;
+}
+.imagenesPeli{
+    padding: 3px;
+}
+.peliCompleto{
+    margin-top: 2%;
+}
