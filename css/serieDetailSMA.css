@@ -85,6 +85,11 @@
 }
 .total {
     display: flex;
-    width: 100%;
-    
+    width: 100%;   
+}
+.caps {
+    margin-left: 5%;
+}
+.capi {
+    background-color: #985D5E;
 }
