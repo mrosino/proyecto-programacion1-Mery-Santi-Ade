@@ -47,9 +47,48 @@ h1 {
     width: 100%;
     
 }
+.imagenes1{
+    padding: 5px;
+    width: 100%;
+}
+    
 .titulos{
     display: flex;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+ /*        Media Query mobile */
+
+@media (max-width:420px) {
+    .banner {
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .imagenes1{
+     width: 50%;
+    }
+    .mejoresPuntuadas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imagenes {
+      max-width: 200px;
+    }
+    .no {
+        max-width: 1px;
+    }
+    .imgTendencia {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .añadidasRecientemente {
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    
+        
+       
     
 }

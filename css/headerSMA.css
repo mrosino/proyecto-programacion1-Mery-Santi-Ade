@@ -4,7 +4,7 @@
     margin: 0 auto;
     font-family: 'IBM Plex Sans', sans-serif;
     font-style: oblique;
-    font-size: large;
+    font-size: 1em;
 }
 body {
     background-image:linear-gradient(#985D5E, #652A42) ;
@@ -12,7 +12,7 @@ body {
     
 }
 img {
-    width:  100%;
+    width: 100%;
 }
 
 .divLogo {
@@ -86,4 +86,10 @@ a {
     border-bottom-style: hidden;
     height: 2em;
 }
-    
+@media (max-width:420px) {
+    .sectionHeader {
+        display: block;
+        flex-direction: column;
+    }
+
+} 

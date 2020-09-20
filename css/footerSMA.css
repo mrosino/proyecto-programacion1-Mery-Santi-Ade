@@ -53,3 +53,14 @@
 
     
 }
+@media (max-width:420px) {
+    .sectionFooter {
+        display: block;
+        flex-direction: column;
+        justify-content:  center;
+    }
+    .titulo2 {
+        justify-content: center;
+    }
+
+} 
