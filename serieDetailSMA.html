@@ -47,9 +47,15 @@
   </header>
 
   <main>
+    <!--<div class="video">
+      <video src="video/Suits Season 9 'Mike Returns' Trailer (HD) Final Season.mp4" type="video/mp4"></video>
+    </div>-->
     <div class="video">
-      <video src="video/Suits Season 9 'Mike Returns' Trailer (HD) Final Season.mp4" type="video/mp4" autoplay loop preload="auto"></video>
-    </div>
+    <video controls="controls" class="video-ctrl">
+      <source src="video/Suits Season 9 'Mike Returns' Trailer (HD) Final Season.mp4" type="video/mp4" autoplay="autoplay" loop="loop">
+      <source src="video/Suits Season 9 'Mike Returns' Trailer (HD) Final Season.mp4/small.webm " type="video/webm" autoplay="autoplay" loop="loop">     
+  </video>
+</div>
   </main>
 
        <main class="foto">
@@ -57,16 +63,7 @@
           
         </section>
       </main>
-
-      <!--<section class="serieInfo">
-        <div class="poster">
-          <img src="img/Suits-season9-poster.jpg" alt="">
-        </div>-->
-      
-
-        <!--<div class="info1">
-            <h1> Nombre: Suits- The Final Season </h1>
-        </div>-->
+     <section class="total">
         <section class="primerCol">
         <div class="temp">
           <h2> 9 Temporadas - 13+ - 2019</h2>
@@ -75,22 +72,10 @@
           <p>Harvey Specter, el mejor abogado corporativo de Nueva York, necesita un socio y contrata a Mike Ross, un chico brillante para que sea su brazo derecho. El único problema es que Mike no estudió derecho.</p>
         </div>
       </section>
-        <!--<div class="info2">
-          <h2>Genero:Drama - Año: 2019 - Apto: +13</h2>
-        </div>-->
-        <!--<div class="info3">
-          <h2>Sinopsis:</h2>
-          <p>Harvey Specter, el mejor abogado corporativo de Nueva York, necesita un socio y contrata a Mike Ross, un chico brillante para que sea su brazo derecho. El único problema es que Mike no estudió derecho.</p>
-        </div>-->
         <section class="segundaCol">
-
-        
         <div class="elenco">
           <h2>Elenco: Gabriel Matcht, Patrick J. Adams, Rick Hoffman, 10+</h2>
         </div>
-       <!-- <div class="info">
-          <h2>Duracion: 9 temporadas </h2>
-        </div>>-->
         <div class="genres">
           <h2> Generos: Dramas de TV - Comedias de TV - Programas de EEUU</h2>
         </div>
@@ -98,12 +83,25 @@
           <h2>Puntuacion: 4.9 estrellas</h2>
         </div>
       </section>
+     </section>  
+     <div class="btn-group">
+      <button type="button" class="btn btn-danger">Capitulos</button>
+    
+      <button type="button" class="btn btn-danger dropdown-toggle"
+              data-toggle="dropdown">
+        <span class="caret"></span>
         
-
-        <!--<section class="video">
-          <iframe width="430" height="230" src="https://www.youtube.com/embed/bPYnXiOVTvQ" frameborder="0" allow="accelerometer; autoplay loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>-->
-      </section>
+      </button>
+    
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Acción #1</a></li>
+        <li><a href="#">Acción #2</a></li>
+        <li><a href="#">Acción #3</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Acción #4</a></li>
+      </ul>
+    </div>
+      
       
        <section class="recomendadas">
          <h2>Recomendadas en base a tu eleccion</h2>

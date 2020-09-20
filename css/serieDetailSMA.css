@@ -12,26 +12,7 @@
     display: flex;
     
 }
-.info {
-    display: flex;
-    width: 35%;
-    padding-left: 10%;
-}
-.info1 {
-    display: flex;
-    width: 70%;
-    font-size: 150%;
-}
-.info2 {
-    display: flex;
-    width: 70%;
-    font-size: 100%;
-}
-.info3 {
-    display: flex;
-    width: 28%;
-    font-size: 100%;
-}
+
 .video {
     display: flex;
     padding-left: 3%;
@@ -58,11 +39,12 @@
     margin-left: 5%;
 }
 .sinop {
-    width: 40%;
+    width: 70%;
     margin-left: 5%;
     margin-top: 2%;
 }
 .elenco {
+    width: 100%;
     margin-left: 5%;
     margin-top: 2%;
 }
@@ -86,8 +68,23 @@
 .primerCol {
     display: flex;
     flex-direction: column;
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+
 }
 .segundaCol {
     display: flex;
     flex-direction: column;
+    width: 40%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+}
+.total {
+    display: flex;
+    width: 100%;
+    
 }
