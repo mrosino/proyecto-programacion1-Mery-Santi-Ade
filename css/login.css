@@ -46,7 +46,7 @@ img {
   .formularios {
     
     padding: 5%;
-    margin-bottom: 100px;
+    
   
   }
   .r2 {
@@ -163,29 +163,12 @@ height: fit-content;
   bottom: 3px;
 }
 
-  
-/*   Media Query */
-
-  @media (max-width:420px) {
-    .formularioIS  { 
-      width: 50%;
-      min-width:255px;
-    }
-    .registra2 {
-      width: 40%;
-      display: inline-table;
-      margin-left: 50px; 
-      }
-      .sociales i{ 
-        margin: 15px 15px 15px 20px;
-        float: left;
-        width: 5%;
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    .input {
-      font-size: 1em;
-    }
+@media (max-width:420px){
+  .botonIS{
+    width: 50%;
+    
   }
-
- 
+  .social{
+    width: 60%;
+  }
+}

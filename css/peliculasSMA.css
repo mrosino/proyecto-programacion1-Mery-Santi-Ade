@@ -1,12 +1,41 @@
 img{
     width: 100%;
+
 }
 .peliculas{
     display: flex;
+
+}
+.peliculas1{
+    display: flex;
+    
 }
 .imagenesPeli{
     padding: 3px;
+    
 }
 .peliCompleto{
     margin-top: 2%;
+
+}
+
+
+@media (max-width:420px){
+    .peliculas{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .peliculas1{
+        display: none;
+
+    }
+    .imagenesPeli{
+        width: 50%;
+
+    }
+    .imagenesPeli1{
+        display: none;
+        
+    }
 }
