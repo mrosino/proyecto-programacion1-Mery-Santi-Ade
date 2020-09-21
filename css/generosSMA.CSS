@@ -12,7 +12,7 @@
 }
 
 .ejeTitulo {
-    font-size: larger;
+    font-size: 2em;
     font-style: oblique;
     text-align: center;
     
@@ -20,7 +20,7 @@
 .tipoEje h2 {
     padding-top: 5px;
     text-align: center;
-    font-size: large;
+    font-size: 1em;
 }
 .apartado1 {
     align-content: center;
@@ -35,7 +35,7 @@
     align-items: center;
     align-self: center;
     font-weight: lighter;
-    font-size: smaller;
+    font-size: 0.5em;
     
 }
 
@@ -74,11 +74,16 @@ color: black
 
 }
 
+.imgrecomendadas {
+    display: flex;
+    margin: 0.2em;
 
+}
 .imgreco {
     padding: 5px;
     width: 100%;
     box-shadow:0px 8px 16px 0px black;
+    
     
 }
 
@@ -102,4 +107,72 @@ padding: 4px 0px 10px 0px;
 .sugerencias {
     font-weight: 0.3em;
     font-style: italic;
+}
+
+.dropup {
+    
+ position: relative;
+ display: inline-block;
+ text-align: center;
+ text-transform: uppercase;
+        
+        
+ }
+    .dropup:hover {
+        color: #351723;
+    }
+    .dropup-content {
+        display: none;
+        position: absolute;
+        background-image:linear-gradient(#652A42, #985D5E);
+        bottom: 20px;
+        widows: 100%;
+        overflow:auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.26);
+        padding: 2px 4px;
+        z-index: 1;
+        text-transform: none;
+        
+        
+    }
+    
+    .dropup:hover .dropup-content {
+        display: block;
+    }
+
+
+
+
+    @media (max-width:420px) {
+        /* help no logro que la segunda linea se me centre*/
+        .apartado1 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-content: center;
+            padding: 1%;
+            box-shadow: black;
+        }
+        .apartado2 {
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            
+        }
+        .apartado3 {
+            grid-template-columns: 1fr 1fr 1fr;
+            
+
+        }
+     
+        .ejeTitulo {
+            font-size: 1.5em;
+       
+
+    }
+   
+    
+@media (max-width:507px) {
+        #sciFi {
+            font-size: 0.8em;
+            /* help miche no logro que funcione, se me desacomoda porque tengo dos lineas, probe agregarle  and min-width:420px)  y a veces funciona a veces no*/
+        }
+    }
 }
