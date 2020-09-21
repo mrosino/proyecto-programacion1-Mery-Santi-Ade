@@ -62,5 +62,21 @@
     .titulo2 {
         justify-content: center;
     }
+    .footer{
+        align-content: center;
+        flex-direction: column;
+    }
+    .redes{
+        align-content: center;
+        margin: auto;
+    }
+    a{
+        text-align: center;
+        align-content: center;
+    }
+    footer{
+        align-content: center;
+        text-align: center;
+    }
 
 } 

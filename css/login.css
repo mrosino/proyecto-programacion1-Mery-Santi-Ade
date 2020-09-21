@@ -46,7 +46,7 @@ img {
   .formularios {
     
     padding: 5%;
-    margin-bottom: 100px;
+    
   
   }
   .r2 {
@@ -163,141 +163,12 @@ height: fit-content;
   bottom: 3px;
 }
 
-  
-        /*        Media Query
-
-  @media screen  and (min-width: 1400px) {
-  .signform { width: 680px; left: 25%; }
-  }
-  
-  
-  @media screen  and (max-width: 1400px) and (min-width: 1230px) {
-  .signform { width: 50%; left: 25%; }
-  }
-  
-  @media screen  and (max-width: 1230px) and (min-width: 1000px) {
-  .signform { width: 60%; left: 15%; }
-  }
-  
-  @media screen  and (max-width: 1000px) and (min-width: 900px) {
-  .signform { width: 70%; left: 10%; }
-  }
-  
-  @media screen  and (max-width: 900px) and (min-width: 750px) {
-  .signform { width: 80%; left: 8%; }
-  }
-  
-  @media screen  and (max-width: 750px) and (min-width: 640px) {
-  .signform { width: 90%; 
-    left: 1%; 
-    }
-  }
-  
-  @media screen  and (min-width: 640px) {
-   
-    .registra2 {
-    width: 40%;
-    display: inline-table;
-    margin-left: 50px; 
-    }
-  }
-  
-  @media screen  and (max-width: 640px) {
+@media (max-width:420px){
+  .botonIS{
+    width: 50%;
     
-    .registra2 {
-      width: 85%;
-      display: inline-table;
-      margin-left: 20px;  
-    }
-    .signform { 
-      width: 50%;
-      min-width:255px;
-    }
-    form#formularioIS:before {
-      content: ''; 
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-     
   }
-    form#formularioIS:after {
-      content: '';
-      position: absolute;   
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-      height:0em;
-      width: 0em;
-      left: 0em;
-      top: 0em;
-      
-    }
+  .social{
+    width: 60%;
   }
-  @media screen  and (max-width: 1500px) and (min-width: 650px) {
-  form#formularioIS::before {
-      content: 'or';
-      color: #79b42b;
-      position: absolute;   
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-      height: 0.5em;
-      width: 0.5em;
-      left: 1.5em;
-      top: 4.2em;
-      z-index: 900;
-    }
-    form#formularioIS::after {
-      content: '';
-      position: absolute;
-      background: rgba(128, 128, 128, 0.3);
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 15px;
-      margin: auto;
-      height: 3.25em;
-      width: 0.1em;
-      left: 2.15em;
-      top: -2.8em;
-      -moz-box-shadow: 0 8.8em 0 0 rgba(128, 128, 128, 0.3);
-      -webkit-box-shadow: 0 8.8em 0 0 rgba(128, 128, 128, 0.3);
-      box-shadow: 0 8.8em 0 0 rgba(128, 128, 128, 0.3);
-  }
-  }
-  @media screen  and (max-width: 640px) and (min-width: 460px) {
-  .signform { 
-    left: 25%;
-     }
-  }
-  @media screen  and (max-width: 460px) and (min-width: 400px) {
-    .signform {
-     left: 20%; 
-    }
-  }
-  @media screen  and (max-width: 400px) and (min-width: 320px) {
-    .signform {
-     left: 10%; 
-    }
-  }
-  @media screen  and (max-width: 320px) {
-    .signform {
-     left: 1%;
-      }
-  }
-  .sociales i{ 
-      margin: 15px 15px 15px 20px;
-      float: left;
-      width: 5%;
-      font-size: 20px;
-      margin-left: 20px;
-  }
-
-  */
+}

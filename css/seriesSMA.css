@@ -21,3 +21,25 @@ img{
 .imagenesSerie {
     padding: 3px;
 }
+
+@media (max-width:420px){
+    .imagenesSerie{
+        width: 50%;
+    }
+    .series1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .series2{
+        display: none;
+    }
+    .series3{
+        display: none;
+    }
+    .series4{
+        display: none;
+    }
+    .imagenesSerie1{
+        display: none;
+    }
+}
