@@ -90,6 +90,12 @@ a {
     .sectionHeader {
         display: block;
         flex-direction: column;
+        width: 50%;
+        font-size: 70%;
     }
+    .lupa {
+        width: 10%;
+    }
+  
 
 } 
