@@ -1,9 +1,10 @@
 img{
     width: 100%;
+
 }
 .peliculas{
     display: flex;
-    
+
 }
 .peliculas1{
     display: flex;
@@ -15,6 +16,7 @@ img{
 }
 .peliCompleto{
     margin-top: 2%;
+
 }
 
 
@@ -22,14 +24,18 @@ img{
     .peliculas{
         display: flex;
         flex-wrap: wrap;
+
     }
     .peliculas1{
         display: none;
+
     }
     .imagenesPeli{
         width: 50%;
+
     }
     .imagenesPeli1{
         display: none;
+        
     }
 }
