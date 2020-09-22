@@ -92,7 +92,21 @@ h1 {
        
     }
     
-        
-       
-    
 }
+/*        Media Query Tablet
+@media (min-width:420px) {
+    .banner {
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .imagenes1{
+        width: 40%;
+    }
+    .mejoresPuntuadas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .no{
+        display: none;
+    }
+}*/
