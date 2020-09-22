@@ -171,4 +171,7 @@ height: fit-content;
   .social{
     width: 60%;
   }
+  .form{
+    width: 100%;
+  }
 }
