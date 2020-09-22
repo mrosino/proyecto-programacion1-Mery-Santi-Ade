@@ -171,8 +171,8 @@ padding: 4px 0px 10px 0px;
     
 @media (max-width:507px) {
         #sciFi {
-            font-size: 0.8em;
-            /* help miche no logro que funcione, se me desacomoda porque tengo dos lineas, probe agregarle  and min-width:420px)  y a veces funciona a veces no*/
+            font-size: 100rem;
+            
         }
     }
 }
