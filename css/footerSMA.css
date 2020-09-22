@@ -43,7 +43,7 @@
 .redes{
     display: flex;
     justify-content: flex-end;
-    padding-right: 5%;
+    
     margin-top: 1%;
     width: 50%;
 
@@ -55,28 +55,23 @@
 }
 @media (max-width:420px) {
     .sectionFooter {
-        display: block;
+
         flex-direction: column;
         justify-content:  center;
+        text-align: center;
+        
     }
-    .titulo2 {
-        justify-content: center;
+    
     }
     .footer{
         align-content: center;
         flex-direction: column;
+        
     }
-    .redes{
-        align-content: center;
-        margin: auto;
-    }
-    a{
-        text-align: center;
-        align-content: center;
-    }
-    footer{
-        align-content: center;
-        text-align: center;
+    .redes .titulo3 {
+        
+        justify-content: center;
+        margin: 0 auto;
+
     }
 
-} 

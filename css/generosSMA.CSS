@@ -118,6 +118,10 @@ padding: 4px 0px 10px 0px;
         
         
  }
+ .tp2 {
+     z-index: 1;
+     padding-top: 5px;
+ }
     .dropup:hover {
         color: #351723;
     }
@@ -141,7 +145,11 @@ padding: 4px 0px 10px 0px;
     }
 
 
-
+    @media (max-width:507px) {
+        #sciFi {
+            font-size: 0.8rem;
+            
+        }
 
     @media (max-width:420px) {
         /* help no logro que la segunda linea se me centre*/
@@ -154,6 +162,7 @@ padding: 4px 0px 10px 0px;
         .apartado2 {
             grid-template-columns: 1fr 1fr 1fr;
             
+                        
             
         }
         .apartado3 {
@@ -168,11 +177,9 @@ padding: 4px 0px 10px 0px;
 
     }
    
-    
-@media (max-width:507px) {
-        #sciFi {
-            font-size: 100rem;
-            
-        }
+    .belicas {
+        display: none;
+    }
+
     }
 }
