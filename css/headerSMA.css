@@ -45,8 +45,6 @@ img {
     padding: 1% ;
     margin-right: 3%;
     flex-wrap: wrap;
-    
-    
 
 }
 .hrefHeader {
@@ -87,15 +85,26 @@ a {
     height: 2em;
 }
 @media (max-width:420px) {
+    
+    .divLogo{
+        width: 40%;
+    
+    }
     .sectionHeader {
-        display: block;
         flex-direction: column;
         width: 50%;
         font-size: 70%;
+
+       
     }
     .lupa {
-        width: 10%;
+        align-items: center;
+        width: 1%;
     }
+  .buscador{
+      align-items: center;
+  }
+
   
 
 } 
