@@ -4,7 +4,7 @@
 }
 .footer {
     display: flex;
-    background-color: #652A42;
+    /*background-color: #652A42;*/
     position: relative;
     bottom: 0;
     width: 100%;
@@ -53,6 +53,13 @@
 
     
 }
+.sectionFooter :hover {
+    background-color: rgba(0, 0, 0, 0.842);
+    color: rgb(215, 194, 188);
+    border-radius: 2px;
+    padding: 6px;
+}
+
 @media (max-width:420px) {
     .sectionFooter {
 
@@ -74,4 +81,6 @@
         margin: 0 auto;
 
     }
+
+
 
