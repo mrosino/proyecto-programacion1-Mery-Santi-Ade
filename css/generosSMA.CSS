@@ -5,6 +5,9 @@
     font-family: 'Roboto', sans-serif;
             
 }
+/*.body {
+    background-image:linear-gradient(#652A42,#8E5358) ; 
+}*/
 .generos {
     width: 100%;
     padding: 20px;
@@ -48,12 +51,13 @@
     
 }
 .dropdown:hover {
-    color: #351723;
+    background-color: rgba(255, 255, 255, 0.671);
+    z-index: 1;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    background-image:linear-gradient(#985D5E, #652A42);
+    /*background-image:linear-gradient(#985D5E, #652A42);*/
     widows: 100%;
     overflow:auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.26);
@@ -70,7 +74,7 @@
 
 .textoG {
 font-weight: lighter;
-color: black
+color:rgb(215, 194, 188); 
 
 }
 
@@ -82,8 +86,7 @@ color: black
 .imgreco {
     padding: 5px;
     width: 100%;
-    box-shadow:0px 8px 16px 0px black;
-    
+   
     
 }
 
@@ -119,16 +122,19 @@ padding: 4px 0px 10px 0px;
         
  }
  .tp2 {
+     color:rgb(215, 194, 188);
      z-index: 1;
      padding-top: 5px;
  }
     .dropup:hover {
-        color: #351723;
+       background-color: rgba(255, 255, 255, 0.589);
+       z-index: 1;
     }
     .dropup-content {
         display: none;
         position: absolute;
-        background-image:linear-gradient(#652A42, #985D5E);
+        
+        /*background-image:linear-gradient(#652A42, #985D5E);*/
         bottom: 20px;
         widows: 100%;
         overflow:auto;
@@ -157,7 +163,7 @@ padding: 4px 0px 10px 0px;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             align-content: center;
             padding: 1%;
-            box-shadow: black;
+            
         }
         .apartado2 {
             grid-template-columns: 1fr 1fr 1fr;
