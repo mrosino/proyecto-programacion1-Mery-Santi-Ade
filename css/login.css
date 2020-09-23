@@ -34,10 +34,9 @@ img {
   }
   .formularioIS{
     border-bottom: #652A42;
-  
-    
-        
+      
   } 
+  
   .formularios {
     
     padding: 5%;
@@ -81,7 +80,7 @@ img {
   .social :hover{
     color: rgb(215, 194, 188);
   }
-  .gradient-text {
+  .rU {
    
     background-color: white;
     border: 2px solid black;
