@@ -21,6 +21,30 @@ img{
 .imagenesSerie {
     padding: 3px;
 }
+.slider{
+    width: 95%;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: cambio 15s infinite;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+@keyframes cambio {
+    0% {margin-left: 0; }
+    15% { margin-right: 0;}
+
+    20% { margin-left: -100%;}
+    35% { margin-right: -100%;}
+
+}
 
 @media (max-width:420px){
     .imagenesSerie{
