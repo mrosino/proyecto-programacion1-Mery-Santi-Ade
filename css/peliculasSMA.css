@@ -46,7 +46,6 @@ img{
 
 }
 
-
 @media (max-width:420px){
     .peliculas{
         display: flex;
