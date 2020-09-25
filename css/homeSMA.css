@@ -31,7 +31,7 @@ img{
     display: flex;
     padding: 0;
     width: 400%;
-    animation: cambio 10s infinite;
+    animation: cambio 18s infinite;
 }
 .slider li{
     width: 100%;
