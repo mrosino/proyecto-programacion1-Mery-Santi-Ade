@@ -21,6 +21,12 @@ img {
     
     
 }
+.comprensivo{
+    position: fixed;
+    top:0;
+    background-color: rgba(0,0,0, 0.7);
+    
+}
 /* Necesito ayuda con esto, y para la barra de buscar tambien!
 #logo :hover {
     background-color: inherit;
@@ -58,25 +64,18 @@ img {
     color:rgb(215, 194, 188);
      
 }
-.hrefHeader :hover {
+.sectionHeader .hrefHeader:hover {
     background-color:white;
-    color: black;
-    
-}
-.sectionHeader :hover {
-    background-color:rgb(215, 194, 188);
     color: black;
     padding: 6px;
     border-radius: 2px;
+    
 }
+
 .titulo {
     font-size: 110%;
     font-weight: bolder;
     
-}
-.sectionHeader .divLogo :hover{
-    display: initial;
-
 }
 /* pongamos algun efecto copado, todo lo que probé queda horrible
 .hrefHeader:hover {

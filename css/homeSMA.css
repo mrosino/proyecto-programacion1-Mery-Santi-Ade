@@ -26,6 +26,7 @@ img{
     display: block;
     margin: auto;
     overflow: hidden;
+    margin-top: 10%;
 }
 .slider ul{
     display: flex;
