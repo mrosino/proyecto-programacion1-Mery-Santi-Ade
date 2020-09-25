@@ -22,7 +22,7 @@ img{
     padding: 3px;
 }
 .slider{
-    width: 95%;
+    width: 75%;
     display: block;
     margin: auto;
     overflow: hidden;
@@ -31,7 +31,7 @@ img{
     display: flex;
     padding: 0;
     width: 200%;
-    animation: cambio 15s infinite;
+    animation: cambio 25s infinite;
 }
 .slider li{
     width: 100%;

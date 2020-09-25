@@ -74,6 +74,10 @@ img {
     font-weight: bolder;
     
 }
+.sectionHeader .divLogo :hover{
+    display: initial;
+
+}
 /* pongamos algun efecto copado, todo lo que probé queda horrible
 .hrefHeader:hover {
 */
