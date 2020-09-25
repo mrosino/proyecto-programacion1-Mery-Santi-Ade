@@ -128,10 +128,13 @@ h1 {
     }
     .añadidasRecientemente {
         display: flex;
-        flex-wrap: wrap;
-       
+        flex-wrap: wrap;  
+    }
+    .slider {
+       width: 150%;
     }
     
+
 }
 /*        Media Query Tablet
 @media (min-width:420px) {
