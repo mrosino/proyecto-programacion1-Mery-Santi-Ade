@@ -28,6 +28,7 @@ img{
     overflow: hidden;
 }
 .slider ul{
+    margin-top: 10%;
     display: flex;
     padding: 0;
     width: 200%;

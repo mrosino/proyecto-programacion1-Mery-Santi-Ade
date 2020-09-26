@@ -28,9 +28,10 @@ img{
     overflow: hidden;
 }
 .slider ul{
+    margin-top: 10%;
     display: flex;
     padding: 0;
-    width: 200%;
+    width: 100%;
     animation: cambio 25s infinite;
 }
 .slider li{
