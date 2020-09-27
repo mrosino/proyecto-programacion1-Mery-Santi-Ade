@@ -58,3 +58,27 @@ img{
     padding: 5px;
     
 }
+
+
+.temp {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.sinop {
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.elenco {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.genres {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.puntu {
+    margin-left: 5%;
+    margin-top: 2%;
+}
