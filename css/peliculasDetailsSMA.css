@@ -1,10 +1,8 @@
 * {
     border-radius: 3px;
 }
-
 img{
     width: 100%;
-
 }
 .principal{
     display: flex;
@@ -17,68 +15,54 @@ img{
     height: 80%;
     margin-top: 10%;
     justify-content: center;
-
 }
 .trailer-ctrl{
     width: 85%;
 }
-.parrafo{
-    justify-content: center;
-}
 .info{
-    width: 70%;
-    margin-top: 55px;
-    background-color: white;
-    padding: 15px;
-    text-align: justify;
-    margin-left: 50px;
-
+    margin-top: 3%;
+    margin-left: 5%;
 }
-.premios{
-    margin-left: 10px;
+.descripcion{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.sinopsis{
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.elenco{
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.director{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.genres{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.puntu{
+    margin-left: 5%;
+    margin-top: 2%;
 }
 .greenbookImg{
     width: 45%;
     padding: 5px;
     margin-top: 50px;
     margin-left: 150px;
-
 }
 .recomendadas{
     display: flex;
     margin-top: 5%;
-
 }
 .imgRecomendadas{
     display: flex;
-
 }
 .peliculas{
     width: 100%;
     padding: 5px;
-    
-}
-
-
-.temp {
-    margin-top: 3%;
-    margin-left: 5%;
-}
-.sinop {
-    width: 70%;
-    margin-left: 5%;
-    margin-top: 2%;
-}
-.elenco {
-    width: 100%;
-    margin-left: 5%;
-    margin-top: 2%;
-}
-.genres {
-    margin-left: 5%;
-    margin-top: 2%;
-}
-.puntu {
-    margin-left: 5%;
-    margin-top: 2%;
 }
