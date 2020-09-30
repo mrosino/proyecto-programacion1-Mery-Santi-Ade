@@ -92,6 +92,10 @@ h1 {
     padding: 5px;
     width: 100%;
 }
+.imagenesBanner1{
+    padding: 5px;
+    width: 100%;
+}
 .imagenes1{
     padding: 5px;
     width: 100%;
@@ -105,10 +109,7 @@ h1 {
  /*        Media Query mobile */
 
 @media (max-width:420px) {
-    .banner {
-        flex-direction: row-reverse;
-        width: 100%;
-    }
+   
     .imagenes1{
      width: 50%;
     }
@@ -134,7 +135,13 @@ h1 {
         margin-top: 50%;
        width: 150%;
     }
-    
+    .imagenesBanner1{
+        display: none;
+    }
+    .imagenesBanner{
+        padding: 5px;
+        width: 100%;
+    }
 
 }
 /*        Media Query Tablet

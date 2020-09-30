@@ -24,12 +24,16 @@
   height: auto;
 }
 .video {
+    flex-wrap: wrap;
     display: flex;
     padding-left: 3%;
     width: 100%;
     height: 80%;
     margin-top: 10%;
     justify-content: center;
+}
+.video-ctrl{
+    width: 85%;
 }
 .temp {
     margin-left: 5%;
@@ -88,4 +92,18 @@
 }
 .capi {
     background-color: #985D5E;
+}
+@media (max-width:420px){
+    .video{
+        margin-top: 45%;
+        
+    }
+    .imgreco{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+   .capi {
+       margin-left: 4%;
+   }
 }
