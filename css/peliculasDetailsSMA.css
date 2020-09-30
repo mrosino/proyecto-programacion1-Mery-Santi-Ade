@@ -66,3 +66,27 @@ img{
     width: 100%;
     padding: 5px;
 }
+
+
+@media (max-width:420px){
+    .trailer{
+        margin-top: 45%;
+    }
+    .peliculas{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .peliculas1{
+        display: none;
+
+    }
+    .imagenesPeli{
+        width: 50%;
+
+    }
+    .imagenesPeli1{
+        display: none;
+        
+    }
+}
