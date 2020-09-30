@@ -5,7 +5,7 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-style: oblique;
     font-size: 1em;
-    z-index: 2;
+    
 }
 body {
    
@@ -113,6 +113,9 @@ a {
     }
   .buscador{
       display: none;
+  }
+  .titulos1{
+      margin-top: 12%;
   }
 
   

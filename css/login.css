@@ -196,6 +196,9 @@ height: fit-content;
 }
 
 @media (max-width:420px){
+  .registrarse{
+    margin-top: 25%;
+  }
   .botonIS{
     width: 50%;
     
