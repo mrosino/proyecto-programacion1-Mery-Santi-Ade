@@ -147,44 +147,46 @@ font-weight: lighter;
  .comprensivo{
   z-index: 1;
 }
-
-
-
- @media (max-width:507px) {
- #sciFi {
- font-size: 0.8rem;
- 
- }
-
  @media (max-width:420px) {
 
  .apartado1 {
- grid-template-columns: 1fr 1fr 1fr 1fr;
- align-content: center;
- padding: 1%;
- 
+  display: none;
  }
+.tipoEje{
+  display: none;
+}
  .apartado2 {
  grid-template-columns: 1fr 1fr 1fr;
- 
- 
+ margin-bottom: 10%;
  
  }
  .apartado3 {
  grid-template-columns: 1fr 1fr 1fr;
- 
 
  }
- 
  .ejeTitulo {
+   margin-top: 35%;
  font-size: 1.2rem;
- 
+ color: black;
 
  }
- 
  .belicas {
  display: none;
  }
+.tP1 {
+  font-size: 0.6rem;
+}
+.tp2 {
+  color:black;
+}
+.dropdown-content  {
+  font-size: 0.9rem;
+  padding: 0%;
+  background-color:transparent;
+  
+}
+.dropdown:hover {
+  background-color:rgba(0, 0, 0, 0.397);;
+}
 
 }
- }
