@@ -33,10 +33,6 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  
-    
-    
-    
    
 }
 .sectionHeader article{
@@ -108,10 +104,10 @@ a {
     .lupa {
         align-items: center;
     }
-  .buscador{
+    .buscador{
       display: none;
   }
-  .titulos1{
+    .titulos1{
       margin-top: 12%;
   }
 

@@ -1,8 +1,51 @@
 .nombres{
     display: flex;
-    color: white;
     justify-content: space-around;
     margin-top: 15%;
-    margin-left: 10%;
-  
+    
+}
+.ade {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #D6B8B2;
+}
+.mery {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #D6B8B2;
+}
+.santi {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #D6B8B2;
+}
+@media (max-width:420px){
+.nombres {
+    flex-direction: column;
+    padding: 20%;
+    text-decoration: none;
+}
+.ade {
+    text-decoration: none;
+    color:#592136;
+    padding: 10%;
+    font-size: 1.2rem;
+
+}
+.mery {
+    text-decoration: none;
+    color: #592136;
+    padding: 10%;
+    font-size: 1.2rem;
+}
+.santi {
+    text-decoration: none;
+    color: #592136;
+    padding: 10%;
+    font-size: 1.2rem;
+}
+.celu {
+    display: none;
+}
+
 }

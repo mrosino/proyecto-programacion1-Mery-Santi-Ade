@@ -132,32 +132,30 @@ h1 {
         flex-wrap: wrap;  
     }
     .slider {
-        margin-top: 50%;
-       width: 150%;
+       margin-top: 40%;
+       width: 100%;
     }
-    .imagenesBanner1{
-        display: none;
-    }
+   
     .imagenesBanner{
         padding: 5px;
         width: 100%;
+        margin-right: 20%;
     }
-
-}
-/*        Media Query Tablet
-@media (min-width:420px) {
-    .banner {
-        flex-direction: row-reverse;
-        width: 100%;
-    }
-    .imagenes1{
-        width: 40%;
-    }
-    .mejoresPuntuadas {
+    .slider ul{
         display: flex;
-        flex-wrap: wrap;
+        padding: 0;
+        width: 400%;
+        animation: cambio 18s infinite;
     }
-    .no{
-        display: none;
+    .slider li{
+        width: 100%;
+        list-style: none;
     }
-}*/
+    @keyframes cambio {
+        0% {margin-left: 0; }
+        15% { margin-left: 0;}
+    
+        20% { margin-left: -100%;}
+        35% { margin-left: -100%;}
+}
+ }

@@ -6,8 +6,9 @@
 img {
   width: 100%;
 }
-.box {
+.box  {
   text-align: start;
+
 }
 #bodyId {
   text-align: center;
@@ -82,6 +83,7 @@ img {
   }
   #iS {
     font-size: 1.3rem;
+    color: rgb(215, 194, 188);
   }
   .rU {
    
@@ -108,8 +110,6 @@ img {
     background-color: rgba(0, 0, 0, 0.438);
     color: white;
     border-radius: 3px;
-    
-
   }
  
   .goologin {  
@@ -197,19 +197,21 @@ height: fit-content;
 
 @media (max-width:420px){
   .registrarse{
-    margin-top: 25%;
+    margin-top: 30%;
   }
   .botonIS{
-    width: 50%;
+    width: 41%;
     
   }
   .social{
-    width: 70%;
+    width: 60%;
   }
   .formularioIS input{
       width: 50%;
 
     }
-
+  .sociales span {
+    font-size: 1rem;
+  }
 }
 /*hola!*/
