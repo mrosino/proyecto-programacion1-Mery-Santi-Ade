@@ -8,6 +8,8 @@ img {
 }
 .box  {
   text-align: start;
+  
+
 
 }
 #bodyId {
@@ -86,15 +88,32 @@ img {
     color: rgb(215, 194, 188);
   }
   .rU {
-   
+    font-size: 1.1em;
+    font-weight: bolder;
     background-color: transparent;
     border: 2px solid black;
     border-radius: 3px;
     padding: 6px;
     color: black;
-  
-  
+   
   }
+
+  .botonIS {
+    background-color: transparent;
+    border: 2px solid black;
+    width: 9.5%;
+    justify-content: center;
+    text-align: center;
+    padding: 6px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    
+}
+.botonIs :active {
+  position: relative; 
+  bottom: 3px;
+  color: #000000;
+}
   
   .fblogin {   
     background-color: inherit;
@@ -178,22 +197,8 @@ main {
 height: fit-content;
 }
 
-.botonIS {
-  background-color: transparent;
-    border: 2px solid black;
-    width: 15%;
-    justify-content: center;
-    text-align: center;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    font-size: 1.1em;
-    
-}
 
-.botonIs :active {
-  position: relative; 
-  bottom: 3px;
-}
+
 
 @media (max-width:420px){
   .registrarse{

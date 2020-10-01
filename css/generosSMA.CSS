@@ -1,8 +1,8 @@
 * {
- box-sizing: border-box;
+ box-sizing: border-box; /*para incluir padding y margin en el total del elemento*/
  padding: 0;
  margin: 0 auto;
- font-family: 'Roboto', sans-serif;
+ font-family: 'Roboto', sans-serif; /*usa la primera, sino la segunda*/
  
 }
 
@@ -14,7 +14,7 @@
 
 .ejeTitulo {
  margin-top: 5%;
- font-size: 1.5rem;
+ font-size: 1.5rem; /*rem toma como base 16px*/
  font-style: oblique;
  text-align: center;
  
@@ -28,7 +28,7 @@
  align-content: center;
  margin-top: 5%;
  display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*usamos grid para cerrar la grieta #teamflex #teamgrid*/
  
  
 }
@@ -44,7 +44,7 @@
 }
 
 .dropdown {
- position: relative;
+ position: relative; /*porque necesito que el contenido se situe frente a este*/
  display: inline-block;
  text-align: center;
  font-size: 1.2rem;
@@ -57,15 +57,15 @@
 }
 .dropdown-content {
  display: none;
- widows: 100%;
- overflow:auto;
+ widows: 100%; /*asi me muestra todas las lineas en la parte superior*/
+ overflow:auto; /*me permite scrollear en pantallas pequeñas*/
  padding: 2px 4px;
  text-transform: none;
  background-color: rgb(0, 0, 0);
 }
 
 .dropdown:hover .dropdown-content {
- display: block;
+ display: block; /*muestra en bloque, ocupa todo el ancho*/
 }
 
 .textoG {
@@ -85,9 +85,9 @@ color:rgb(215, 194, 188);
 }
 
 .apartado2 {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-padding: 4px 0px 10px 0px;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ padding: 4px 0px 10px 0px;
 
 }
 .apartado3 {
@@ -96,19 +96,9 @@ padding: 4px 0px 10px 0px;
  padding: 4px 0px 10px 0px;
  }
 
-.sugg {
- text-transform: none;
- font-weight: 0.3em;
- font-style: italic;
-}
-.sugerencias {
- font-weight: 0.3em;
- font-style: italic;
-}
-
 .dropdown1 {
-  position: relative;
- display: inline-block;
+ position: relative; /*porque necesito que este abajo del boton*/
+ display: inline-block; /**/
  text-align: center;
  text-transform: uppercase;
  
@@ -124,6 +114,7 @@ padding: 4px 0px 10px 0px;
  background-color:#D6B8B2;
  z-index: 0;
  }
+
  .dropdown1-content {
  display: none;
  bottom: 20px;
@@ -136,7 +127,7 @@ padding: 4px 0px 10px 0px;
  
  }
 .dropdown1-content .textoG {
-font-weight: lighter;
+ font-weight: lighter;
  color:rgb(0, 0, 0); 
  }
  
@@ -144,7 +135,7 @@ font-weight: lighter;
  display: block;
  }
  .comprensivo{
-  z-index: 1;
+  z-index: 1; /*para que lo lea ultimo, sino no funciona bien el header*/
 }
  @media (max-width:420px) {
 
@@ -152,7 +143,7 @@ font-weight: lighter;
   display: none;
  }
 .tipoEje{
-  display: none;
+ display: none;
 }
  .apartado2 {
  grid-template-columns: 1fr 1fr 1fr;
@@ -164,7 +155,7 @@ font-weight: lighter;
 
  }
  .ejeTitulo {
-   margin-top: 35%;
+ margin-top: 35%;
  font-size: 1.2rem;
  color: black;
 
