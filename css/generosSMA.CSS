@@ -106,9 +106,8 @@ padding: 4px 0px 10px 0px;
  font-style: italic;
 }
 
-.dropup {
- 
- position: relative;
+.dropdown1 {
+  position: relative;
  display: inline-block;
  text-align: center;
  text-transform: uppercase;
@@ -121,11 +120,11 @@ padding: 4px 0px 10px 0px;
  }
 
 
- .dropup:hover {
+ .dropdown1:hover {
  background-color:#D6B8B2;
  z-index: 0;
  }
- .dropup-content {
+ .dropdown1-content {
  display: none;
  bottom: 20px;
  widows: 100%;
@@ -136,12 +135,12 @@ padding: 4px 0px 10px 0px;
  background-color:#D6B8B2 ;
  
  }
-.dropup-content .textoG {
+.dropdown1-content .textoG {
 font-weight: lighter;
  color:rgb(0, 0, 0); 
  }
  
- .dropup:hover .dropup-content {
+ .dropdown1:hover .dropdown1-content {
  display: block;
  }
  .comprensivo{
