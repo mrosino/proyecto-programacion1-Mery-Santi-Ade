@@ -98,20 +98,15 @@ a {
 @media (max-width:420px) {
     .divLogo{
         width: 40%;
-        
-    
     }
     .sectionHeader {
         flex-direction: column;
         width: 50%;
         font-size: 70%;
         justify-content: center;
-
-       
     }
     .lupa {
         align-items: center;
-      
     }
   .buscador{
       display: none;

@@ -22,7 +22,7 @@ img{
     width: 75%;
 }
 .slider{
-    width: 95%;
+    width: 60%;
     display: block;
     margin: auto;
     overflow: hidden;
@@ -38,14 +38,7 @@ img{
     width: 100%;
     list-style: none;
 }
-@keyframes cambio {
-    0% {margin-left: 0; }
-    15% { margin-left: 0;}
 
-    20% { margin-left: -100%;}
-    35% { margin-left: -100%;}
-
-}
 
 @media (max-width:420px){
     .slider{
