@@ -5,35 +5,25 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-style: oblique;
     font-size: 1em;
-    
 }
 body {
-   
     width: 100%;
-    
-    
 }
 img {
     width: 100%;
 }
-
 .divLogo {
     width: 7%;
-    
-    
 }
 .comprensivo{
     position: fixed;
     top:0;
     background-color: #572336;
-    
 }
-
 .sectionHeader {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-   
+    justify-content: space-between; 
 }
 .sectionHeader article{
     display: flex;
@@ -44,7 +34,6 @@ img {
     padding: 1% ;
     margin-right: 3%;
     flex-wrap: wrap;
-
 }
 .hrefHeader {
     font-size: 110%;
@@ -54,31 +43,21 @@ img {
     margin: auto ;
     text-decoration: none;
     color:rgb(215, 194, 188);
-     
 }
 .sectionHeader .hrefHeader:hover {
     background-color:white;
     color: black;
     padding: 6px;
     border-radius: 2px;
-    
 }
-
 .titulo {
     font-size: 110%;
     font-weight: bolder;
-    
 }
-/* pongamos algun efecto copado, todo lo que probé queda horrible
-.hrefHeader:hover {
-*/
-
 .titulo1{
     font-size: 110%;
     font-weight: bolder;
     margin-left: 6%;
-    
-
 }
 a {
     color: black;
@@ -91,6 +70,7 @@ a {
     border-bottom-style: hidden;
     height: 2em;
 }
+
 @media (max-width:420px) {
     .divLogo{
         width: 40%;
@@ -110,7 +90,4 @@ a {
     .titulos1{
       margin-top: 12%;
   }
-
-  
-
 } 

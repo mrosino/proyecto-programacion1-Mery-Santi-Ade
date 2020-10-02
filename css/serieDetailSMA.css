@@ -1,11 +1,9 @@
 * {
     font-family: 'Roboto', sans-serif;
-
 }
 
 .imgRecomendadas {
-    display: flex;
-    
+    display: flex; 
 }
 .serieInfo {
     display: flex;
@@ -61,7 +59,6 @@
     margin-top: 2%;
     margin-left: 5%;
     margin-bottom: 3%;
-
 }
 .segundaCol {
     display: flex;
@@ -70,7 +67,6 @@
     margin-right: 15%;
     margin-top: 2%;
     margin-bottom: 3%;
-
 }
 .total {
     display: flex;
@@ -85,12 +81,10 @@
 @media (max-width:420px){
     .video{
         margin-top: 45%;
-        
     }
     .imgreco{
         display: flex;
         flex-wrap: wrap;
-
     }
    .capi {
        margin-left: 4%;

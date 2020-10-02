@@ -16,7 +16,6 @@ img{
 }
 .serieCompleto{
     margin-top: 2%;
-
 }
 .imagenesSerie {
     padding: 3px;
@@ -34,8 +33,6 @@ img{
     width: 100%;
     animation: none;
 }
-
-
 
 @media (max-width:420px){
     .slider{

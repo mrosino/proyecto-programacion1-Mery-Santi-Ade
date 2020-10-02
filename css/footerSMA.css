@@ -11,16 +11,11 @@
     height: 10%;
     justify-content: center;
     margin-top: 1%;
-    
 }
 .sectionFooter {
     display: flex;
     flex-direction: row;
     width: 50%;
-    
-    
-    
-   
 }
 .sectionFooter article{
     display: flex;
@@ -29,35 +24,23 @@
     align-items: center;
     padding: 1%;
     flex-wrap: wrap;
-    
-    
-
 }
 .titulo2{
     font-size: 100%;
     text-decoration: none;
-    
-    
-
-
 }
 .titulo3{
     margin-right: 15px;
     padding-bottom: 10px;
-    
 }
 .redes{
     display: flex;
     justify-content: flex-end;
-    
     margin-top: 1%;
     width: 50%;
-
 }
 .redes a{ 
     color: black;
-
-    
 }
 .sectionFooter :hover {
     background-color: rgba(0, 0, 0, 0.842);
@@ -68,24 +51,19 @@
 
 @media (max-width:420px) {
     .sectionFooter {
-
         flex-direction: column;
         justify-content:  center;
         text-align: center;
-        
     }
-    
     }
     .footer{
         align-content: center;
         flex-direction: column;
-        
     }
     .redes .titulo3 {
         
         justify-content: center;
         margin: 0 auto;
-
     }
 
 

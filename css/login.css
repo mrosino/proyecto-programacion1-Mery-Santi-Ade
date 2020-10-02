@@ -8,9 +8,6 @@ img {
 }
 .box  {
   text-align: start;
-  
-
-
 }
 #bodyId {
   text-align: center;
@@ -22,9 +19,7 @@ img {
 .divLogo {
   width: 7%;
   align-content: center;
-    
 }
-
 .formularioIS input{
   display: flex;
   flex-direction: column;
@@ -33,33 +28,23 @@ img {
     margin: 0,1;
     border-radius: 3px;
     margin-bottom: 15px;
-
   }
   .formularioIS{
-    border-bottom: #652A42;
-      
+    border-bottom: #652A42;   
   } 
-  
   .formularios {
-    
     padding: 5%;
-    
-  
   }
   .r2 {
     color:  #070606;
     font-weight: bolder;
     text-decoration: none;
     text-align: right;
-
-    
   }
   .cuentaNo {
     text-decoration: none;
     font-style: italic;
     font-weight: bolder;
-      
-       
     }
   .sociales span {
     text-align: center; 
@@ -68,8 +53,7 @@ img {
     font-weight: 700;
     font-style: normal;
   }
-  .social{
-       
+  .social{  
     margin-top: 12px;
     text-indent:0;
     display:block;
@@ -95,9 +79,7 @@ img {
     border-radius: 3px;
     padding: 6px;
     color: black;
-   
   }
-
   .botonIS {
     background-color: transparent;
     border: 2px solid black;
@@ -106,15 +88,13 @@ img {
     text-align: center;
     padding: 6px;
     font-size: 1.1em;
-    font-weight: bolder;
-    
+    font-weight: bolder;  
 }
 .botonIs :active {
   position: relative; 
   bottom: 3px;
   color: #000000;
 }
-  
   .fblogin {   
     background-color: inherit;
     border: 2px solid black;
@@ -122,15 +102,12 @@ img {
     width: 20%;
     justify-content: center;
     text-align: center;
-
-   
   }
   .fblogin:hover {
     background-color: rgba(0, 0, 0, 0.438);
     color: white;
     border-radius: 3px;
   }
- 
   .goologin {  
     background-color: inherit;
     border: 2px solid black;
@@ -138,15 +115,12 @@ img {
     width: 20%;
     justify-content: center;
     text-align: center;
-    
   }
   .goologin:hover {
     background-color: rgba(0, 0, 0, 0.438);
     color:white;
     border-radius: 3px;
-    
   }
- 
   .twlogin { 
     background-color: inherit;
     border: 2px solid black;
@@ -154,15 +128,12 @@ img {
     width: 20%;
     justify-content: center;
     text-align: center;
-     
   }
   .twlogin:hover {
     background-color: rgba(0, 0, 0, 0.438);
     color:white;
     border-radius: 3px;
-    
   }
- 
   .registra2 a {
     position: relative;
     color: #b6b6b6;
@@ -187,18 +158,12 @@ img {
     text-decoration: none;
     color: black;
   }
- 
   .irA a {
   text-decoration: none;
   }
-
-  
 main {
 height: fit-content;
 }
-
-
-
 
 @media (max-width:420px){
   .registrarse{
@@ -206,14 +171,12 @@ height: fit-content;
   }
   .botonIS{
     width: 41%;
-    
   }
   .social{
     width: 60%;
   }
   .formularioIS input{
       width: 50%;
-
     }
   .sociales span {
     font-size: 1rem;

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     margin-top: 15%;
-    
 }
 .ade {
     text-decoration: none;
@@ -47,5 +46,4 @@
 .celu {
     display: none;
 }
-
 }
