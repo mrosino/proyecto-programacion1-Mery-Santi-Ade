@@ -44,7 +44,7 @@
 }
 
 .dropdown {
- position: relative; /*porque necesito que el contenido se situe frente a este*/
+ position: relative; /*porque necesito que el contenido se situe en relacion a este*/
  display: inline-block;
  text-align: center;
  font-size: 1.2rem;
