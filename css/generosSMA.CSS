@@ -1,8 +1,8 @@
 * {
- box-sizing: border-box; /*para incluir padding y margin en el total del elemento*/
+ box-sizing: border-box; 
  padding: 0;
  margin: 0 auto;
- font-family: 'Roboto', sans-serif; /*usa la primera, sino la segunda*/
+ font-family: 'Roboto', sans-serif; 
  
 }
 
@@ -14,7 +14,7 @@
 
 .ejeTitulo {
  margin-top: 5%;
- font-size: 1.5rem; /*rem toma como base 16px*/
+ font-size: 1.5rem; 
  font-style: oblique;
  text-align: center;
  
@@ -44,7 +44,7 @@
 }
 
 .dropdown {
- position: relative; /*porque necesito que el contenido se situe en relacion a este*/
+ position: relative; 
  display: inline-block;
  text-align: center;
  font-size: 1.2rem;
@@ -57,15 +57,15 @@
 }
 .dropdown-content {
  display: none;
- widows: 100%; /*asi me muestra todas las lineas en la parte superior*/
- overflow:auto; /*me permite scrollear en pantallas pequeñas*/
+ widows: 100%; 
+ overflow:auto; 
  padding: 2px 4px;
  text-transform: none;
  background-color: rgb(0, 0, 0);
 }
 
 .dropdown:hover .dropdown-content {
- display: block; /*muestra en bloque, ocupa todo el ancho*/
+ display: block;
 }
 
 .textoG {
@@ -97,8 +97,8 @@ color:rgb(215, 194, 188);
  }
 
 .dropdown1 {
- position: relative; /*porque necesito que este abajo del boton*/
- display: inline-block; /**/
+ position: relative; 
+ display: inline-block; 
  text-align: center;
  text-transform: uppercase;
  
