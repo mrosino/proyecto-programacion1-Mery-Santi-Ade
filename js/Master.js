@@ -7,16 +7,14 @@ window.addEventListener('load',function(){
     .then(function(informacion){
         console.log(informacion.results)
         var populares = informacion.results
-        for (i = 0 ; i < 1 ; i++){
-            var url=informacion.results[i].poster_path
-            var titulo =  populares[i].original_title
-            var sinopsis = populares[i].overview
-            var lanzamiento = populares[i].release_date
-            var puntuacion = populares[i].vote_average 
-            var mP = document.querySelector('.mejoresPuntuadas')
-            
+        var contenidoMejoresPuntuadas = ""
+        for (i = 0 ; i < 20 ; i++){
+            console.log(informacion.results[i])
+            var url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path 
+            contenidoMejoresPuntuadas = contenidoMejoresPuntuadas+ '<div class="imagenes1"><img src="'+ url+'" alt=""></div>'
         }
-        mP.innerHTML += `Las peliculas mas puntuadas son ${titulo}`
+        document.querySelector(".mejoresPuntuadas").innerHTML= contenidoMejoresPuntuadas
+        console.log(contenidoMejoresPuntuadas)
     })
    
 
@@ -31,3 +29,7 @@ window.addEventListener('load',function(){
 
 
 })
+            /*var titulo =  populares[i].original_title
+            var sinopsis = populares[i].overview
+            var lanzamiento = populares[i].release_date
+            var puntuacion = populares[i].vote_average */
