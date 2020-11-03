@@ -17,8 +17,8 @@ window.addEventListener('load',function(){
         console.log(contenidoMejoresPuntuadas)
     })
    
-
-
+//declarar variables, llamar apis. hacer las funciones 
+//separar el eventListener load por funciones, asi van llamandose de a una.
 
 
 
