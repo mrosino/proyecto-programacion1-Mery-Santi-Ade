@@ -6,11 +6,11 @@ window.addEventListener('load',function(){
     })
     .then(function(informacion){
         console.log(informacion.results)
-        var populares = informacion.results
-        var contenidoMejoresPuntuadas = ""
+        let populares = informacion.results
+        let contenidoMejoresPuntuadas = ""
         for (i = 0 ; i < 20 ; i++){
             console.log(informacion.results[i])
-            var url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path 
+            let url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path 
             contenidoMejoresPuntuadas = contenidoMejoresPuntuadas+ '<div class="imagenes1"><img src="'+ url+'" alt=""></div>'
         }
         document.querySelector(".mejoresPuntuadas").innerHTML= contenidoMejoresPuntuadas
@@ -29,7 +29,7 @@ window.addEventListener('load',function(){
 
 
 })
-            /*var titulo =  populares[i].original_title
-            var sinopsis = populares[i].overview
-            var lanzamiento = populares[i].release_date
-            var puntuacion = populares[i].vote_average */
+            /*let titulo =  populares[i].original_title
+            let sinopsis = populares[i].overview
+            let lanzamiento = populares[i].release_date
+            let puntuacion = populares[i].vote_average */
