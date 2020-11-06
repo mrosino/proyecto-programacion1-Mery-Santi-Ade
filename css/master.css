@@ -44,8 +44,11 @@ img{
     90% { margin-left: -400;}
     100% {margin-left: -400;}
 }
-h1 {
+h2 {
     color: black;
+    margin-top: 150px;
+    font-size: 50px;
+
 }
 .mejoresPuntuadas{
     display: flex;
