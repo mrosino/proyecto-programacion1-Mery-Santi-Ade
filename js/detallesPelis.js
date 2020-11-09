@@ -1,12 +1,25 @@
 window.addEventListener('load', function(){
-    var informacion = document.querySelector('.detalleInfo')
+    let queryString= window.location.search 
     let datoURL = new URLSearchParams(queryString);
-    let id = datoURL.get('id');   
-    //chquear genre_ids
-    fetch('https://api.themoviedb.org/3/movie/'+id+'?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US')
+    let id = datoURL.get('id');  
+    fetch('https://api.themoviedb.org/3/movie/'+id+'?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-US')
     .then(function(respuesta){
-        //return respuesta.json()
-    console.log(respuesta);
+      return respuesta.json()
+    })
+    .then (function(respuesta){
+      let title= respuesta.title
+      let overview= respuesta.overview
+      let poster= "https://image.tmdb.org/t/p/w500" + respuesta.poster_path
+      let puntuacion=respuesta.vote_average
+      let lanzamiento= respuesta.release_date
+
+      document.querySelector(".descripcion").innerHTML= overview
+      document.querySelector(".titulo").innerHTML="<h2>"+title+"</h2>"
+      document.querySelector(".poster").innerHTML="<img src='"+poster+"'/>"
+      document.querySelector(".puntu").innerHTML=puntuacion
+      document.querySelector(".lanza").innerHTML=lanzamiento
+    console.log(respuesta)
+
     })
     //.then(function(datellesDePeliculas){
     //console.log(detallesDePeliculas.//genres[0].name);

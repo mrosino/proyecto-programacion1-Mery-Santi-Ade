@@ -15,7 +15,8 @@ window.addEventListener('load',function(){
         for (i = 0 ; i < 7 ; i++){
             console.log(informacion.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path
-            pelisPopulares = pelisPopulares+ '<div class="imagenes"><img src="'+ url+'" alt=""></div>'
+            let id= informacion.results[i].id
+            pelisPopulares = pelisPopulares+ '<a href="detallesPelis.html?id='+ id+'"> <div class="imagenes"><img src="'+ url+'" alt=""></div></a> '
         }
         document.querySelector(".popularesPelis").innerHTML= pelisPopulares
         console.log(pelisPopulares)
