@@ -2,7 +2,7 @@ window.addEventListener('load', function(){
     var informacion = document.querySelector('.detalleInfo')
     let datoURL = new URLSearchParams(queryString);
     let id = datoURL.get('id');   
-    
+    //chquear genre_ids
     fetch('https://api.themoviedb.org/3/movie/'+id+'?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US')
     .then(function(respuesta){
         //return respuesta.json()

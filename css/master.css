@@ -50,24 +50,40 @@ h2 {
     font-size: 50px;
 
 }
-.mejoresPuntuadas{
+.popularesPelis{
     display: flex;
     flex-wrap:wrap;
 }
-.enTendencia{
+.popularesSeries{
     display: flex;
-    
+    flex-wrap:wrap;
 }
-.añadidasRecientemente{
+
+.mejoresPuntuadasPelis{
+    display: flex;
+    flex-wrap:wrap;
+}
+.mejoresPuntuadasSeries{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.añadidasRecientementePelis{
     display: flex;
 }
-.imgTendencia{
+
+.añadidasRecientementeSeries{
     display: flex;
 }
+
 .imagenes{
     padding: 5px;
-    width: 100%;
+    width: 200px;
+    
 }
+
+  
+
 .imagenesBanner{
     padding: 5px;
     width: 100%;
@@ -76,11 +92,7 @@ h2 {
     padding: 5px;
     width: 100%;
 }
-.imagenes1{
-    padding: 5px;
-    width: 300px;
-    margin-top: 10%;
-}    
+ 
 .titulos{
     display: flex;
     margin-top: 5px;
