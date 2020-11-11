@@ -1,19 +1,22 @@
 window.addEventListener('load', function(){
 
-    let queryString= window.location.search 
+    let queryString= location.search 
     let datoURL = new URLSearchParams(queryString);
     let id = datoURL.get('id'); 
+    console.log(id);
+    let nombre1 =datoURL.get('nombre')
+    console.log(nombre1);
     let detalle =document.querySelector('.detalleInfo')
     let nombreGen = document.querySelector('.nombreGenero')
 
-    fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US')
+    fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES')
     .then(function(respuesta){
         return respuesta.json()
 
     })
         .then(function(listadoDeGeneros){
             console.log(listadoDeGeneros)
-        nombreGen.innerHTML=`A continuación podrás ver peliculas y series de ${id}`
+        nombreGen.innerHTML=`A continuación podrás ver peliculas y series de ${nombre1}`
 })
 
 

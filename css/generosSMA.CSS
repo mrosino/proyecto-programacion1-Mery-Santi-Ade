@@ -12,6 +12,9 @@
  width: 100%;
  padding: 20px;
 }
+.nombreGenero{
+margin-top: 20%;
+}
 .ejeTitulo {
  margin-top: 5%;
  font-size: 1.5rem; 
