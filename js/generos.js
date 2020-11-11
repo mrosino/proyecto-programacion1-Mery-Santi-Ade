@@ -1,6 +1,9 @@
+//volar esta pagina y hacerla dropdown(html)
 window.addEventListener('load', function(){
     var detalleGen = document.querySelector('.listadoGeneros')
     var decripcion = document.querySelector('.descripcionGenero')
+   
+
 
         fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US')
             .then(function(respuesta){
@@ -11,8 +14,9 @@ window.addEventListener('load', function(){
                 console.log(listadoDeGeneros.genres[0].name);
                 listadoDeGeneros.genres.forEach(genero => {
                 detalleGen.innerHTML += ` <a href="detalleGenero.html?id=${genero.id}"><div class="tP2">${genero.name}</div></a>`
-
-
+                
+                
+               
 
                  })
         })

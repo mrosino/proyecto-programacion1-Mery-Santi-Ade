@@ -17,16 +17,16 @@ window.addEventListener('load', function(){
       document.querySelector(".descripcion").innerHTML= overview
       document.querySelector(".titulo").innerHTML="<h2>"+title+"</h2>"
       document.querySelector(".poster").innerHTML="<img src='"+poster+"'/>"
-      document.querySelector(".puntu").innerHTML=puntuacion
+      document.querySelector(".puntu").innerHTML=`La puntuación es ${puntuacion}`
       document.querySelector(".lanza").innerHTML=lanzamiento
-    //preguntar por que no funciona
-     if (atp == "false"){
+     
+   
+     if (atp == false){
       document.querySelector(".atp").innerHTML=`La pelicula posee contenido apto para público`
         
       }
-      else{
-        
-        document.querySelector(".atp").innerHTML=`La pelicula posee contenido no- apto para público`
+      else{        
+        document.querySelector(".atp").innerHTML=`La pelicula posee contenido no-apto para público`
       }
 
     })
