@@ -16,17 +16,17 @@ window.addEventListener('load', function(){
       var atp =respuesta.adult
       document.querySelector(".descripcion").innerHTML= overview
       document.querySelector(".titulo").innerHTML="<h2>"+title+"</h2>"
-      document.querySelector(".poster").innerHTML="<img src='"+poster+"'/>"
-      document.querySelector(".puntu").innerHTML=`La puntuación es ${puntuacion}`
+      document.querySelector(".poster").innerHTML="<img src='"+poster+"'</img>"
+      document.querySelector(".puntu").innerHTML=`Puntuación ${puntuacion} estrellas`
       document.querySelector(".lanza").innerHTML=lanzamiento
      
    
      if (atp == false){
-      document.querySelector(".atp").innerHTML=`La pelicula posee contenido apto para público`
+      document.querySelector(".atp").innerHTML=`La pelicula posee contenido apto para todo público`
         
       }
       else{        
-        document.querySelector(".atp").innerHTML=`La pelicula posee contenido no-apto para público`
+        document.querySelector(".atp").innerHTML=`La pelicula posee contenido no-apto para todo público`
       }
 
     })

@@ -7,6 +7,18 @@ img{
 .peliculas1{
     display: flex;    
 }
+.peliculas2{
+    display: flex;
+}
+.peliculas3{
+    display: flex;
+}
+.peliculas4{
+    display: flex;
+}
+.peliculas5{
+    display: flex;
+}
 .imagenesPeli{
     padding: 3px;   
 }

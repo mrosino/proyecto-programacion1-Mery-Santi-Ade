@@ -68,20 +68,19 @@ img{
 }*/
 .info{
     display: flex;
-    margin-top: 10%;
-    background-color:  rgb(215, 194, 188);
     padding: 10px;
-
+    margin-top: 10%;
 }
 .detalles{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:  rgb(215, 194, 188);
+    width: 50%;
     text-align: left;
+    height: 400px;
 }
-.titulo{
-    width: 100%;
-}
-.poster{
-    width: 70%;
-}
+
+
 
 
 @media (max-width:420px){
