@@ -4,6 +4,9 @@
  margin: 0 auto;
  font-family: 'Roboto', sans-serif; 
 }
+.listadoGeneros{
+  margin-top: 20%;
+}
 .generos {
  width: 100%;
  padding: 20px;
