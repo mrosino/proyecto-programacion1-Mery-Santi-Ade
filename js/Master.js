@@ -16,7 +16,7 @@ window.addEventListener('load',function(){
             console.log(informacion.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path
             let id= informacion.results[i].id
-            pelisPopulares = pelisPopulares+ '<a href="detallesPelis.html?id='+ id+'"> <div class="imagenes"><img src="'+ url+'" alt=""></div></a> '
+            pelisPopulares = pelisPopulares+ '<a href="detallesPelis.html?id='+id+'"> <div class="imagenes"><img src="'+url+'" alt=""></div></a> '
         }
         document.querySelector(".popularesPelis").innerHTML= pelisPopulares
         console.log(pelisPopulares)
@@ -33,8 +33,9 @@ window.addEventListener('load',function(){
         let seriesPopulares = ""
         for (i = 0 ; i < 7 ; i++){
             console.log(informacion1.results[i])
+            let id= informacion1.results[i].id
             let url= "https://image.tmdb.org/t/p/w500" +informacion1.results[i].poster_path
-            seriesPopulares = seriesPopulares+ '<div class="imagenes"><img src="'+ url+'" alt=""></div>'
+            seriesPopulares = seriesPopulares+ '<a href="detallesSeries.html?id='+id+'"> <div class="imagenes"><img src="'+url+'" alt=""></div></a> '
         }
         document.querySelector(".popularesSeries").innerHTML= seriesPopulares
         console.log(seriesPopulares)
@@ -55,9 +56,12 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=3b4640a2c0443153138c
     let pelisMejoresPuntuadas = ""
     for (i = 0 ; i < 7 ; i++){
         console.log(informacion2.results[i])
+        let id= informacion2.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion2.results[i].poster_path
-        pelisMejoresPuntuadas = pelisMejoresPuntuadas+ '<div class="imagenes"><img src="'+ url+'" alt=""></div>'
-    }
+        pelisMejoresPuntuadas = pelisMejoresPuntuadas+ '<a href="detallesPelis.html?id='+id+'"> <div class="imagenes"><img src="'+ url+'" alt=""></div></a> '
+                                                        
+    } 
+
     document.querySelector(".mejoresPuntuadasPelis").innerHTML= pelisMejoresPuntuadas
     console.log(pelisMejoresPuntuadas)
 })
@@ -76,8 +80,10 @@ fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=3b4640a2c0443153138c528
     let seriesMejoresPuntuadas = ""
     for (i = 0 ; i < 7 ; i++){
         console.log(informacion3.results[i])
+        let id= informacion3.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion3.results[i].poster_path
-        seriesMejoresPuntuadas = seriesMejoresPuntuadas+ '<div class="imagenes"><img src="'+ url+'" alt=""></div>'
+        seriesMejoresPuntuadas = seriesMejoresPuntuadas+ '<a href="detallesSeries.html?id='+id+'"> <div class="imagenes"><img src="'+url+'" alt=""></div></a> '
+      
     }
     document.querySelector(".mejoresPuntuadasSeries").innerHTML= seriesMejoresPuntuadas
     console.log(seriesMejoresPuntuadas)
@@ -95,8 +101,9 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=3b4640a2c044315313
     let pelisAñadidasRecientemente = ""
     for (i = 0 ; i < 7 ; i++){
         console.log(informacion4.results[i])
+        let id= informacion4.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion4.results[i].poster_path
-        pelisAñadidasRecientemente = pelisAñadidasRecientemente+ '<div class="imagenes"><img src="'+ url+'" alt=""></div>'
+        pelisAñadidasRecientemente = pelisAñadidasRecientemente+ '<a href="detallesPelis.html?id='+id+'"> <div class="imagenes"><img src="'+url+'" alt=""></div></a> '
     }
     document.querySelector(".añadidasRecientementePelis").innerHTML= pelisAñadidasRecientemente
     console.log(pelisAñadidasRecientemente)
@@ -114,8 +121,10 @@ fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c
     let seriesAñadidasRecientemente = ""
     for (i = 0 ; i < 7 ; i++){
         console.log(informacion5.results[i])
+        let id= informacion5.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion5.results[i].poster_path
-        seriesAñadidasRecientemente = seriesAñadidasRecientemente+ '<div class="imagenes"><img src="'+ url+'" alt=""></div>'
+        seriesAñadidasRecientemente = seriesAñadidasRecientemente+ '<a href="detallesSeries.html?id='+id+'"> <div class="imagenes"><img src="'+url+'" alt=""></div></a> '
+      
     }
     document.querySelector(".añadidasRecientementeSeries").innerHTML= seriesAñadidasRecientemente
     console.log(seriesAñadidasRecientemente)

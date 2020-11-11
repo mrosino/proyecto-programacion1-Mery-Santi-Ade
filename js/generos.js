@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
-var sectionHtml1 = document.querySelector('.listadoGeneros')
-
+var detalleGen = document.querySelector('.listadoGeneros')
+//var decripcion = document.querySelector('.descripcionGenero')
 
 fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US')
 .then(function(respuesta){
@@ -10,7 +10,32 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=3b4640a2c0443153138
 .then(function(listadoDeGeneros){
 console.log(listadoDeGeneros.genres[0].name);
 listadoDeGeneros.genres.forEach(genero => {
-    sectionHtml1.innerHTML += `<h2> <a href="detallev2.html?id=${genero.id}">${genero.name}</a></h2>`
+    detalleGen.innerHTML += ` <a href="detalleGenero.html?id=${genero.id}"><div class="tP2">${genero.name}</div></a>`
+  /*  if(genero.name == "action"){
+        descripcion.innerHTML=`Este tipo de película son de alta tensión y pueden contener cosas del estilo de
+        persecuciones y muchas peleas, además de una dirección que pone énfasis en el movimiento. Incluyen
+        rescates, batallas, escapadas, explosiones. Su ritmo es espectacular, donde el bueno o los buenos suelen
+        combatir con los malos.`
+    }
+    else if (adventure) {
+        descripcion.innerHTML=`Estas películas y series cuentan historias interesantes y excitantes en contextos
+        normalmente exóticos, y con un contenido similar al de las películas de acción. Suelen ocurrir en el
+        desierto, la selva, montaña o en el mar. Los personajes pueden estar en búsqueda de cumplir una misión.`
+    }
+    else if (comedy) {
+        descripcion.innerHTML=`Las comedias son películas y series divertidas, construidas para que el espectador pase
+        un rato divertido y no deje de reír. Suele ocurrir en multitud de contextos, pero, a diferencia de las
+        películas normales, las comedias exageran la situación para que el público se ría a carcajadas.`
+        
+    }
+    else if (drama) {
+        descripcion.innerHTML=`Son películas y series serias, con personajes y situaciones muy realistas, parecidas a la
+        vida cotidiana, que incluyen situaciones tensas y dramáticas, y que pueden acabar mal o no.`
+    }
+
+    else if (drama) {
+        descripcion.innerHTML=`hola`
+    }*/
 });
 })
 
