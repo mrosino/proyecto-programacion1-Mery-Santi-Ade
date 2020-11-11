@@ -1,6 +1,9 @@
 img{
     width: 100%;
 }
+.series{
+    display: flex;
+}
 .series1 { 
     display: flex;
     
@@ -12,6 +15,9 @@ img{
     display: flex;
 }
 .series4 {
+    display: flex;
+}
+.series5{
     display: flex;
 }
 .serieCompleto{
