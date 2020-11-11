@@ -10,6 +10,7 @@ body {
 }
 img{
     width: 100%;
+    
 }
 .slider{
     width: 95%;
@@ -70,17 +71,23 @@ h2 {
 
 .añadidasRecientementePelis{
     display: flex;
+    
 }
 
 .añadidasRecientementeSeries{
     display: flex;
 }
-
 .imagenes{
     padding: 5px;
     width: 200px;
+    height: 290px;
     
 }
+.imagenes img{
+    width: 100%;
+    max-height: 100%;
+}
+
 
   
 
