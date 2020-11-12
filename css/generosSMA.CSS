@@ -74,7 +74,7 @@ margin-top: 20%;
 }
 .dropdown:hover .dropdown-content {
  display: block;
- width: 135px;
+ width: fit-content;
  letter-spacing: 2px;
  
  

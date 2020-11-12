@@ -86,7 +86,8 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         console.log(infoSeries4.results)
 
         let series = ""
-        for (i = 0 ; i < 7 ; i++){
+        for (i = 1 ; i < 8 ; i++){
+            //La primera peli no tiene poster, por eso empezamos de 1 y no de 0.
             console.log(infoSeries4.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries4.results[i].poster_path
             let id= infoSeries4.results[i].id
