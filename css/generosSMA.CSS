@@ -76,8 +76,14 @@ margin-top: 20%;
  display: block;
  width: 135px;
  letter-spacing: 2px;
-
  
+ 
+}
+.dropdown-content:hover .gen :hover{
+  color: rgb(215, 194, 188);
+  background-color: rgba(0, 0, 0, 0.507);
+ 
+
 }
 
 .textoG {
