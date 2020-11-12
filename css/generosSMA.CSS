@@ -1,10 +1,9 @@
-* {
+*{
  box-sizing: border-box; 
  padding: 0;
  margin: 0 auto;
 font-family: 'Lato', sans-serif;
-
-
+letter-spacing: 2px;
 }
 .listadoGeneros{
   margin-top: 20%;
@@ -44,7 +43,13 @@ margin-top: 20%;
 }
 .gen{
   text-decoration: none;
+  
 }
+.tp2 {
+  color:rgb(215, 194, 188);
+  z-index: 1;
+  margin-bottom: 10px;
+  }
 
 .dropdown {
  position: relative; 
@@ -62,13 +67,17 @@ margin-top: 20%;
  background-color: #652a42;
  position: fixed;
  text-align: left;
- align-self: flex-start;
- align-items: flex-start;
+ margin-left: 2px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 
  
 }
 .dropdown:hover .dropdown-content {
  display: block;
+ width: 135px;
+ letter-spacing: 2px;
 
+ 
 }
 
 .textoG {
@@ -99,11 +108,7 @@ color:rgb(215, 194, 188);
  text-align: center;
  text-transform: uppercase;
  }
- .tp2 {
- color:rgb(215, 194, 188);
- z-index: 1;
- padding-top: 5px;
- }
+ 
  .dropdown1:hover {
  background-color:#D6B8B2;
  z-index: 0;

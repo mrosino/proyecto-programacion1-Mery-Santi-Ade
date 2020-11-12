@@ -1,6 +1,6 @@
 *{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-style: oblique;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
     border-radius: 3px;
 }
 body {
@@ -104,6 +104,10 @@ h2 {
     display: flex;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-style: oblique;
+    font-weight: 300;
 }
  /*        Media Query mobile */
 

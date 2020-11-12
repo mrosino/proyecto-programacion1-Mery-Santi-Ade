@@ -2,8 +2,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-style: oblique;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
     font-size: 1em;
 }
 body {
