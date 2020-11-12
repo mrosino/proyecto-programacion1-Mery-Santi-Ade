@@ -16,8 +16,8 @@ window.addEventListener('load', function(){
          
           const e = respuestaArray[i];
           console.log(e);
-         
-          resultados.innerHTML += `<a href="detallesPelis.html?id=${e.id}"> <div class="imagenes"><img src="${e.poster_path}" alt=""></div></a>`
+         //no funciona la api con las imagenes, probe con texto y funca
+          resultados.innerHTML += `<a href="detallesPelis.html?id=${e.id}"> <div class="imagenes"><h2>${e.original_name}</h2><img src="${e.poster_path}" alt=""></div></a>`
         }
     })
 })
