@@ -2,7 +2,8 @@ window.addEventListener('load', function(){
     let queryString= location.search 
     let datoURL = new URLSearchParams(queryString);
     let query = datoURL.get('query'); 
-   
+let valorInput = document.querySelector('.buscador')
+var 
 /*Cuando le das click en buscar lo que tiene que hacer es
 1. agarrar el valor del input del buscador
 2. asignarselo a una variable
