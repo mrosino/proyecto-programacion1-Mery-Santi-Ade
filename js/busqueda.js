@@ -9,6 +9,22 @@ window.addEventListener('load', function(){
         return infoSearch.json()
       })
     .then(function(respuestaSearch){
-        
+      let respuestaArray = respuestaSearch.results
+      let resultados = document.querySelector('.resultadosB')
+     
+        for (let i = 0; i < respuestaArray.length; i++) {
+         
+          const e = respuestaArray[i];
+          console.log(e);
+         
+          resultados.innerHTML += `<a href="detallesPelis.html?id=${e.id}"> <div class="imagenes"><img src="${e.poster_path}" alt=""></div></a>`
+        }
     })
 })
+
+
+/*
+for (const respuesta of respuestaSearch.results) {
+  resultados.innerHTML += `<a href="detallesPelis.html?id=${respuesta.id}"> <div class="imagenes"><img src="${respuesta.poster_path}" alt=""></div></a>`
+}
+*/
