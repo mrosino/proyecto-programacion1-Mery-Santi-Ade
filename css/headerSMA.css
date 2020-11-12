@@ -50,6 +50,15 @@ img {
     padding: 6px;
     border-radius: 2px;
 }
+.form{
+    font-size: 110%;
+    font-weight: bolder;
+    text-align: center;
+    align-content: center;
+    margin: auto ;
+    text-decoration: none;
+    color:rgb(215, 194, 188);
+}
 .titulo {
     font-size: 110%;
     font-weight: bolder;
@@ -64,14 +73,26 @@ a {
    justify-content: center;
 }
 .buscador{
-    color: #b6b6b6;
+    color: black;
+    padding: 1px;
     border-color:rgb(0, 0, 0);
     border-width:1px;
     border-bottom-style: hidden;
     height: 2em;
+    background-color:rgb(215, 194, 188);
+    font-size: 1rem;
 }
 .botonBuscar{
-    size: 4px;
+    width: fit-content;
+    border-width:1px;
+    
+    border-radius: 2px;
+    border-bottom-style: hidden;
+    padding-left: 3px;
+    padding-right: 2px;
+    margin-left: 5px;
+    background-color:rgb(215, 194, 188);
+
 }
 @media (max-width:420px) {
     .divLogo{

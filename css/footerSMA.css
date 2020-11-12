@@ -47,6 +47,8 @@
     color: rgb(215, 194, 188);
     border-radius: 2px;
     padding: 6px;
+    align-self: center;
+    
 }
 
 @media (max-width:420px) {

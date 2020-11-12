@@ -76,6 +76,7 @@ margin-top: 20%;
  display: block;
  width: fit-content;
  letter-spacing: 2px;
+ align-self: flex-start;
  
  
 }
