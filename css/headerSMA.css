@@ -70,7 +70,9 @@ a {
     border-bottom-style: hidden;
     height: 2em;
 }
-
+.botonBuscar{
+    size: 4px;
+}
 @media (max-width:420px) {
     .divLogo{
         width: 40%;
