@@ -22,12 +22,12 @@ img{
 .slider ul{
     display: flex;
     padding: 0;
-    width: 400%;
-    animation: cambio 18s infinite;
+    
 }
 .slider li{
     width: 100%;
     list-style: none;
+    margin:4px;
 }
 @keyframes cambio {
     0% {margin-left: 0; }
@@ -36,14 +36,8 @@ img{
     20% { margin-left: -100%;}
     35% { margin-left: -100%;}
 
-    45% { margin-left: -200%;}
-    60% { margin-left: -200%;}
 
-    70% { margin-left: -300%;}
-    85% { margin-left: -300%;}
-
-    90% { margin-left: -400;}
-    100% {margin-left: -400;}
+  
 }
 h2 {
     color: black;
@@ -53,47 +47,49 @@ h2 {
 }
 .popularesPelis{
     display: flex;
-    flex-wrap:wrap;
+    animation: cambio 30s;
 }
 .popularesSeries{
     display: flex;
-    flex-wrap:wrap;
+    animation: cambio 30s;
+    
 }
 
 .mejoresPuntuadasPelis{
     display: flex;
-    flex-wrap:wrap;
+    animation: cambio 30s;
+    
 }
 .mejoresPuntuadasSeries{
     display: flex;
-    flex-wrap:wrap;
+    animation: cambio 30s;
+    
 }
 
 .añadidasRecientementePelis{
-    display: flex;
-    
+    display: flex;  
+    animation: cambio 30s;
 }
 
 .añadidasRecientementeSeries{
     display: flex;
+    animation: cambio 30s;
 }
 .imagenes{
     padding: 5px;
     width: 200px;
-    height: 290px;
+    height: 290px;  
     
 }
 .imagenes img{
     width: 100%;
     max-height: 100%;
+    
 }
-
-
-  
-
 .imagenesBanner{
-    padding: 5px;
-    width: 100%;
+    display: flex;
+    width: auto;
+    height: 500px;
 }
 .imagenesBanner1{
     padding: 5px;

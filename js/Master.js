@@ -12,7 +12,7 @@ window.addEventListener('load',function(){
         console.log(informacion.results)
 
         let pelisPopulares = ""
-        for (i = 0 ; i < 7 ; i++){
+        for (i = 0 ; i < 14 ; i++){
             console.log(informacion.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path
             let id= informacion.results[i].id
@@ -31,7 +31,7 @@ window.addEventListener('load',function(){
         console.log(informacion1.results)
 
         let seriesPopulares = ""
-        for (i = 0 ; i < 7 ; i++){
+        for (i = 0 ; i < 14 ; i++){
             console.log(informacion1.results[i])
             let id= informacion1.results[i].id
             let url= "https://image.tmdb.org/t/p/w500" +informacion1.results[i].poster_path
@@ -54,7 +54,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=3b4640a2c0443153138c
     console.log(informacion2.results)
  
     let pelisMejoresPuntuadas = ""
-    for (i = 0 ; i < 7 ; i++){
+    for (i = 0 ; i < 14 ; i++){
         console.log(informacion2.results[i])
         let id= informacion2.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion2.results[i].poster_path
@@ -78,7 +78,7 @@ fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=3b4640a2c0443153138c528
     console.log(informacion3.results)
  
     let seriesMejoresPuntuadas = ""
-    for (i = 0 ; i < 7 ; i++){
+    for (i = 0 ; i < 14 ; i++){
         console.log(informacion3.results[i])
         let id= informacion3.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion3.results[i].poster_path
@@ -99,7 +99,7 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=3b4640a2c044315313
     console.log(informacion4.results)
     
     let pelisAñadidasRecientemente = ""
-    for (i = 0 ; i < 7 ; i++){
+    for (i = 0 ; i < 14 ; i++){
         console.log(informacion4.results[i])
         let id= informacion4.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion4.results[i].poster_path
@@ -119,7 +119,7 @@ fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c
     console.log(informacion5.results)
     
     let seriesAñadidasRecientemente = ""
-    for (i = 0 ; i < 7 ; i++){
+    for (i = 0 ; i < 14 ; i++){
         console.log(informacion5.results[i])
         let id= informacion5.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion5.results[i].poster_path
@@ -130,5 +130,26 @@ fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c
     console.log(seriesAñadidasRecientemente)
 })
 
+
+// fetch para slider 
+/*fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES&page=7')
+.then(function(respuesta6){
+  return respuesta6.json()
+})
+.then(function(informacion6){
+  console.log(informacion6.results)
+
+  let slider = "<ul>"
+    for (i = 0 ; i < 20 ; i++){
+        console.log(informacion6.results[i])
+        let id= informacion6.results[i].id
+        let url= "https://image.tmdb.org/t/p/w500" +informacion6.results[i].poster_path
+        slider= slider+ '<li><a href="detallesPelis.html?id='+id+'"><img class="imagenesBanner" src="'+url+'" alt=""></a></li>'
+      
+    }
+    slider=slider + '</ul>'
+    document.querySelector(".slider").innerHTML= slider
+    
+})*/
 
 })
