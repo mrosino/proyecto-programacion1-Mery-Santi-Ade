@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
     let datoURL = new URLSearchParams(queryString);
     let id = datoURL.get('id');  
     
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-US`)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES`)
     .then(function(info){
       return info.json()
     })

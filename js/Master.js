@@ -3,7 +3,7 @@ window.addEventListener('load',function(){
 
 
   //populares pelis
-    fetch('https://api.themoviedb.org/3/movie/popular?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=en-US&page=1')
+    fetch('https://api.themoviedb.org/3/movie/popular?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=1')
     .then(function(respuesta){
       return respuesta.json()
       
@@ -22,7 +22,7 @@ window.addEventListener('load',function(){
         console.log(pelisPopulares)
     })
    // populares series
-    fetch('https://api.themoviedb.org/3/tv/popular?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US&page=1')
+    fetch('https://api.themoviedb.org/3/tv/popular?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=1')
     .then(function(respuesta1){
       return respuesta1.json()
       
@@ -45,7 +45,7 @@ window.addEventListener('load',function(){
     })
 
 //Mejores puntuadas pelis
-fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US&page=2')
+fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=2')
 .then(function(respuesta2){
   return respuesta2.json()
   
@@ -69,7 +69,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=3b4640a2c0443153138c
 //mejores puntuadas Series
 
 
-fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US&page=2')
+fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=2')
 .then(function(respuesta3){
   return respuesta3.json()
   
@@ -90,7 +90,7 @@ fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=3b4640a2c0443153138c528
 })
 
 //añadidas recientemente Pelis
-fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US&page=3')
+fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=3')
 .then(function(respuesta4){
   return respuesta4.json()
   
@@ -110,7 +110,7 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=3b4640a2c044315313
 })
 
 //añadidas recientemente Series
-fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c528fe0e85a7a&language=en-US&page=1')
+fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=1')
 .then(function(respuesta5){
   return respuesta5.json()
   

@@ -1,6 +1,6 @@
 window.addEventListener('load',function(){
 
-    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=en-US&page=1')
+    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=1')
     .then(function(respuesta){
       return respuesta.json()
       
@@ -19,7 +19,7 @@ window.addEventListener('load',function(){
         console.log(peliculas)
     })
 
-    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=en-US&page=2')
+    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=2')
     .then(function(respuesta){
       return respuesta.json()
       
@@ -38,7 +38,7 @@ window.addEventListener('load',function(){
         console.log(peliculas)
     })
 
-    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=en-US&page=3')
+    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=3')
     .then(function(respuesta){
       return respuesta.json()
       
@@ -57,7 +57,7 @@ window.addEventListener('load',function(){
         console.log(peliculas)
     })
 
-    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=en-US&page=4')
+    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=4')
     .then(function(respuesta){
       return respuesta.json()
       
@@ -76,7 +76,7 @@ window.addEventListener('load',function(){
         console.log(peliculas)
     })
 
-    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=en-US&page=5')
+    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=5')
     .then(function(respuesta){
       return respuesta.json()
       
@@ -95,7 +95,7 @@ window.addEventListener('load',function(){
         console.log(peliculas)
     })
 
-    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=en-US&page=6')
+    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=6')
     .then(function(respuesta){
       return respuesta.json()
       
