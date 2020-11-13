@@ -1,82 +1,33 @@
-* {
-    font-family: 'Roboto', sans-serif;
+*{
+    border-radius: 3px;
 }
 
-.imgRecomendadas {
-    display: flex; 
-}
-.serieInfo {
-    display: flex;
-    padding-left: 10%;
-    padding-top: 200px;
-}
-.video {
-    flex-wrap: wrap;
-    display: flex;
-    padding-left: 3%;
+img{
     width: 100%;
-    height: 80%;
-    margin-top: 10%;
-    justify-content: center;
 }
-.video-ctrl{
-    width: 85%;
-}
-.temp {
-    margin-left: 5%;
-}
-.sinop {
-    width: 70%;
-    margin-left: 5%;
-    margin-top: 2%;
-}
-.elenco {
-    width: 100%;
-    margin-left: 5%;
-    margin-top: 2%;
-}
-.genres {
-    margin-left: 5%;
-    margin-top: 2%;
-}
-.puntu {
-    margin-left: 5%;
-    margin-top: 2%;
-}
-.recomendadas{
+
+.info{
     display: flex;
-    margin-top: 5%;
+    flex-direction: column;
+    padding: 1px;
+    padding: 10px;
+    justify-content: space-between;
+    align-content: center;
     
 }
-.imgreco {
-    padding: 5px;
-    width: 100%;
+.titulo{
+    font-size: 2rem;
+    text-align: center;
 }
-.primerCol {
+.detalles{
     display: flex;
-    flex-direction: column;
+    margin-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:  rgb(215, 194, 188);
     width: 70%;
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-bottom: 3%;
-}
-.segundaCol {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-right: 15%;
-    margin-top: 2%;
-    margin-bottom: 3%;
-}
-.total {
-    display: flex;
-    width: 100%;   
-}
-.caps {
-    margin-left: 8%;
-}
-.capi {
-    background-color: #985D5E;
+    text-align: left;
+    height: fit-content;
 }
 @media (max-width:420px){
     .video{
