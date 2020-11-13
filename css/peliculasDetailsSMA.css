@@ -9,6 +9,7 @@ img{
 .info{
     display: flex;
     flex-direction: column;
+    padding: 1px;
     padding: 10px;
     justify-content: space-between;
     align-content: center;
@@ -21,7 +22,6 @@ img{
 .detalles{
     display: flex;
     margin-top: 150px;
-    
     padding-left: 10px;
     padding-right: 10px;
     background-color:  rgb(215, 194, 188);
@@ -57,6 +57,8 @@ img{
 
 
 /*
+COSAS PRIMERA ENTREGA
+
 .principal{
     display: flex;
 }
@@ -119,3 +121,37 @@ img{
     width: 100%;
     padding: 5px;
 }*/
+.info{
+    display: flex;
+    padding: 10px;
+    margin-top: 10%;
+}
+.detalles{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:  rgb(215, 194, 188);
+    width: 100%;
+}
+
+
+
+
+
+@media (max-width:420px){
+    .trailer{
+        margin-top: 45%;
+    }
+    .peliculas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .peliculas1{
+        display: none;
+    }
+    .imagenesPeli{
+        width: 50%;
+    }
+    .imagenesPeli1{
+        display: none;
+    }
+}
