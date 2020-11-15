@@ -104,7 +104,7 @@ window.addEventListener('load',function(){
         console.log(infoPelis5.results)
 
         let peliculas = ""
-        for (i = 0 ; i < 8 ; i++){
+        for (i = 0 ; i < 7 ; i++){
             console.log(infoPelis5.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoPelis5.results[i].poster_path
             let id= infoPelis5.results[i].id
