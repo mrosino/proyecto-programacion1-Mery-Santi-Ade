@@ -140,9 +140,6 @@ color:rgb(215, 194, 188);
  .comprensivo{
   z-index: 1; /*para que lo lea ultimo, sino no funciona bien el header*/
 }
-.imagenes {
-  width: 70%;
-}
 
  @media (max-width:420px) {
  .apartado1 {
