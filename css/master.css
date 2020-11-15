@@ -8,94 +8,45 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-img{
-    width: 100%;
-    
-}
-.slider{
-    width: 95%;
-    display: block;
-    margin: auto;
-    overflow: hidden;
-    margin-top: 10%;
-}
-.slider ul{
-    display: flex;
-    padding: 0;
-    
-}
-.slider li{
-    width: 100%;
-    list-style: none;
-    margin:4px;
-}
-@keyframes cambio {
-    0% {margin-left: 0; }
-    15% { margin-left: 0;}
-
-    20% { margin-left: -100%;}
-    35% { margin-left: -100%;}
-
-
-
-
-  
-}
 .rotulos {
     color: black;
     margin-top: 100px;
     font-size: 50px;
-
 }
+.slider {
+    width: 95%;
+    
+}
+.sliderItem {
+    margin:10px;
+}
+
+
 .popularesPelis{
     display: flex;
-    animation: cambio 30s;
+   
 }
 .popularesSeries{
     display: flex;
-    animation: cambio 30s;
-    
 }
 
 .mejoresPuntuadasPelis{
     display: flex;
-    animation: cambio 30s;
+  
     
 }
 .mejoresPuntuadasSeries{
     display: flex;
-    animation: cambio 30s;
-    
 }
 
 .añadidasRecientementePelis{
     display: flex;  
-    animation: cambio 30s;
+    
 }
 
 .añadidasRecientementeSeries{
     display: flex;
-    animation: cambio 30s;
-}
-.imagenes{
-    padding: 5px;
-    width: auto;
-    height: 290px;  
     
-}
-.imagenes img{
-    width: 100%;
-    max-height: 100%;
-    
-}
-.imagenesBanner{
-    display: flex;
-    width: auto;
-    height: 500px;
-}
-.imagenesBanner1{
-    padding: 5px;
-    width: 100%;
 }
  
 .titulos{
@@ -111,51 +62,13 @@ img{
 
 @media (max-width:420px) {
    
-    .imagenes1{
-     width: 50%;
-    }
-    .mejoresPuntuadas {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .imagenes {
-      display: none;
-    }
+
+   
     .no {
         display: none;
     }
-    .imgTendencia {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .añadidasRecientemente {
-        display: flex;
-        flex-wrap: wrap;  
-    }
-    .slider {
-       margin-top: 40%;
-       width: 100%;
-    }
-    .imagenesBanner{
-        padding: 5px;
-        width: 100%;
-        margin-right: 20%;
-    }
-    .slider ul{
-        display: flex;
-        padding: 0;
-        width: 400%;
-        animation: cambio 18s infinite;
-    }
-    .slider li{
-        width: 100%;
-        list-style: none;
-    }
-    @keyframes cambio {
-        0% {margin-left: 0; }
-        15% { margin-left: 0;}
+  
+  
     
-        20% { margin-left: -100%;}
-        35% { margin-left: -100%;}
-}
+   
  }
