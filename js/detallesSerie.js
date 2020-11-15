@@ -35,6 +35,24 @@ window.addEventListener('load', function(){
         document.querySelector(".video").innerHTML="<iframe width='966' height='596' src='https://www.youtube.com/embed/"+key+"'></iframe>"
     })
 
+    fetch (`https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-ES&page=1`)
+    .then (function(recommendations){
+      return recommendations.json()
+
+    })
+    .then(function(respuesta2){
+      let recommendations = ""
+        for (i = 0 ; i < 7 ; i++){
+            console.log(respuesta2.results[i])
+            let id= respuesta2.results[i].id
+            let url= "https://image.tmdb.org/t/p/w500" +respuesta2.results[i].poster_path
+            recommendations = recommendations+ '<a href="detallesSeries.html?id='+id+'"> <div class="imagenes"><img src="'+url+'" alt=""></div></a> '
+        }
+        document.querySelector(".seriesReco").innerHTML= recommendations
+        console.log(recommendations)
+
+    })
+
     })
 
     
