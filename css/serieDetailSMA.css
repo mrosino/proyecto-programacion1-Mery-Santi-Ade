@@ -32,6 +32,13 @@
     display: flex;
     width: 100%;
 }
+.slider {
+    width: 95%;
+    
+}
+.sliderItem {
+    margin:10px;
+}
 @media (max-width:420px){
     .video{
         margin-top: 45%;

@@ -24,15 +24,27 @@ img{
 }
 .detalles{
     display: flex;
+    flex-direction: column;
     margin-top: 150px;
     background-color:  rgb(215, 194, 188);
     width: 70%;
-    height: fit-content;
 }
 .seriesReco {
     display: flex;
     width: 100%;
+    
 }
+.infoReco {
+    margin: 10px;
+}
+.slider {
+    width: 95%;
+    
+}
+.sliderItem {
+    margin:10px;
+}
+
 
 @media (max-width:420px){
     .trailer{

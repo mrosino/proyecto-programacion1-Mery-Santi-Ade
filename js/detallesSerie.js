@@ -42,14 +42,20 @@ window.addEventListener('load', function(){
     })
     .then(function(respuesta2){
       let recommendations = ""
-        for (i = 0 ; i < 7 ; i++){
+        for (i = 0 ; i < 14 ; i++){
             console.log(respuesta2.results[i])
             let id= respuesta2.results[i].id
             let url= "https://image.tmdb.org/t/p/w500" +respuesta2.results[i].poster_path
-            recommendations = recommendations+ '<a href="detallesSeries.html?id='+id+'"> <div class="imagenes"><img src="'+url+'" alt=""></div></a> '
+            recommendations = recommendations+ '<a class="sliderItem" class="infoReco" href="detallesSeries.html?id='+id+'"><img src="'+url+'" alt=""></a> '
         }
         document.querySelector(".seriesReco").innerHTML= recommendations
         console.log(recommendations)
+        $(".seriesReco").slick({
+          infinite: true,
+          slidesToShow: 7,
+          slidesToScroll: 1
+
+        })
 
     })
 
