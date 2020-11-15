@@ -7,15 +7,15 @@ img{
 }
 
 .info{
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
     padding: 1px;
     padding: 10px;
     justify-content: space-between;
     align-content: center;
 }
 .poster {
-    width: 20%;
+    width: 25%;
     margin-top: 100px;
 }
 .titulo{
@@ -27,7 +27,12 @@ img{
     flex-direction: column;
     margin-top: 150px;
     background-color:  rgb(215, 194, 188);
-    width: 70%;
+    width: 50%;
+}
+.video{
+    margin-top: 50px;
+    text-align: center;
+    
 }
 .seriesReco {
     display: flex;
@@ -44,7 +49,9 @@ img{
 .sliderItem {
     margin:10px;
 }
-
+.rotulos{
+    text-align: center;
+}
 
 @media (max-width:420px){
     .trailer{
@@ -133,37 +140,6 @@ COSAS PRIMERA ENTREGA
     width: 100%;
     padding: 5px;
 }*/
-.info{
-    display: flex;
-    padding: 10px;
-    margin-top: 10%;
-}
-.detalles{
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color:  rgb(215, 194, 188);
-    width: 100%;
-}
 
 
 
-
-
-@media (max-width:420px){
-    .trailer{
-        margin-top: 45%;
-    }
-    .peliculas{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .peliculas1{
-        display: none;
-    }
-    .imagenesPeli{
-        width: 50%;
-    }
-    .imagenesPeli1{
-        display: none;
-    }
-}
