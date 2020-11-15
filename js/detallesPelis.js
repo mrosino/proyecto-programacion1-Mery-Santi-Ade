@@ -31,6 +31,17 @@ window.addEventListener('load', function(){
 
     })
    
+    fetch (`https://api.themoviedb.org/3/movie/${id}/videos?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-ES`)
+    .then(function(videos){
+        return videos.json()
+
+    })
+    .then(function (respuesta1){
+        let key= respuesta1.results[0].key
+        let video= "https://www.youtube.com/watch?v=" + key
+        document.querySelector(".video").innerHTML="<iframe width='966' height='596' src='https://www.youtube.com/embed/"+key+"'></iframe>"
+    })
+
     //.then(function(datellesDePeliculas){
     //console.log(detallesDePeliculas.//genres[0].name);
     //detallesDePeliculas.//genres.forEach(detalle => {
