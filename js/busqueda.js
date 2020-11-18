@@ -23,8 +23,3 @@ window.addEventListener('load', function(){
 })
 
 
-/*
-for (const respuesta of respuestaSearch.results) {
-  resultados.innerHTML += `<a href="detallesPelis.html?id=${respuesta.id}"> <div class="imagenes"><img src="${respuesta.poster_path}" alt=""></div></a>`
-}
-*/

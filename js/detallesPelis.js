@@ -14,12 +14,21 @@ window.addEventListener('load', function(){
       let puntuacion=respuesta.vote_average
       let lanzamiento= respuesta.release_date
       var atp =respuesta.adult
+      var botonLista = JSON.stringify('respuesta')
       document.querySelector(".descripcion").innerHTML= overview
       document.querySelector(".titulo").innerHTML="<h2>"+title+"</h2>"
       document.querySelector(".poster").innerHTML="<img src='"+poster+"'</img>"
       document.querySelector(".puntu").innerHTML=`Puntuación ${puntuacion} estrellas`
       document.querySelector(".lanza").innerHTML=lanzamiento
+      /*
+      //agregar a mi lista
+      
+      document.querySelector(".añadirLista").innerHTML= `<a id="${JSON.stringify(botonLista)}" href="#" class=""btn-black botonLista> Agregar a mi lista </a>`
+      */
+
       console.log(overview)
+      
+      
       
      
    
