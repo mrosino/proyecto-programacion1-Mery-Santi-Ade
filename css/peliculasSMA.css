@@ -33,27 +33,31 @@ img{
 .banners2{
     width: 75%;
 }
-.slider{
+.slider {
+    width: 95%;
+    
+}
+.gif{
     width: 60%;
     display: block;
     margin: auto;
     overflow: hidden;
 }
-.slider ul{
+.gif ul{
     margin-top: 10%;
     display: flex;
     padding: 0;
     width: 100%;
     animation: none;
 }
-.slider li{
+.gif li{
     width: 100%;
     list-style: none;
 }
 
 
 @media (max-width:420px){
-    .slider{
+    .gif{
         margin-top: 33%;
     }
     .peliculas{

@@ -22,6 +22,21 @@ window.addEventListener('load', function(){
       document.querySelector(".puntu").innerHTML=`Puntuación ${puntuacion} estrellas`
       document.querySelector(".lanza").innerHTML=lanzamiento
       document.querySelector(".temporadas").innerHTML=temporadas
+
+      document.querySelector(".favo").addEventListener('click', function(e){
+        e.preventDefault()
+        let favoritos = localStorage.getItem('favoritos')
+        if( favoritos == null ){
+          favoritos = []
+        } else {
+          favoritos = JSON.parse(favoritos)
+        }
+        favoritos.push(respuesta)
+        localStorage.setItem('favoritos', JSON.stringify(favoritos))
+      })
+
+
+
     })
 
     fetch (`https://api.themoviedb.org/3/tv/${id}/videos?api_key=35c3a4bec2a3c008c9fa7737b86aadc1`)

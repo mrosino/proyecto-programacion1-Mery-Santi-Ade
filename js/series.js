@@ -10,7 +10,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         console.log(infoSeries.results)
 
         let series = ""
-        for (i = 0 ; i < 7 ; i++){
+        for (i = 0 ; i < 14 ; i++){
             console.log(infoSeries.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries.results[i].poster_path
             let id= infoSeries.results[i].id
@@ -18,6 +18,12 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         }
         document.querySelector(".series").innerHTML= series
         console.log(series)
+        $(".series").slick({
+            infinite: true,
+            slidesToShow: 7,
+            slidesToScroll: 1
+      
+          })
     })
 
     fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=2')
@@ -29,7 +35,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         console.log(infoSeries1.results)
 
         let series = ""
-        for (i = 0 ; i < 7 ; i++){
+        for (i = 0 ; i < 14 ; i++){
             console.log(infoSeries1.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries1.results[i].poster_path
             let id= infoSeries1.results[i].id
@@ -37,6 +43,12 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         }
         document.querySelector(".series1").innerHTML= series
         console.log(series)
+        $(".series1").slick({
+            infinite: true,
+            slidesToShow: 7,
+            slidesToScroll: 1
+      
+          })
     })
 
     fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=3')
@@ -48,7 +60,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         console.log(infoSeries2.results)
 
         let series = ""
-        for (i = 0 ; i < 7 ; i++){
+        for (i = 0 ; i < 14 ; i++){
             console.log(infoSeries2.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries2.results[i].poster_path
             let id= infoSeries2.results[i].id
@@ -56,6 +68,12 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         }
         document.querySelector(".series2").innerHTML= series
         console.log(series)
+        $(".series2").slick({
+            infinite: true,
+            slidesToShow: 7,
+            slidesToScroll: 1
+      
+          })
     })
 
     fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=4')
@@ -67,7 +85,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         console.log(infoSeries3.results)
 
         let series = ""
-        for (i = 0 ; i < 7 ; i++){
+        for (i = 0 ; i < 14 ; i++){
             console.log(infoSeries3.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries3.results[i].poster_path
             let id= infoSeries3.results[i].id
@@ -75,9 +93,15 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         }
         document.querySelector(".series3").innerHTML= series
         console.log(series)
+        $(".series3").slick({
+            infinite: true,
+            slidesToShow: 7,
+            slidesToScroll: 1
+      
+          })
     })
 
-    fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=5')
+    fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=7')
     .then(function(respuesta){
       return respuesta.json()
       
@@ -86,8 +110,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         console.log(infoSeries4.results)
 
         let series = ""
-        for (i = 1 ; i < 8 ; i++){
-            //La primera peli no tiene poster, por eso empezamos de 1 y no de 0.
+        for (i = 1 ; i < 14 ; i++){
             console.log(infoSeries4.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries4.results[i].poster_path
             let id= infoSeries4.results[i].id
@@ -95,6 +118,12 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         }
         document.querySelector(".series4").innerHTML= series
         console.log(series)
+        $(".series4").slick({
+            infinite: true,
+            slidesToShow: 7,
+            slidesToScroll: 1
+      
+          })
     })
 
     fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=6')
@@ -106,7 +135,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         console.log(infoSeries5.results)
 
         let series = ""
-        for (i = 0 ; i < 7 ; i++){
+        for (i = 0 ; i < 14 ; i++){
             console.log(infoSeries5.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries5.results[i].poster_path
             let id= infoSeries5.results[i].id
@@ -114,6 +143,12 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
         }
         document.querySelector(".series5").innerHTML= series
         console.log(series)
+        $(".series5").slick({
+            infinite: true,
+            slidesToShow: 7,
+            slidesToScroll: 1
+      
+          })
     })
 
 })

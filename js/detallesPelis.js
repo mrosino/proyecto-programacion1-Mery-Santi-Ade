@@ -3,6 +3,7 @@ window.addEventListener('load', function(){
     let datoURL = new URLSearchParams(queryString);
     let id = datoURL.get('id');  
     
+    // Detalle pelicula
     fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES`)
     .then(function(info){
       return info.json()
@@ -40,8 +41,23 @@ window.addEventListener('load', function(){
         document.querySelector(".atp").innerHTML=`La pelicula posee contenido no-apto para todo público`
       }
 
+      document.querySelector(".favo").addEventListener('click', function(e){
+        e.preventDefault()
+        let favoritos = localStorage.getItem('favoritos')
+        if( favoritos == null ){
+          favoritos = []
+        } else {
+          favoritos = JSON.parse(favoritos)
+        }
+        favoritos.push(respuesta)
+        localStorage.setItem('favoritos', JSON.stringify(favoritos))
+      })
+
+      
+
     })
    
+    // Video
     fetch (`https://api.themoviedb.org/3/movie/${id}/videos?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-ES`)
     .then(function(videos){
         return videos.json()
@@ -54,6 +70,7 @@ window.addEventListener('load', function(){
     })
 
 
+    // RECOMENDADAS 
     fetch (`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-Es&page=1`)
     .then (function(recommendations){
       return recommendations.json()

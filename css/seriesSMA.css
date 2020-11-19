@@ -30,18 +30,26 @@ img{
 .imagenesSerie {
     padding: 3px;
 }
-.slider{
-    width: 45%;
+.slider {
+    width: 95%;
+    
+}
+.gif{
+    width: 60%;
     display: block;
-    margin-top: 1%;
+    margin: auto;
     overflow: hidden;
 }
-.slider ul{
+.gif ul{
     margin-top: 10%;
     display: flex;
     padding: 0;
     width: 100%;
     animation: none;
+}
+.gif li{
+    width: 100%;
+    list-style: none;
 }
 
 @media (max-width:420px){
