@@ -28,6 +28,11 @@ body {
 }
 .popularesPelis{
     display: flex;
+
+}
+.popularesPelis img{
+    min-width: 101px;
+    min-height: 151.5;
 }
 .popularesSeries{
     display: flex;

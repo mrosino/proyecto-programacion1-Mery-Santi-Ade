@@ -21,7 +21,7 @@ window.addEventListener('load', function(){
       document.querySelector(".poster").innerHTML="<img src='"+poster+"'</img>"
       document.querySelector(".puntu").innerHTML=`Puntuación ${puntuacion} estrellas`
       document.querySelector(".lanza").innerHTML=lanzamiento
-      document.querySelector(".temporadas").innerHTML=temporadas
+      document.querySelector(".temporadas").innerHTML= `Temporadas: ${temporadas}`
 
       document.querySelector(".favo").addEventListener('click', function(e){
         e.preventDefault()
@@ -47,7 +47,7 @@ window.addEventListener('load', function(){
     .then(function (respuesta1){
         let key= respuesta1.results[0].key
         let video= "https://www.youtube.com/watch?v=" + key
-        document.querySelector(".video").innerHTML="<iframe width='966' height='596' src='https://www.youtube.com/embed/"+key+"'></iframe>"
+        document.querySelector(".video").innerHTML="<iframe width='700' height='450' src='https://www.youtube.com/embed/"+key+"'></iframe>"
     })
 
     fetch (`https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-ES&page=1`)

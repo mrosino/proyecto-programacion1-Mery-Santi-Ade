@@ -7,16 +7,18 @@ img{
 }
 
 .info{
-    margin-top: 20px;
+    margin-top: 10%;
     display: flex;
-    padding: 1px;
-    padding: 10px;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+    background-color:  rgb(215, 194, 188);
+    height: 400px;
 }
 .poster {
-    width: 25%;
-    margin-top: 100px;
+    width: 20%;
 }
 .titulo{
     font-size: 2rem;
@@ -25,9 +27,12 @@ img{
 .detalles{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
-    background-color:  rgb(215, 194, 188);
     width: 50%;
+    text-align: justify;
+}
+.descripcion{
+    justify-content: center;
+
 }
 .video{
     margin-top: 50px;
@@ -49,8 +54,11 @@ img{
 .sliderItem {
     margin:10px;
 }
-.rotulos{
+.rotulosR{
     text-align: center;
+    color: black;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 @media (max-width:420px){

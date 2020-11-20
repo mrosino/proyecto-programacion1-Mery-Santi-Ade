@@ -49,7 +49,12 @@ window.addEventListener('load', function(){
         } else {
           favoritos = JSON.parse(favoritos)
         }
-        favoritos.push(respuesta)
+        for (let i=0; i<favoritos.length; i++){
+          if(favoritos.id !== respuesta.id){
+            favoritos.push(respuesta)
+          }
+        }
+
         localStorage.setItem('favoritos', JSON.stringify(favoritos))
       })
 
@@ -66,7 +71,7 @@ window.addEventListener('load', function(){
     .then(function (respuesta1){
         let key= respuesta1.results[0].key
         let video= "https://www.youtube.com/watch?v=" + key
-        document.querySelector(".video").innerHTML="<iframe width='966' height='596' src='https://www.youtube.com/embed/"+key+"'></iframe>"
+        document.querySelector(".video").innerHTML="<iframe width='700' height='450' src='https://www.youtube.com/embed/"+key+"'></iframe>"
     })
 
 

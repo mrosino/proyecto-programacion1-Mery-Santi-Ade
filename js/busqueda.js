@@ -10,16 +10,17 @@ window.addEventListener('load', function(){
         return infoSearch.json()
       })
     .then(function(respuestaSearch){
+      //console.log(respuestaSearch.results+"-----------------------");
       let respuestaArray = respuestaSearch.results
       let resultados = document.querySelector('.resultadosB')
-      let poster= "https://image.tmdb.org/t/p/w500" + respuestaSearch.poster_path
+      //let poster= "https://image.tmdb.org/t/p/w500" + respuestaSearch.poster_path
 
         for (let i = 0; i < respuestaArray.length; i++) {
          
           const elementosArray = respuestaArray[i];
           console.log(elementosArray);
          //no funciona la api con las imagenes, probe con texto y funca
-          resultados.innerHTML += `<a href="detallesPelis.html?id=${elementosArray.id}"> <div class="imagenes"><h2 class="resultBNombres">${elementosArray.title}</h2><img src="${poster}" alt=""></div></a>`
+          resultados.innerHTML += `<a href="detallesPelis.html?id=${elementosArray.id}"> <div class="imagenes"><h2 class="resultBNombres">${elementosArray.title}</h2><img src="https://image.tmdb.org/t/p/w500${elementosArray.poster_path}" alt=""></div></a>`
         }
     })
 })
