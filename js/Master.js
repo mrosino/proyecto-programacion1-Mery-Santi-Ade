@@ -16,7 +16,7 @@ window.addEventListener('load',function(){
             console.log(informacion.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path
             let id= informacion.results[i].id
-            pelisPopulares = pelisPopulares+ '<a class="sliderItem" href="detallesPelis.html?id='+id+'"><img src="'+url+'" alt=""></a> '
+            pelisPopulares = pelisPopulares+ '<a class="sliderItem" href="detallesPelis.html?id='+id+'"><img style="min-height: 264px; max-height: 264px;" src="'+url+'" alt=""></a> '
         }
         document.querySelector(".popularesPelis").innerHTML= pelisPopulares
         $(".popularesPelis").slick({
@@ -42,7 +42,7 @@ window.addEventListener('load',function(){
             console.log(informacion1.results[i])
             let id= informacion1.results[i].id
             let url= "https://image.tmdb.org/t/p/w500" +informacion1.results[i].poster_path
-            seriesPopulares = seriesPopulares+ '<a class="sliderItem" href="detallesSeries.html?id='+id+'"><img src="'+url+'" alt=""></a> '
+            seriesPopulares = seriesPopulares+ '<a class="sliderItem" href="detallesSeries.html?id='+id+'"><img style="min-height: 264px; max-height: 264px;" src="'+url+'" alt=""></a> '
         }
         document.querySelector(".popularesSeries").innerHTML= seriesPopulares
         $(".popularesSeries").slick({
@@ -71,7 +71,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=3b4640a2c0443153138c
         console.log(informacion2.results[i])
         let id= informacion2.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion2.results[i].poster_path
-        pelisMejoresPuntuadas = pelisMejoresPuntuadas+ '<a class="sliderItem" href="detallesPelis.html?id='+id+'"><img src="'+ url+'" alt=""></a> '
+        pelisMejoresPuntuadas = pelisMejoresPuntuadas+ '<a class="sliderItem" href="detallesPelis.html?id='+id+'"><img style="min-height: 264px; max-height: 264px;" src="'+url+'" alt=""></a> '
                                                         
     } 
 
@@ -101,7 +101,7 @@ fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=3b4640a2c0443153138c528
         console.log(informacion3.results[i])
         let id= informacion3.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion3.results[i].poster_path
-        seriesMejoresPuntuadas = seriesMejoresPuntuadas+ '<a class="sliderItem" href="detallesSeries.html?id='+id+'"><img src="'+url+'" alt=""></a> '
+        seriesMejoresPuntuadas = seriesMejoresPuntuadas+ '<a class="sliderItem" href="detallesSeries.html?id='+id+'"><img style="min-height: 264px; max-height: 264px;" src="'+url+'" alt=""></a> '
       
     }
     document.querySelector(".mejoresPuntuadasSeries").innerHTML= seriesMejoresPuntuadas
@@ -128,7 +128,7 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=3b4640a2c044315313
         console.log(informacion4.results[i])
         let id= informacion4.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion4.results[i].poster_path
-        pelisAñadidasRecientemente = pelisAñadidasRecientemente+ '<a class="sliderItem" href="detallesPelis.html?id='+id+'"><img src="'+url+'" alt=""></a> '
+        pelisAñadidasRecientemente = pelisAñadidasRecientemente+ '<a class="sliderItem" href="detallesPelis.html?id='+id+'"><img style="min-height: 264px; max-height: 264px;" src="'+url+'" alt=""></a> '
     }
     document.querySelector(".añadidasRecientementePelis").innerHTML= pelisAñadidasRecientemente
     $(".añadidasRecientementePelis").slick({
@@ -154,7 +154,7 @@ fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c
         console.log(informacion5.results[i])
         let id= informacion5.results[i].id
         let url= "https://image.tmdb.org/t/p/w500" +informacion5.results[i].poster_path
-        seriesAñadidasRecientemente = seriesAñadidasRecientemente+ '<a class="sliderItem" href="detallesSeries.html?id='+id+'"><img src="'+url+'" alt=""></a> '
+        seriesAñadidasRecientemente = seriesAñadidasRecientemente+ '<a class="sliderItem" href="detallesSeries.html?id='+id+'"><img style="min-height: 264px; max-height: 264px;" src="'+url+'" alt=""></a> '
       
     }
     document.querySelector(".añadidasRecientementeSeries").innerHTML= seriesAñadidasRecientemente
