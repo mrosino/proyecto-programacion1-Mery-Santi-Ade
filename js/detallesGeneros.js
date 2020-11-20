@@ -16,7 +16,7 @@ window.addEventListener('load', function(){
     })
         .then(function(listadoDeGeneros){
             console.log(listadoDeGeneros)
-        nombreGen.innerHTML=`A continuación podrás ver peliculas y series de ${nombre1}`
+        nombreGen.innerHTML=`<div class="contiName"><h2 class="contiName2">A continuación podrás ver peliculas y series de ${nombre1}</h2></div>`
 })
 
 
@@ -27,11 +27,11 @@ window.addEventListener('load', function(){
       })
     .then(function(respuesta){
        
-        for (i = 0 ; i < 10 ; i++){
+        for (i = 0 ; i < 20 ; i++){
             let newId = respuesta.results[i].id            
             let url= "https://image.tmdb.org/t/p/w500" +respuesta.results[i].poster_path
             let nombre= respuesta.results[i].original_title
-            detalle.innerHTML+= `<a href="detallesPelis.html?id=${newId}"><h2> ${nombre}</h2> <div class="imagenes"><img src="${url}" alt=""></div></a> `
+            detalle.innerHTML+= `<div class="contGen"><a class="aGen" href="detallesPelis.html?id=${newId}"><div class="imagenesGen"><img src="${url}" alt=""></div></a></div> `
         } 
 
     })
