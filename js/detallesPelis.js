@@ -28,9 +28,7 @@ window.addEventListener('load', function(){
       */
 
       console.log(overview)
-      
-      
-      
+       
      
    
      if (atp == false){
@@ -99,27 +97,9 @@ window.addEventListener('load', function(){
        
 
     })
-
-    //.then(function(datellesDePeliculas){
-    //console.log(detallesDePeliculas.//genres[0].name);
-    //detallesDePeliculas.//genres.forEach(detalle => {
-     //   informacion.innerHTML += `//<h2> <a href="detallev2.html?id=${genero.id}">${genero.name}</a></h2>`
-    
-    
+//Icono favorito
+   const icon = document.querySelector('.heart');
+    setInterval(() => {
+      icon.classList.toggle('active');
+    }, 1500);
     })
-
-
-   /* Detalle de Movie
-        Imagen de Portada
-        Nombre
-        Promedio de votos 
-         HARD:  Reviews de la película
-        Detalle de Serie
-        Imagen de la serie 
-        Nombre de la serie
-        Nombre del género (hipervínculo al detalle del genero)
-        Fecha de salida
-        Detalle Genero
-        Nombre del género 
-        10 películas o series que pertenezcan a ese género (hipervínculo al detalle de la pelicula o serie) 
-         */
