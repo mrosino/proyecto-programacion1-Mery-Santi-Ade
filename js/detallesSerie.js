@@ -14,6 +14,7 @@ window.addEventListener('load', function(){
       let lanzamiento= respuesta.first_air_date
       let temporadas= respuesta.number_of_seasons
       let poster= "https://image.tmdb.org/t/p/w500" + respuesta.poster_path
+      respuesta.tipo="serie"
       
       
       document.querySelector(".descripcion").innerHTML= overview
@@ -31,8 +32,16 @@ window.addEventListener('load', function(){
         } else {
           favoritos = JSON.parse(favoritos)
         }
-        favoritos.push(respuesta)
-        localStorage.setItem('favoritos', JSON.stringify(favoritos))
+        var agregarAFavorito=true
+        for (let i=0; i<favoritos.length; i++){ 
+         if (favoritos[i].id==respuesta.id){
+          agregarAFavorito=false
+         }
+        }
+        if (agregarAFavorito==true){
+          favoritos.push(respuesta)
+          localStorage.setItem('favoritos', JSON.stringify(favoritos))
+        }
       })
 
 

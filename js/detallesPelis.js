@@ -17,6 +17,7 @@ window.addEventListener('load', function(){
       let lanzamiento= respuesta.release_date
       var atp =respuesta.adult
       var botonLista = JSON.stringify('respuesta')
+      respuesta.tipo="peli"
       document.querySelector(".descripcion").innerHTML= overview
       document.querySelector(".titulo").innerHTML="<h2>"+title+"</h2>"
       document.querySelector(".poster").innerHTML="<img src='"+poster+"'</img>"
@@ -51,17 +52,17 @@ window.addEventListener('load', function(){
           favoritos = JSON.parse(favoritos)
         }        
         
-      
-        for (let i=0; i<10; i++){ //putaaaaaaaaaaaaaa
-          if(favoritos.id !== respuesta.id){
-            favoritos.push(respuesta)
-            
-            
-          }
-          
-          
+      var agregarAFavorito=true
+        for (let i=0; i<favoritos.length; i++){ 
+         if (favoritos[i].id==respuesta.id){
+          agregarAFavorito=false
+         }
         }
-        localStorage.setItem('favoritos', JSON.stringify(favoritos))
+        if (agregarAFavorito==true){
+          favoritos.push(respuesta)
+          localStorage.setItem('favoritos', JSON.stringify(favoritos))
+        }
+
       })
 
   /*    
