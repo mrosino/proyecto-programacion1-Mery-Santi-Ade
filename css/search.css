@@ -6,6 +6,9 @@
     letter-spacing: 2px;
     font-size: 1em;
 }
+.buscadorForm{
+    margin-top: 10%;
+}
 .resultadosB{
     margin-top: 9%;
     text-align: center;
@@ -38,3 +41,6 @@ a{
     padding-bottom: 25px;
 }
 
+.imagenes{
+    width: 10%;
+}

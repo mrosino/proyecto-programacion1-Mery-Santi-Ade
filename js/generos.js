@@ -11,7 +11,7 @@ window.addEventListener('load', function(){
 
             })
                 .then(function(listadoDeGeneros){
-                console.log(listadoDeGeneros.genres[0].name);
+                //console.log(listadoDeGeneros.genres[0].name);
                 listadoDeGeneros.genres.forEach(genero => {
                 dropdown.innerHTML += ` <a class="gen" href="detalleGenero.html?id=${genero.id}&nombre=${genero.name}"><div class="tP2">${genero.name}</div></a>`
                 

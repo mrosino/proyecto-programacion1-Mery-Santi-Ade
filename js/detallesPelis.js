@@ -9,6 +9,7 @@ window.addEventListener('load', function(){
       return info.json()
     })
     .then (function(respuesta){
+      
       let title= respuesta.title
       let overview= respuesta.overview
       let poster= "https://image.tmdb.org/t/p/w500" + respuesta.poster_path
@@ -27,9 +28,9 @@ window.addEventListener('load', function(){
       document.querySelector(".añadirLista").innerHTML= `<a id="${JSON.stringify(botonLista)}" href="#" class=""btn-black botonLista> Agregar a mi lista </a>`
       */
 
-      console.log(overview)
+     // console.log(overview)
        
-     
+     //apto todo publico
    
      if (atp == false){
       document.querySelector(".atp").innerHTML=`La pelicula posee contenido apto para todo público`
@@ -44,22 +45,52 @@ window.addEventListener('load', function(){
         let favoritos = localStorage.getItem('favoritos')
         if( favoritos == null ){
           favoritos = []
+        
+        
         } else {
           favoritos = JSON.parse(favoritos)
-        }
-        for (let i=0; i<favoritos.length; i++){
+        }        
+        
+      
+        for (let i=0; i<10; i++){ //putaaaaaaaaaaaaaa
           if(favoritos.id !== respuesta.id){
             favoritos.push(respuesta)
+            
+            
           }
+          
+          
         }
-
         localStorage.setItem('favoritos', JSON.stringify(favoritos))
       })
 
-      
+  /*    
 
-    })
    
+//rehago a ver que tal
+// añadir
+let añadir = document.querySelector('.favo')
+let favoritos = []
+añadir.addEventListener('click', function(){
+  
+  if (window.localStorage.getItem('favoritos') == null){
+    window.localStorage.setItem('favoritos', JSON.stringify(favoritos))
+
+  }
+  else {
+    let objetoAñadido = JSON.parse(window.localStorage.getItem('favoritos'))
+    //let favoritosSR = [...new Set(favoritos)];
+    objetoAñadido.push(respuesta)
+    window.localStorage.setItem('favoritos', JSON.stringify(objetoAñadido))
+    
+  }
+
+})
+
+*/
+})
+
+    //
     // Video
     fetch (`https://api.themoviedb.org/3/movie/${id}/videos?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-ES`)
     .then(function(videos){
