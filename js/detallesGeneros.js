@@ -7,6 +7,7 @@ window.addEventListener('load', function(){
     let nombre1 =datoURL.get('nombre')
     console.log(nombre1);
     let detalle =document.querySelector('.detalleInfo')
+    let detalle1 =document.querySelector('.detalleInfo1')
     let nombreGen = document.querySelector('.nombreGenero')
 
     fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES')
@@ -35,6 +36,23 @@ window.addEventListener('load', function(){
         } 
 
     })
+
+    this.fetch(`http://api.themoviedb.org/3/discover/tv?api_key=ad5d026c61e51047e5dd51e17f8086dd&with_genres=${id}`)
+    .then(function(info1){
+        return info1.json()
+      })
+    .then(function(respuesta1){
+        console.log(respuesta1);
+       
+        for (i = 0 ; i < 20 ; i++){
+            let newId1 = respuesta1.results[i].id            
+            let url1= "https://image.tmdb.org/t/p/w500" +respuesta1.results[i].poster_path
+            let nombre1= respuesta1.results[i].original_name
+            detalle1.innerHTML+= `<div class="contGen"><a class="aGen" href="detallesSeries.html?id=${newId1}"><div class="imagenesGen"><img src="${url1}" alt=""></div></a></div> `
+        } 
+
+    })
+
 //replicar pero para discover tv
 
 
