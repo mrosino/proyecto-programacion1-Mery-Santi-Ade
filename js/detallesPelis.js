@@ -23,15 +23,6 @@ window.addEventListener('load', function(){
       document.querySelector(".poster").innerHTML="<img src='"+poster+"'</img>"
       document.querySelector(".puntu").innerHTML=`Puntuación ${puntuacion} estrellas`
       document.querySelector(".lanza").innerHTML=lanzamiento
-      /*
-      //agregar a mi lista
-      
-      document.querySelector(".añadirLista").innerHTML= `<a id="${JSON.stringify(botonLista)}" href="#" class=""btn-black botonLista> Agregar a mi lista </a>`
-      */
-
-     // console.log(overview)
-       
-     //apto todo publico
    
      if (atp == false){
       document.querySelector(".atp").innerHTML=`La pelicula posee contenido apto para todo público`
@@ -65,33 +56,8 @@ window.addEventListener('load', function(){
 
       })
 
-  /*    
-
-   
-//rehago a ver que tal
-// añadir
-let añadir = document.querySelector('.favo')
-let favoritos = []
-añadir.addEventListener('click', function(){
-  
-  if (window.localStorage.getItem('favoritos') == null){
-    window.localStorage.setItem('favoritos', JSON.stringify(favoritos))
-
-  }
-  else {
-    let objetoAñadido = JSON.parse(window.localStorage.getItem('favoritos'))
-    //let favoritosSR = [...new Set(favoritos)];
-    objetoAñadido.push(respuesta)
-    window.localStorage.setItem('favoritos', JSON.stringify(objetoAñadido))
-    
-  }
-
 })
 
-*/
-})
-
-    //
     // Video
     fetch (`https://api.themoviedb.org/3/movie/${id}/videos?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-ES`)
     .then(function(videos){
@@ -103,7 +69,6 @@ añadir.addEventListener('click', function(){
         let video= "https://www.youtube.com/watch?v=" + key
         document.querySelector(".video").innerHTML="<iframe width='700' height='450' src='https://www.youtube.com/embed/"+key+"'></iframe>"
     })
-
 
     // RECOMENDADAS 
     fetch (`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-Es&page=1`)
@@ -117,7 +82,7 @@ añadir.addEventListener('click', function(){
             
             let id= respuesta2.results[i].id
             let url= "https://image.tmdb.org/t/p/w500" +respuesta2.results[i].poster_path
-            recommendations = recommendations+ '<a class="sliderItem" class="infoReco" href="detallesPelis.html?id='+id+'"><img src="'+url+'" alt=""></a> '
+            recommendations = recommendations+ '<a class="sliderItem" class="infoReco" href="detallesPelis.html?id='+id+'"><img style="min-height: 264px; max-height: 264px;" src="'+url+'" alt=""></a> '
         }
         document.querySelector(".seriesReco").innerHTML= recommendations
         $(".seriesReco").slick({
@@ -129,6 +94,7 @@ añadir.addEventListener('click', function(){
        
 
     })
+    
 //Icono favorito
    const icon = document.querySelector('.heart');
     setInterval(() => {

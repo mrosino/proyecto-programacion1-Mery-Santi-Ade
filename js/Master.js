@@ -167,26 +167,4 @@ fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c
     console.log(seriesAñadidasRecientemente)
 })
 
-
-// fetch para slider 
-/*fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES&page=7')
-.then(function(respuesta6){
-  return respuesta6.json()
-})
-.then(function(informacion6){
-  console.log(informacion6.results)
-
-  let slider = "<ul>"
-    for (i = 0 ; i < 20 ; i++){
-        console.log(informacion6.results[i])
-        let id= informacion6.results[i].id
-        let url= "https://image.tmdb.org/t/p/w500" +informacion6.results[i].poster_path
-        slider= slider+ '<li><a class="sliderItem" href="detallesPelis.html?id='+id+'"><img class="imagenesBanner" src="'+url+'" alt=""></a></li>'
-      
-    }
-    slider=slider + '</ul>'
-    document.querySelector(".slider").innerHTML= slider
-    
-})*/
-
 })
