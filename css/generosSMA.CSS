@@ -118,9 +118,13 @@ margin-top: 10%;
 .dropdown-content  {
   font-size: 0.9rem;
   padding: 0%;
-  background-color:transparent;
+  background-color: #652a42;
+
 }
 .dropdown:hover {
   background-color:rgba(0, 0, 0, 0.397);;
+}
+.listadoGeneros{
+  margin-top: 100%;
 }
 }

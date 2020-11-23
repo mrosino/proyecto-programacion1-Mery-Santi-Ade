@@ -57,20 +57,65 @@
           </section>
         </header>
 <main>
-  <section class="buscadorForm">
+  <!-- <section class="buscadorForm">
 
   
   <form class="form" action="search.html" method="GET">
     <input class="buscador" type="text" name="busqueda" placeholder=" Titulos, géneros, ... "/>
      <button class="botonBuscar" type="submit" value="search"> Buscar </button>
+     <select name="peliSerie" class="peli-Serie" id="peliSerie"></select>
+     <select name="actor" class="porActor" id="people"></select> 
    </form>
-  </section>
+  </section>-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
 
-    <Section class="resultadosB">
-        <h1 class="rotulosS">Resultados de tu búsqueda</h1>
+    
+    <section class="busc-avanzado">
+      <div class="titulo">
+      <p>Busquedas avanzadas</p>
+    </div>
+      <form class="buscador" action="search.html" method="GET">
+        <div class="form-group">
+          <label for="searchGenre">Géneros que desea buscar</label>
+          <select name="tipoGen" class="despegableGen" id="generos"></select>
+        </div>
+        <div>
+          <label for="name" class="orden">
+            Órden de resultados
+            <select class="orden" name="orden">
+                <option value=""></option>
+                <option value="popularity.desc">Popularidad descendente </option>
+                <option value="popularity.asc"> Popularidad ascendente</option>
+                <option value="vote_average.desc">Puntuacion descendente</option>
+                <option value="vote_average.asc">Puntuacion ascendente</option>
+                <option value="first_air_date.desc">Fecha de estreno ascendente </option>
+                <option value="first_air_date.asc">Fecha de estreno ascendente </option>
 
-    </Section>
 
+                </optgroup>
+            </select>
+          </label>
+          <button type="submit" name="button" class="btn" id="advanceSearchBtn">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="resultado">
+
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
@@ -84,7 +129,8 @@
         <footer class="footer">
             <section class="sectionFooter">
               <div class="divLogo">
-                <img src="assets/img/logotmdb.png" alt="logo tmdb">
+                          <img class="logoTmdb" src="assets/img/logotmdb.png" alt="logo tmdb">
+
                 </div>
         
         

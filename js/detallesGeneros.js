@@ -37,7 +37,7 @@ window.addEventListener('load', function(){
 
     })
 
-    this.fetch(`http://api.themoviedb.org/3/discover/tv?api_key=ad5d026c61e51047e5dd51e17f8086dd&with_genres=${id}`)
+    fetch(`http://api.themoviedb.org/3/discover/tv?api_key=ad5d026c61e51047e5dd51e17f8086dd&with_genres=${id}`)
     .then(function(info1){
         return info1.json()
       })

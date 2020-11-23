@@ -165,16 +165,19 @@ height: fit-content;
 
 @media (max-width:420px){
   .registrarse{
-    margin-top: 10%;
+    margin-top: 50%;
+  }
+  #iS{
+    color: black;
   }
   .botonIS{
-    width: 41%;
+    width: fit-content;
   }
   .social{
-    width: 60%;
+    width: 80%;
   }
   .formularioIS input{
-      width: 50%;
+      width: fit-content;
     }
   .sociales span {
     font-size: 1rem;
