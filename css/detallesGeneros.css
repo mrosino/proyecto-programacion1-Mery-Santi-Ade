@@ -32,3 +32,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+
+@media (max-width:420px){
+    .detalleInfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .detalleInfo1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+}
+}
+

@@ -53,9 +53,6 @@
 }
 
 @media (max-width:420px){
-    .slider{
-        margin-top: 33%;
-    }
     .imagenesSerie{
         width: 50%;
     }
@@ -74,5 +71,9 @@
     }
     .imagenesSerie1{
         display: none;
+    }
+    .gif{
+        margin-top: 30%;
+        width: 70%;
     }
 }

@@ -124,4 +124,8 @@ margin-top: 10%;
 .dropdown:hover {
   background-color:rgba(0, 0, 0, 0.397);;
 }
+.contiName2{
+  margin-top: 200px;
+  font-size: 20px;
+}
 }
