@@ -36,7 +36,7 @@ img{
 }
 .descripcion{
     justify-content: center;
-    max-width: 370px;
+    max-width: 650px;
     padding: 5px;
 
 }
@@ -71,7 +71,7 @@ img{
 }
 /*boton fav*/
 .favo{
-    margin-top: 10%;
+    margin-top: 2%;
     height: 2rem;
     width:fit-content;
     text-indent:0;

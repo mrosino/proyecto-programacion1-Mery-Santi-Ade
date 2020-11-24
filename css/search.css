@@ -6,8 +6,23 @@
     letter-spacing: 2px;
     font-size: 1em;
 }
-.imagenes{
-    width: 320px;
+.imagenesB{
+  max-height: 350px;
+  min-height: 350px;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+
+}
+.imagenesC :hover{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.564);
+    padding: 5px;
+
 }
 .resultado { 
     display: flex;
@@ -19,4 +34,36 @@
     width: 30px;
     color: black;
 
+}
+.oculto{
+    display: none;
+}
+.resultadosB{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+@media (max-width:420px){
+    .rotulosS{
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    .footer{
+        margin-top: 320px;
+        
+
+    }
+    .oculto{
+        margin-top: 200px;
+        display: block;
+    }
+    .oculto .buscador{
+        display: block;
+
+    }
+    .form{
+        display: flex;
+    
+    }
 }

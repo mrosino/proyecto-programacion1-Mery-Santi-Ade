@@ -89,6 +89,21 @@ margin-top: 10%;
 }
 
  @media (max-width:420px) {
+  .dropdown{
+    font-size: inherit;
+  
+  }
+  .dropdown-content  {
+    font-size: 0.9rem;
+    background-color: #652a42;
+  
+  }
+  .dropdown:hover {
+    background-color:rgba(0, 0, 0, 0.397);;
+  }
+  .tP2{
+    padding-left: 2px;
+  }
  .apartado1 {
   display: none;
  }
@@ -113,16 +128,6 @@ margin-top: 10%;
  }
 .tP1 {
   font-size: 0.6rem;
-}
-
-.dropdown-content  {
-  font-size: 0.9rem;
-  padding: 0%;
-  background-color: #652a42;
-
-}
-.dropdown:hover {
-  background-color:rgba(0, 0, 0, 0.397);;
 }
 .contiName2{
   margin-top: 200px;

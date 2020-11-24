@@ -26,6 +26,10 @@
     text-align: center;
     
 }
+.footer{
+    margin-top: -1000px;
+
+}
 .pp{
     border-radius: 50%;
     width: 200px;
