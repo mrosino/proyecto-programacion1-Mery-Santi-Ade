@@ -1,0 +1,61 @@
+*{
+    border-radius: 3px;
+}
+.info{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgb(215, 194, 188);
+    height: 400px;
+}
+.poster {
+    width: 20%;
+    
+}
+.titulo{
+    font-size: 2rem;
+    text-align: center;
+}
+.detalles{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: justify;
+}
+.video {
+    margin-top: 50px;
+    text-align: center;
+}
+.seriesReco {
+    display: flex;
+    width: 100%;
+}
+.slider {
+    width: 95%;
+    
+}
+.sliderItem {
+    margin:10px;
+}
+.rotulosR{
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    font-size: 20px;
+}
+@media (max-width:420px){
+    .video{
+        margin-top: 45%;
+    }
+    .imgreco{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   .capi {
+       margin-left: 4%;
+   }
+}
