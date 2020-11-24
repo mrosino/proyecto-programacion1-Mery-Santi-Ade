@@ -1,0 +1,26 @@
+* {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+/*no funciona NADA*/
+.form-group{
+    background-color: transparent;
+}
+.buscador1{
+    background-color: transparent;
+}
+.orden{
+    width: 20%
+}
+.despegableGen{
+overflow:auto; 
+ text-transform: uppercase;
+ padding: 3px;
+ background-color: #652a42;
+ position: fixed;
+ text-align: left;
+ margin-left: 2px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}

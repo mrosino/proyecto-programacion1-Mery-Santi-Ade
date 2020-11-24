@@ -17,3 +17,51 @@
 
 }
     
+/*boton fav*/
+.favo{
+    margin-top: 10%;
+    height: 2rem;
+    width:fit-content;
+    text-indent:0;
+    display:block;
+    color:#000000;
+    background-color: var(--main-bg-color);
+    text-decoration:none;
+    text-align:center;
+    background-color:#D4B7B0;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 560;
+    font-size: 1.2rem;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+
+  }
+  
+  .favo :active {
+    position: relative; 
+    bottom: 2px;
+    font-weight: 900;
+  }
+  .rotulosFav{
+      font-size: 2.4rem;
+      color: black;
+      margin-top: 100px;
+      text-align: center;
+      
+  }
+  #detalleTextoFav{
+    margin-top: 4px;
+    margin-bottom: 14px;
+    font-weight: 580;
+    text-align: center;
+    
+  }
+  .rotulosFav:hover{
+      color: #d4b7b09d;
+  }
+  #detalleTextoFav:hover{
+    color: #d4b7b09d;
+  }

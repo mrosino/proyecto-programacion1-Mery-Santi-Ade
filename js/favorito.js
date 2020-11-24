@@ -10,7 +10,7 @@ window.addEventListener('load', function(){
 
         }
         else {
-            peliculas = `${peliculas}<div><a href="detallesSeries.html?id=${id}"> <div class="imagenes1"><img src="${url}" alt=""></div></a> <div> <button " onclick="sacarDeMiLista(${id})">Sacar de mi lista </button></div></div>`
+            peliculas = `${peliculas}<div><a href="detallesSeries.html?id=${id}"> <div class="imagenes1"><img src="${url}" alt=""></div></a> <div> <button class="favo" onclick="sacarDeMiLista(${id})">Sacar de mi lista </button></div></div>`
 
         }
        

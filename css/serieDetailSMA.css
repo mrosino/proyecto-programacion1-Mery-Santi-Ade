@@ -47,6 +47,34 @@
     margin-top: 30px;
     font-size: 20px;
 }
+/*boton fav*/
+.favo{
+    margin-top: 10%;
+    height: 2rem;
+    width:fit-content;
+    text-indent:0;
+    display:block;
+    color:#000000;
+    background-color: var(--main-bg-color);
+    text-decoration:none;
+    text-align:center;
+    background-color:#AB7577;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 560;
+    font-size: 1.2rem;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+
+  }
+  
+  .favo :active {
+    position: relative; 
+    bottom: 2px;
+    font-weight: 900;
+  }
 @media (max-width:420px){
     .video{
         margin-top: 45%;

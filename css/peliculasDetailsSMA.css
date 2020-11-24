@@ -94,13 +94,10 @@ img{
   
   .favo :active {
     position: relative; 
-    bottom: 3px;
-    color: #000000;
+    bottom: 2px;
+    font-weight: 900;
   }
-  /*no funciona :(*/
-  .favo :visited{
-      background-color: rgba(128, 128, 128, 0.733);
-  }
+ 
 @media (max-width:420px){
     .info{
         height: fit-content;

@@ -20,6 +20,15 @@ img {
   width: 7%;
   align-content: center;
 }
+.input{
+  border-radius: 8px;
+}
+.rU:hover{
+  background-color: rgba(0, 0, 0, 0.438);
+  color: #D4B7B0;
+  border-radius: 3px;
+}
+
 .formularioIS input{
   display: flex;
   flex-direction: column;
@@ -94,6 +103,11 @@ img {
   bottom: 3px;
   color: #000000;
 }
+.botonIS:hover{
+  background-color: rgba(0, 0, 0, 0.438);
+  color: #D4B7B0;
+  border-radius: 3px;
+}
   .fblogin {   
     background-color: inherit;
     border: 2px solid black;
@@ -104,7 +118,7 @@ img {
   }
   .fblogin:hover {
     background-color: rgba(0, 0, 0, 0.438);
-    color: white;
+    color: #D4B7B0;
     border-radius: 3px;
   }
   .goologin {  
@@ -117,7 +131,7 @@ img {
   }
   .goologin:hover {
     background-color: rgba(0, 0, 0, 0.438);
-    color:white;
+    color:#D4B7B0;
     border-radius: 3px;
   }
   .twlogin { 
@@ -130,7 +144,7 @@ img {
   }
   .twlogin:hover {
     background-color: rgba(0, 0, 0, 0.438);
-    color:white;
+    color:#D4B7B0;
     border-radius: 3px;
   }
   .registra2 a {

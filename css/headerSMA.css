@@ -43,12 +43,24 @@ img {
     margin: auto ;
     text-decoration: none;
     color:rgb(215, 194, 188);
+    
+}
+.hrefHeader1{
+    font-size: 110%;
+    font-weight: bolder;
+    text-align: center;
+    align-content: center;
+    margin: auto ;
+    text-decoration: none;
+    color:rgb(215, 194, 188);   
 }
 .sectionHeader .hrefHeader:hover {
     
     color: black;
     padding: 6px;
     border-radius: 2px;
+    background-color: #D4B7B0;
+    font-weight: 610;
 }
 .form{
     font-size: 110%;

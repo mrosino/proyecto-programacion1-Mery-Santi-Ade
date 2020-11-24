@@ -24,7 +24,8 @@
       document.querySelector(".lanza").innerHTML=lanzamiento
       document.querySelector(".temporadas").innerHTML= `Temporadas: ${temporadas}`
 
-      document.querySelector(".favo").addEventListener('click', function(e){
+      botFavo = document.querySelector(".favo")
+      botFavo.addEventListener('click', function(e){
         e.preventDefault()
         let favoritos = localStorage.getItem('favoritos')
         if( favoritos == null ){
@@ -36,11 +37,13 @@
         for (let i=0; i<favoritos.length; i++){ 
          if (favoritos[i].id==respuesta.id){
           agregarAFavorito=false
+          alert('Ya has agregado a favoritos')
          }
         }
         if (agregarAFavorito==true){
           favoritos.push(respuesta)
           localStorage.setItem('favoritos', JSON.stringify(favoritos))
+          botFavo.innerHTML= `Agregado a favoritos`
         }
       })
 
