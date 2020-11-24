@@ -65,4 +65,7 @@
         display: flex;
     
     }
+    .resultadosB{
+        grid-template-columns: 1fr;
+    }
 }
