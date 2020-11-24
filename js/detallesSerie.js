@@ -74,7 +74,7 @@
             console.log(respuesta2.results[i])
             let id= respuesta2.results[i].id
             let url= "https://image.tmdb.org/t/p/w500" +respuesta2.results[i].poster_path
-            recommendations = recommendations+ '<a class="sliderItem" class="infoReco" href="detallesSeries.html?id='+id+'"><img style="min-height: 264px; max-height: 264px;" src="'+url+'" alt=""></a> '
+            recommendations = recommendations+ '<a class="sliderItem" class="infoReco" href="detallesSeries.html?id='+id+'"><img class="imagenesD" src="'+url+'" alt=""></a> '
         }
         document.querySelector(".seriesReco").innerHTML= recommendations
         console.log(recommendations)

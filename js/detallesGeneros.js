@@ -32,7 +32,7 @@ window.addEventListener('load', function(){
             let newId = respuesta.results[i].id            
             let url= "https://image.tmdb.org/t/p/w500" +respuesta.results[i].poster_path
             let nombre= respuesta.results[i].original_title
-            detalle.innerHTML+= `<div class="contGen"><a class="aGen" href="detallesPelis.html?id=${newId}"><div class="imagenesGen"><img style="min-height: 360px; max-height: 360px;" src="${url}" alt=""></div></a></div> `
+            detalle.innerHTML+= `<div class="contGen"><a class="aGen" href="detallesPelis.html?id=${newId}"><div class="imagenesGen imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a></div> `
         } 
 
     })
@@ -48,7 +48,7 @@ window.addEventListener('load', function(){
             let newId1 = respuesta1.results[i].id            
             let url1= "https://image.tmdb.org/t/p/w500" +respuesta1.results[i].poster_path
             let nombre1= respuesta1.results[i].original_name
-            detalle1.innerHTML+= `<div class="contGen"><a class="aGen" href="detallesSeries.html?id=${newId1}"><div class="imagenesGen"><img style="min-height: 360px; max-height: 360px;" src="${url1}" alt=""></div></a></div> `
+            detalle1.innerHTML+= `<div class="contGen"><a class="aGen" href="detallesSeries.html?id=${newId1}"><div class="imagenesGen imagenesC"><img class="imagenesD" src="${url1}" alt=""></div></a></div> `
         } 
 
     })

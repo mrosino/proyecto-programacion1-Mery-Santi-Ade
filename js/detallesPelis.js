@@ -71,7 +71,7 @@ window.addEventListener('load', function(){
     .then(function (respuesta1){
         let key= respuesta1.results[0].key
         let video= "https://www.youtube.com/watch?v=" + key
-        document.querySelector(".video").innerHTML="<iframe width='700' height='450' src='https://www.youtube.com/embed/"+key+"'></iframe>"
+        document.querySelector(".video").innerHTML=`<iframe width='700' height='450' src='https://www.youtube.com/embed/${key}'></iframe>`
     })
 
     // RECOMENDADAS 
@@ -86,7 +86,7 @@ window.addEventListener('load', function(){
             
             let id= respuesta2.results[i].id
             let url= "https://image.tmdb.org/t/p/w500" +respuesta2.results[i].poster_path
-            recommendations = recommendations+ '<a class="sliderItem" class="infoReco" href="detallesPelis.html?id='+id+'"><img style="min-height: 264px; max-height: 264px;" src="'+url+'" alt=""></a> '
+            recommendations = `${recommendations}<a class="sliderItem" class="infoReco" href="detallesPelis.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
         }
         document.querySelector(".seriesReco").innerHTML= recommendations
         $(".seriesReco").slick({

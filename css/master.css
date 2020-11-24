@@ -3,6 +3,11 @@
     letter-spacing: 2px;
     border-radius: 3px;
 }
+.imagenesD{
+  max-height: 270px;
+  min-height: 270px;
+  width: auto;
+}
 body {
     background-image: url(../assets/img/fondo2.gif);
     background-repeat: no-repeat;

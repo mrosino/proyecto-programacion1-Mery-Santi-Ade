@@ -16,6 +16,12 @@ letter-spacing: 2px;
 .nombreGenero{
 margin-top: 10%;
 }
+.imagenesC :hover{
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.564);
+  padding: 5px;
+
+}
 
 .gen{
   text-decoration: none;
