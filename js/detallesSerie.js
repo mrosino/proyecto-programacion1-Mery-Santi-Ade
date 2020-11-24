@@ -38,6 +38,7 @@
          if (favoritos[i].id==respuesta.id){
           agregarAFavorito=false
           alert('Ya has agregado a favoritos')
+          botFavo.innerHTML= `Agregado a favoritos`
          }
         }
         if (agregarAFavorito==true){
