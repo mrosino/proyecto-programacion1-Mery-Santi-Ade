@@ -10,11 +10,17 @@ window.addEventListener('load',function(){
 
         let peliculas = ""
         for (i = 0 ; i < 14 ; i++){
-            console.log(infoPelis.results[i])
+            
+          if(infoPelis.results[i].poster_path ==null){
+            let id= infoPelis.results[i].id
+            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="assets/img/error.png" alt=""></div></a> `
+          }
+          else{
             let url= "https://image.tmdb.org/t/p/w500" +infoPelis.results[i].poster_path
             let id= infoPelis.results[i].id
             peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
         }
+      }
         document.querySelector(".peliculas").innerHTML= peliculas
         console.log(peliculas)
         $(".peliculas").slick({
@@ -62,11 +68,17 @@ window.addEventListener('load',function(){
 
         let peliculas = ""
         for (i = 0 ; i < 14 ; i++){
-            console.log(infoPelis2.results[i])
+          if(infoPelis2.results[i].poster_path ==null){
+            let id= infoPelis2.results[i].id
+            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="assets/img/noPic2.png" alt=""></div></a> `
+          }
+          else{
+           // console.log(infoPelis2.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoPelis2.results[i].poster_path
             let id= infoPelis2.results[i].id
             peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
         }
+      }
         document.querySelector(".peliculas2").innerHTML= peliculas
         console.log(peliculas)
         $(".peliculas2").slick({
