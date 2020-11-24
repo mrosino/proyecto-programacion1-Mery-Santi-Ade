@@ -20,12 +20,14 @@ window.addEventListener('load', function () {
     })
 
   // Logica para la busqueda
+  
   var withGenres = new URLSearchParams(location.search).get("tipoGen");
   var orden = new URLSearchParams(location.search).get("orden");
 
   fetch(`https://api.themoviedb.org/3/discover/movie?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&with_genres=${withGenres}&sort_by=${orden}`)
     .then(function (response) {
       return response.json()
+      
     })
     .then(function (data) {
       var contenedorSeries = document.querySelector(".resultado");

@@ -21,7 +21,7 @@ window.addEventListener('load', function(){
         for (let i = 0; i < respuestaArray.length; i++) {
          
           const elementosArray = respuestaArray[i];
-          console.log(elementosArray);
+         // console.log(elementosArray);
        
           resultados.innerHTML += `<a href="detallesPelis.html?id=${elementosArray.id}"> <div class="imagenes"><img src="https://image.tmdb.org/t/p/w500${elementosArray.poster_path}" alt=""></div></a>`
         }

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Home - SMA movies</title>
         <link rel="stylesheet" href="css/master.css">
-        <link rel="stylesheet" href="busquedaAvanzada.css">
+        <link rel="stylesheet" href="css/busquedaAvanzada.css">
         <link rel="stylesheet" href="css/headerSMA.css">
         <link rel="stylesheet" href="css/footerSMA.css">
         <link rel="stylesheet" href="css/search.css">
@@ -90,12 +90,16 @@
     
     <section class="busc-avanzado">
       <div class="titulo">
-      <p>Busquedas avanzadas</p>
+      <p class="rotulosB">Busquedas avanzadas</p>
+
     </div>
+    <br>
+    <br>
       <form class="buscador1" action="search.html" method="GET">
         <div class="form-group">
           <label for="searchGenre">Géneros que desea buscar</label>
-          <select name="tipoGen" class="despegableGen" id="generos" required></select>
+          
+          <select name="tipoGen" class="despegableGen" id="generos" required>Selecciona un género</select>
         </div>
         <div>
           <label for="name" class="orden">
@@ -114,7 +118,7 @@
             </select>
           </label>
          
-          <button type="submit" name="button" class="btn" id="advanceSearchBtn">Search</button>
+          <button class="favo2" type="submit" name="button" class="btn" id="advanceSearchBtn">Search</button>
         </div>
       </form>
     </section>
