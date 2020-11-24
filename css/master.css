@@ -6,7 +6,9 @@
 .imagenesD{
   max-height: 270px;
   min-height: 270px;
-  width: auto;
+  min-width: 192px;
+  max-width: 192px;
+  padding: 6px;
 }
 body {
     background-image: url(../assets/img/fondo2.gif);

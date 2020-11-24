@@ -35,8 +35,13 @@
 .resultadosB{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1%;
 
 }
+.rotulosS{
+    margin-top: 150px;
+}
+
 
 @media (max-width:420px){
     .rotulosS{

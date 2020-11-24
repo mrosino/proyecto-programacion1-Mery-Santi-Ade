@@ -3,6 +3,9 @@ window.addEventListener('load', function () {
   let datoURL = new URLSearchParams(queryString);
   let query = datoURL.get('busqueda');
   let listGen = document.querySelector('.despegableGen')
+  let tipo = document.querySelector('.rotulosC')
+  let tipo1 = document.querySelector('rotulosD')
+
 
 
   // Fetch del listados de generos disponibles
@@ -32,8 +35,9 @@ window.addEventListener('load', function () {
     .then(function (data) {
       var contenedorPelis = document.querySelector(".resultado1");
       for (var i = 0; i < 14; i++) {
-        contenedorPelis.innerHTML += 
-          `<a href="detallesPelis.html?id=${data.results[i].id}">
+        tipo.classList.remove('rotulosC')
+          tipo.classList.add('rotulosB')
+          contenedorPelis.innerHTML += `<a href="detallesPelis.html?id=${data.results[i].id}">
             <img class="imagenesA" src='https://image.tmdb.org/t/p/original/${data.results[i].poster_path}'>
           </a>`
       }
@@ -51,6 +55,8 @@ fetch(`https://api.themoviedb.org/3/discover/tv?api_key=3b4640a2c0443153138c528f
   
   var contenedorSeries = document.querySelector(".resultado2");
   for (var i = 0; i < 14; i++) {
+    tipo1.classList.remove('rotulosD')
+    tipo1.classList.add('rotulosB')
     contenedorSeries.innerHTML += 
       `<a href="detallesSeries.html?id=${data.results[i].id}">
         <img class="imagenesA" src='https://image.tmdb.org/t/p/original/${data.results[i].poster_path}'>

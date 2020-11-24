@@ -34,7 +34,16 @@
     font-size: 2.4rem;
       color: black;
       text-align: center;
+      display: block;
 }
+.rotulosC{
+  display: none;
+
+}
+.rotulosD{
+  display: none;
+}
+
 
 select{
  font-weight: 600;
