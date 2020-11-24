@@ -3,23 +3,36 @@
     letter-spacing: 2px;
 }
 
-/*no funciona NADA*/
+.imagenesA{
+  max-height: 270px;
+  min-height: 270px;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  min-width: 182.4px;
+  padding: 1%;
+}
+
+
 .form-group{
     background-color: transparent;
 }
 .buscador1{
-    background-color: #ab7577;
+    background-color: #af6c6ee1;
     width: fit-content;
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
 }
 .rotulosB{
     font-size: 2.4rem;
       color: black;
-    
       text-align: center;
 }
 
@@ -44,7 +57,7 @@ select{
 }
 
 .favo2{
-    margin-top: 10%;
+    margin-top: 4px;
     height: 2rem;
     width:fit-content;
     text-indent:0;
@@ -59,7 +72,6 @@ select{
     text-align: center;
     font-weight: 560;
     font-size: 1.2rem;
-    padding-left: 2px;
     padding-right: 2px;
     
 
@@ -70,3 +82,4 @@ select{
     bottom: 2px;
     font-weight: 900;
   }
+ 

@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
 
       listadoDeGeneros.genres.forEach(genero => {
         listGen.innerHTML += `<option class="valores" value="${genero.id}">${genero.name}</option>`
-
+        
       })
     })
 
@@ -30,12 +30,30 @@ window.addEventListener('load', function () {
       
     })
     .then(function (data) {
-      var contenedorSeries = document.querySelector(".resultado");
-      for (var i = 0; i < data.results.length; i++) {
-        contenedorSeries.innerHTML += 
-          `<a href="detallesSeries.html?id=${data.results[i].id}">
-            <img class="imagenes" src='https://image.tmdb.org/t/p/original/${data.results[i].poster_path}'>
+      var contenedorPelis = document.querySelector(".resultado1");
+      for (var i = 0; i < 14; i++) {
+        contenedorPelis.innerHTML += 
+          `<a href="detallesPelis.html?id=${data.results[i].id}">
+            <img class="imagenesA" src='https://image.tmdb.org/t/p/original/${data.results[i].poster_path}'>
           </a>`
       }
     })
+})
+var withGenres = new URLSearchParams(location.search).get("tipoGen");
+var orden = new URLSearchParams(location.search).get("orden");
+//para series
+fetch(`https://api.themoviedb.org/3/discover/tv?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&sort_by=${orden}&page=1&with_genres=${withGenres}`)
+.then(function (response) {
+  return response.json()
+  
+})
+.then(function (data) {
+  
+  var contenedorSeries = document.querySelector(".resultado2");
+  for (var i = 0; i < 14; i++) {
+    contenedorSeries.innerHTML += 
+      `<a href="detallesSeries.html?id=${data.results[i].id}">
+        <img class="imagenesA" src='https://image.tmdb.org/t/p/original/${data.results[i].poster_path}'>
+      </a>`
+  }
 })
