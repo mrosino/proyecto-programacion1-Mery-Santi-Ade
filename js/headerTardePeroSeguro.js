@@ -1,7 +1,6 @@
-// si me da el tiempo armo el header entero desde js, pero mientras voy agregando los cambios
 
 
-//buscador normal 
+//buscador normal del header
 window.addEventListener('load', function(){
     let queryString= location.search 
     let datoURL = new URLSearchParams(queryString);

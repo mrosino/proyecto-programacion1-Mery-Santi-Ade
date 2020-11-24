@@ -9,16 +9,26 @@
     text-decoration: none;
     font-size: 1.5rem;
     color: #D6B8B2;
+    text-align: center;
+    
 }
 .mery {
     text-decoration: none;
     font-size: 1.5rem;
     color: #D6B8B2;
+    text-align: center;
+    
 }
 .santi {
     text-decoration: none;
     font-size: 1.5rem;
     color: #D6B8B2;
+    text-align: center;
+    
+}
+.pp{
+    border-radius: 50%;
+    width: 200px;
 }
 @media (max-width:420px){
 .nombres {
