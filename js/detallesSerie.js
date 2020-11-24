@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+ window.addEventListener('load', function(){
     let queryString= window.location.search 
     let datoURL = new URLSearchParams(queryString);
     let id = datoURL.get('id');  

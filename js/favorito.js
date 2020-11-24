@@ -6,11 +6,11 @@ window.addEventListener('load', function(){
         let id = favoritos[i].id
         let url= "https://image.tmdb.org/t/p/w500" + favoritos[i].poster_path
         if (favoritos[i].tipo=="peli"){
-            peliculas = `${peliculas}<div><a href="detallesPelis.html?id=${id}"> <div class="imagenes1"><img src="${url}" alt=""></div></a> <div> <button  onclick="sacarDeMiLista(${id})">Sacar de mi lista </button></div></div>`
+            peliculas = `${peliculas}<div><a href="detallesPelis.html?id=${id}"> <div class="imagenes1"><img src="${url}" alt=""></div></a> <div> <button class="favo" onclick="sacarDeMiLista(${id})">Sacar de mi lista </button></div></div>`
 
         }
         else {
-            peliculas = `${peliculas}<div><a href="detallesSeries.html?id=${id}"> <div class="imagenes1"><img src="${url}" alt=""></div></a> <div> <button onclick="sacarDeMiLista(${id})">Sacar de mi lista </button></div></div>`
+            peliculas = `${peliculas}<div><a href="detallesSeries.html?id=${id}"> <div class="imagenes1"><img src="${url}" alt=""></div></a> <div> <button " onclick="sacarDeMiLista(${id})">Sacar de mi lista </button></div></div>`
 
         }
        

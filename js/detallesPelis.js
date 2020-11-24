@@ -94,10 +94,4 @@ window.addEventListener('load', function(){
        
 
     })
-    
-//Icono favorito
-   const icon = document.querySelector('.heart');
-    setInterval(() => {
-      icon.classList.toggle('active');
-    }, 1500);
-    })
+  })

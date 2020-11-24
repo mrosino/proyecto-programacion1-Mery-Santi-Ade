@@ -1,5 +1,7 @@
  *{
     border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
 }
 
 img{
@@ -14,7 +16,7 @@ img{
     margin-right: 10%;
     justify-content: space-between;
     align-items: center;
-    background-color:  rgb(215, 194, 188);
+    background-color:  #d5b8b1ab;
     height: 400px;
 }
 .poster {
@@ -23,15 +25,19 @@ img{
 .titulo{
     font-size: 2rem;
     text-align: center;
+    padding: 5px;
 }
 .detalles{
     display: flex;
     flex-direction: column;
     width: 50%;
     text-align: justify;
+    
 }
 .descripcion{
     justify-content: center;
+    max-width: 370px;
+    padding: 5px;
 
 }
 .video{
@@ -60,61 +66,50 @@ img{
     margin-top: 30px;
     font-size: 20px;
 }
+.atp{
+    padding: 6px;
+}
+/*boton fav*/
+.favo{
+    margin-top: 10%;
+    height: 2rem;
+    width:fit-content;
+    text-indent:0;
+    display:block;
+    color:#000000;
+    background-color: var(--main-bg-color);
+    text-decoration:none;
+    text-align:center;
+    background-color:#AB7577;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 560;
+    font-size: 1.2rem;
+    padding-left: 2px;
+    padding-right: 2px;
+    
 
-/**/
-
-.center {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   
-  .heart {
-    position: relative;
-    width: 36px;
-    height: 36px;
+  .favo :active {
+    position: relative; 
+    bottom: 3px;
+    color: #000000;
   }
-  
-  .heart-icon {
-    cursor: pointer;
+  /*no funciona :(*/
+  .favo :visited{
+      background-color: rgba(128, 128, 128, 0.733);
   }
-  
-  .animation-container {
-    width: 200%;
-    height: 200%;
-    pointer-events: none;
-  }
-  
-  .lines line {
-    stroke: red;
-    stroke-width: 5px;
-  }
-  
-  .active .heart-icon {
-    fill: red;
-    animation: beat .3s ease-out;
-  }
-  
-  .active .ring {
-    transition: transform .5s ease-in-out;
-    transform-origin: 50% 50%;
-    transform: scale(10);
-  } 
-  
-  @keyframes beat {
-    50% {
-      transform: scale(.7);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
-
-
 @media (max-width:420px){
+    .info{
+        height: fit-content;
+        width: fit-content;
+    }
+    .favo{
+        height: fit-content;
+        width: fit-content;
+    }
     .trailer{
         margin-top: 45%;
     }
