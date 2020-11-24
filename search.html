@@ -94,12 +94,12 @@
       <form class="buscador" action="search.html" method="GET">
         <div class="form-group">
           <label for="searchGenre">Géneros que desea buscar</label>
-          <select name="tipoGen" class="despegableGen" id="generos"></select>
+          <select name="tipoGen" class="despegableGen" id="generos" required></select>
         </div>
         <div>
           <label for="name" class="orden">
-            Órden de resultados
-            <select class="orden" name="orden">
+            Filtro de popularidad
+            <select class="orden" name="orden" required>
                 <option value=""></option>
                 <option value="popularity.desc">Popularidad descendente </option>
                 <option value="popularity.asc"> Popularidad ascendente</option>
@@ -112,6 +112,7 @@
                 </optgroup>
             </select>
           </label>
+         
           <button type="submit" name="button" class="btn" id="advanceSearchBtn">Search</button>
         </div>
       </form>

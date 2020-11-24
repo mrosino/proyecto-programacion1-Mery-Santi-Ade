@@ -6,13 +6,15 @@
     letter-spacing: 2px;
     font-size: 1em;
 }
-
-
-
-
 .imagenes{
-    width: 10%;
+    width: 320px;
 }
+.resultado { 
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
 .valores{
     width: 30px;
     color: black;
