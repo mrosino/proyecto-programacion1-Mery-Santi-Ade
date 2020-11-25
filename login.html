@@ -82,15 +82,16 @@
           <br>
         </div>
         <div class="form">
-          <form class="formularioIS">
-
-            <input class="input" type="text" placeholder="Nombre de usuario" />
-            <input class="input" type="password" placeholder="Contraseña" />
+          <form method="GET" action="index.html" class="formularioIS">
+            <input class="input" type="text" id="nombreU" placeholder="Nombre de usuario" />
+            <div id="error"></div>
+            <input class="input" type="password" id="contraseñaU" placeholder="Contraseña" />
+            <div id="error"></div>
             <input type="checkbox" class="box">
             <label for="box" class="rU"> Recordar usuario</label>
             <br>
             <br>
-            <button class="botonIS" type="botonIS">Iniciar sesion </button>
+            <button class="botonIS" type="submit">Iniciar sesion </button>
 
           </form>
           <br>
@@ -153,6 +154,7 @@
   
   <script src="js/generos.js"></script>
   <script src="js/buscadorHeader.js"></script>
+  <script src="js/login.js"></script>
 </body>
 
 </html>
