@@ -27,3 +27,11 @@ function sacarDeMiLista(id){
     location.href = 'favorito.html'
 
 }
+
+/*let remove = document.querySelector(".remover")
+remove.addEventListener('onclick', function(e){
+    e.preventDefault()
+    clearInterval.localStorage(favoritas)
+})
+}
+*/
