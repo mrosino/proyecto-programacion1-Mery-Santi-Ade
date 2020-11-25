@@ -15,6 +15,12 @@
   min-width: 182.4px;
   padding: 1%;
 }
+.imagenesA:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.564);
+  padding: 5px;
+
+}
 
 
 .form-group{
@@ -35,6 +41,9 @@
       color: black;
       text-align: center;
       display: block;
+      background-color: #d4b7b0ee;
+      width: fit-content;
+      padding: 15px
 }
 .rotulosC{
   display: none;

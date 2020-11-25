@@ -13,6 +13,9 @@
 .contiName2{
     font-size: 2rem;
     margin-bottom: 3%;
+    background-color: #d4b7b0ee;
+    width: fit-content;
+    padding: 15px
 
 }
 .imagenesGen{
