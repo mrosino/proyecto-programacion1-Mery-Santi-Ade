@@ -19,8 +19,8 @@ window.addEventListener('load', function(){
       var botonLista = JSON.stringify('respuesta')
       respuesta.tipo="peli"
       document.querySelector(".descripcion").innerHTML= overview
-      document.querySelector(".titulo").innerHTML="<h2>"+title+"</h2>"
-      document.querySelector(".poster").innerHTML="<img src='"+poster+"'</img>"
+      document.querySelector(".titulo").innerHTML=`<h2>${title}</h2>`
+      document.querySelector(".poster").innerHTML=`<img src='${poster}'</img>`
       document.querySelector(".puntu").innerHTML=`Puntuación ${puntuacion} estrellas`
       document.querySelector(".lanza").innerHTML=lanzamiento
    

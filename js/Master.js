@@ -11,7 +11,7 @@ window.addEventListener('load',function(){
     .then(function(informacion){
         console.log(informacion.results)
 
-        let pelisPopulares = ""
+        let pelisPopulares = "" //lo inicializamos en un string vacio ppara que no pueda mostrar undefined si no trae nada
         for (i = 0 ; i < 14 ; i++){
           let id= informacion.results[i].id
           let url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path

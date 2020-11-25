@@ -1,7 +1,5 @@
-//volar esta pagina y hacerla dropdown(html)
+
 window.addEventListener('load', function(){
-    var detalleGen = document.querySelector('.listadoGeneros')
-    var decripcion = document.querySelector('.descripcionGenero')
     var dropdown = document.querySelector('.dropdown-content')
 
 

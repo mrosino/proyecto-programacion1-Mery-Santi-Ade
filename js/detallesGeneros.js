@@ -1,24 +1,16 @@
 window.addEventListener('load', function(){
-
-    let queryString= location.search 
-    let datoURL = new URLSearchParams(queryString);
-    let id = datoURL.get('id'); 
-    console.log(id);
+    let queryString= location.search //devuelve un string con todos los parametros
+    let datoURL = new URLSearchParams(queryString); //me da los parametros
+    let id = datoURL.get('id'); //busco el que me interesa
+    //console.log(id);
     let nombre1 =datoURL.get('nombre')
-    console.log(nombre1);
+    //console.log(nombre1);
     let detalle =document.querySelector('.detalleInfo')
     let detalle1 =document.querySelector('.detalleInfo1')
     let nombreGen = document.querySelector('.nombreGenero')
 
-    fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES')
-    .then(function(respuesta){
-        return respuesta.json()
 
-    })
-        .then(function(listadoDeGeneros){
-            console.log(listadoDeGeneros)
-        nombreGen.innerHTML=`<div class="contiName"><h2 class="contiName2">A continuación podrás ver peliculas y series de ${nombre1}</h2></div>`
-})
+    nombreGen.innerHTML=`<div class="contiName"><h2 class="contiName2">A continuación podrás ver peliculas y series de ${nombre1}</h2></div>`
 
 
 
@@ -30,7 +22,7 @@ window.addEventListener('load', function(){
        
         for (i = 0 ; i < 20 ; i++){
             let newId = respuesta.results[i].id            
-            let url= "https://image.tmdb.org/t/p/w500" +respuesta.results[i].poster_path
+            let url= `https://image.tmdb.org/t/p/w500${respuesta.results[i].poster_path}`
             let nombre= respuesta.results[i].original_title
             detalle.innerHTML+= `<div class="contGen"><a class="aGen" href="detallesPelis.html?id=${newId}"><div class="imagenesGen imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a></div> `
         } 
