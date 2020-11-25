@@ -12,6 +12,7 @@
       let overview= respuesta.overview
       let puntuacion=respuesta.vote_average
       let lanzamiento= respuesta.first_air_date
+      var atp =respuesta.adult
       let temporadas= respuesta.number_of_seasons
       let poster= "https://image.tmdb.org/t/p/w500" + respuesta.poster_path
       respuesta.tipo="serie"
@@ -23,6 +24,15 @@
       document.querySelector(".puntu").innerHTML=`Puntuación ${puntuacion} estrellas`
       document.querySelector(".lanza").innerHTML=lanzamiento
       document.querySelector(".temporadas").innerHTML= `Temporadas: ${temporadas}`
+
+
+      if (atp == false){
+        document.querySelector(".atp").innerHTML=`La pelicula posee contenido apto para todo público`
+          
+        }
+        else{        
+          document.querySelector(".atp").innerHTML=`La pelicula posee contenido no-apto para todo público`
+        }
 
       botFavo = document.querySelector(".favo")
       botFavo.addEventListener('click', function(e){

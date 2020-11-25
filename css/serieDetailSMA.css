@@ -26,6 +26,9 @@
     width: 50%;
     text-align: justify;
 }
+.atp{
+    padding: 6px;
+}
 .video {
     margin-top: 50px;
     text-align: center;
