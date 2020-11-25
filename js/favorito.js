@@ -28,10 +28,11 @@ function sacarDeMiLista(id){
 
 }
 
-/*let remove = document.querySelector(".remover")
-remove.addEventListener('onclick', function(e){
-    e.preventDefault()
-    clearInterval.localStorage(favoritas)
+let remove = document.querySelector(".remover")
+remove.addEventListener('click', function(){    
+
+    localStorage.clear()
+    location.href='favorito.html'
+
+
 })
-}
-*/

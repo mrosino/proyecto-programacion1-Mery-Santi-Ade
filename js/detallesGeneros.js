@@ -32,7 +32,7 @@ window.addEventListener('load', function(){
             let newId = respuesta.results[i].id            
             let url= "https://image.tmdb.org/t/p/w500" +respuesta.results[i].poster_path
             let nombre= respuesta.results[i].original_title
-            detalle.innerHTML+= `<div class="contGen"><a class="aGen" href="detallesPelis.html?id=${newId}"><div class="imagenesGen imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a></div> `
+            detalle.innerHTML+= `<div class="contGen"><a class="aGen" href="detallesPelis.html?id=${newId}"><div class="imagenesGen imagenesC"><div class="imagenesD" <img src="${url}" alt=""></div></div></a></div> `
         } 
 
     })

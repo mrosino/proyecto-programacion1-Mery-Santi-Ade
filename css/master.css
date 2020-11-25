@@ -4,12 +4,16 @@
     border-radius: 3px;
 }
 .imagenesD{
-  max-height: 270px;
-  min-height: 270px;
-  min-width: 192px;
-  max-width: 192px;
-  padding: 6px;
+    max-height: 270px;
+    min-height: 270px;
+    min-width: 192px;
+    max-width: 192px;
+    padding: 6px;
 }
+.pruebaClase img {
+    width: 100%;
+}
+
 body {
     background-image: url(../assets/img/fondo2.gif);
     background-repeat: no-repeat;
