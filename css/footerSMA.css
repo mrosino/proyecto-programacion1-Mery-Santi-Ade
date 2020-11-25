@@ -50,7 +50,15 @@
     align-self: center;
     
 }
-
+/*RESOLVER ASAP*/
+.logoTmdb :hover{
+    background-color: initial;
+    color: initial;
+    border-radius: 0px;
+    padding: 0px;
+    align-self: center;
+    
+}
 @media (max-width:420px) {
     .sectionFooter {
         flex-direction: column;
@@ -72,6 +80,7 @@
         width: 50% ;
         text-align: center;
     }
+
 
 
 
