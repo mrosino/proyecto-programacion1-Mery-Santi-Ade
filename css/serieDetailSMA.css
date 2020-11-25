@@ -29,6 +29,10 @@
 .video {
     margin-top: 50px;
     text-align: center;
+    max-height: 700px;
+  min-height: 700px;
+  min-width: 450px;
+  max-width: 450px;
 }
 .seriesReco {
     display: flex;
@@ -78,6 +82,7 @@
 @media (max-width:420px){
     .video{
         margin-top: 45%;
+        width: 200px;
     }
     .imgreco{
         display: flex;
@@ -85,5 +90,8 @@
     }
    .capi {
        margin-left: 4%;
+   }
+   .info{
+       margin-top: 300px;
    }
 }

@@ -91,4 +91,10 @@ select{
     bottom: 2px;
     font-weight: 900;
   }
- 
+  @media (max-width:420px){
+    .rotulosB{
+      margin-top: 50px;
+    }
+
+
+  }
