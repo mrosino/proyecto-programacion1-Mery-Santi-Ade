@@ -12,18 +12,10 @@ window.addEventListener('load',function(){
         console.log(informacion.results)
 
         let pelisPopulares = ""
-        
         for (i = 0 ; i < 14 ; i++){
-          if(informacion.results[i].poster_path == nul){
-            let id= informacion.results[i].id
-            pelisPopulares = `${pelisPopulares}<a class="sliderItem" href="detallesPelis.html?id=${id}"><img class="imagenesD" src="assets/img/error.png" alt=""></a> `
-          }
-          else{
-            //console.log(informacion.results[i])
-            let url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path
-            let id= informacion.results[i].id
-            pelisPopulares = `${pelisPopulares}<a class="sliderItem" href="detallesPelis.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
-          }
+          let id= informacion.results[i].id
+          let url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path
+          pelisPopulares = `${pelisPopulares}<a class="sliderItem" href="detallesPelis.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
         }
         document.querySelector(".popularesPelis").innerHTML= pelisPopulares
         $(".popularesPelis").slick({

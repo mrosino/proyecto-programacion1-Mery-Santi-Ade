@@ -68,3 +68,10 @@
   #detalleTextoFav:hover{
     color: #d4b7b09d;
   }
+
+  @media (max-width:420px){
+    .rotulosFav{
+      margin-top: 210px;
+    }
+
+  }
