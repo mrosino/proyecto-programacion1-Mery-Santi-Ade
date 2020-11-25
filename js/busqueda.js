@@ -31,7 +31,7 @@ window.addEventListener('load', function () {
 
       for (var i = 0; i < 14; i++) {
         var contenedorPelis = document.querySelector(".resultado1")
-        if(data.results[i].backdrop_path==null){
+        if(data.results[i].poster_path==null){
           let id= data.results[i].id
 
           contenedorPelis.innerHTML +=`<a href="detallesPelis.html?id=${data.results[i].id}">
@@ -60,7 +60,7 @@ fetch(`https://api.themoviedb.org/3/discover/tv?api_key=3b4640a2c0443153138c528f
   
   for (var i = 0; i < 14; i++) {
     var contenedorSeries = document.querySelector(".resultado2")
-    if(data.results[i].backdrop_path==null){
+    if(data.results[i].poster_path==null){
       let id= data.results[i].id
   
       contenedorSeries.innerHTML +=`<a href="detallesPelis.html?id=${data.results[i].id}">
