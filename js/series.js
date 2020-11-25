@@ -14,7 +14,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
             console.log(infoSeries.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries.results[i].poster_path
             let id= infoSeries.results[i].id
-            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD" <img src="${url}" alt=""></div></div></a> `
+            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
         }
         document.querySelector(".series").innerHTML= series
         console.log(series)
@@ -39,7 +39,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
             console.log(infoSeries1.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries1.results[i].poster_path
             let id= infoSeries1.results[i].id
-            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD" <img src="${url}" alt=""></div></div></a> `
+            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
         }
         document.querySelector(".series1").innerHTML= series
         console.log(series)
@@ -64,7 +64,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
             console.log(infoSeries2.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries2.results[i].poster_path
             let id= infoSeries2.results[i].id
-            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD" <img src="${url}" alt=""></div></div></a> `
+            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
         }
         document.querySelector(".series2").innerHTML= series
         console.log(series)
@@ -89,7 +89,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
             console.log(infoSeries3.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries3.results[i].poster_path
             let id= infoSeries3.results[i].id
-            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD" <img src="${url}" alt=""></div></div></a> `
+            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
         }
         document.querySelector(".series3").innerHTML= series
         console.log(series)
@@ -114,7 +114,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
             console.log(infoSeries4.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries4.results[i].poster_path
             let id= infoSeries4.results[i].id
-            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD" <img src="${url}" alt=""></div></div></a> `
+            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
         }
         document.querySelector(".series4").innerHTML= series
         console.log(series)
@@ -139,7 +139,7 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
             console.log(infoSeries5.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoSeries5.results[i].poster_path
             let id= infoSeries5.results[i].id
-            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD" <img src="${url}" alt=""></div></div></a> `
+            series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
         }
         document.querySelector(".series5").innerHTML= series
         console.log(series)
