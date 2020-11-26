@@ -23,12 +23,6 @@ img {
 .input{
   border-radius: 8px;
 }
-.rU:hover{
-  background-color: rgba(0, 0, 0, 0.438);
-  color: #D4B7B0;
-  border-radius: 3px;
-}
-
 .formularioIS input{
   display: flex;
   flex-direction: column;
@@ -78,15 +72,6 @@ img {
   #iS {
     font-size: 1.3rem;
     color: rgb(215, 194, 188);
-  }
-  .rU {
-    font-size: 1.1em;
-    font-weight: bolder;
-    background-color: transparent;
-    border: 2px solid black;
-    border-radius: 3px;
-    padding: 6px;
-    color: black;
   }
   .botonIS {
     background-color: transparent;
