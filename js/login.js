@@ -1,4 +1,20 @@
 window.addEventListener('load', function(){
+  let formulario = document.querySelector('form')
+  console.log(formulario.elements);
+  let arrayFormulario = Array.form(formulario)
+  console.log(arrayFormulario);
+
+})
+
+
+
+
+
+
+
+
+
+/*window.addEventListener('load', function(){
     let formulario = document.querySelector('.formularioIS')
         function validateRegisterForm(){
             let { email, nombreUsuario} = formulario.elements
@@ -7,7 +23,7 @@ window.addEventListener('load', function(){
             return true;
         }
         function validateEmail(email) {
-            let re = `!?¿*//$%·#-{}();:º`
+            let re = `!?¿/$%·#-{}();:º`
             let error = document.getElementById('errorEmail');
       
       
@@ -58,4 +74,4 @@ window.addEventListener('load', function(){
                 }}
         
 
-        })
+        })*/
