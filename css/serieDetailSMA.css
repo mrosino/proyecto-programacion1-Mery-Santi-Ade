@@ -34,9 +34,9 @@
     padding: 6px;
 }
 .video {
-    margin-top: 50px;
-    text-align: center;
-    max-height: 700px;
+  margin-top: 50px;
+  text-align: center;
+  max-height: 700px;
   min-height: 700px;
   min-width: 450px;
   max-width: 450px;
@@ -77,8 +77,6 @@
     font-size: 1.2rem;
     padding-left: 2px;
     padding-right: 2px;
-    
-
   }
   
   .favo :active {
@@ -86,10 +84,8 @@
     bottom: 2px;
     font-weight: 900;
   }
-@media (max-width:420px){
-    .video{
-        width: 150px;
-    }
+
+  @media (max-width:420px){
     .imgreco{
         display: flex;
         flex-wrap: wrap;
