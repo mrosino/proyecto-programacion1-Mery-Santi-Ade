@@ -1,6 +1,8 @@
 window.addEventListener('load',function(){
+  var cargando = document.querySelector('.cargando')
 
-
+  cargando.classList.add('loading')
+  cargando.style.display="block"
 
   //populares pelis
     fetch('https://api.themoviedb.org/3/movie/popular?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=1')
@@ -151,7 +153,7 @@ fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c
   
 })
 .then(function(informacion5){
-   // console.log(informacion5.results)
+  cargando.style.display="none"
     
     let seriesAñadidasRecientemente = ""
     for (i = 0 ; i < 14 ; i++){
