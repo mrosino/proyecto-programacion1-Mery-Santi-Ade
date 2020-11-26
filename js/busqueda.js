@@ -1,6 +1,8 @@
 window.addEventListener('load', function () {
   let withGenres = new URLSearchParams(location.search).get("tipoGen")
-  let orden = new URLSearchParams(location.search).get("orden")
+  let orden = new URLSearchParams(location.search).get("popularidad")
+  let orden1 = new URLSearchParams(location.search).get("puntuacion")
+  let orden2 = new URLSearchParams(location.search).get("fechas")
   let listGen = document.querySelector('.despegableGen')
   var cargando = document.querySelector('.cargando')
   let usuario = localStorage.getItem('nombre')
@@ -35,7 +37,7 @@ window.addEventListener('load', function () {
 
 
   //discover peliculas
-  fetch(`https://api.themoviedb.org/3/discover/movie?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&with_genres=${withGenres}&sort_by=${orden}`)
+  fetch(`https://api.themoviedb.org/3/discover/movie?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&with_genres=${withGenres}&sort_by=${orden}&sort_by=${orden1}&sort_by=${orden2}`)
     .then(function (response) {
       return response.json()
 

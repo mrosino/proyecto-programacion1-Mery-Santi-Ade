@@ -21,18 +21,13 @@
     text-align: center;
   
   }
-  .form-group{
-      background-color: transparent;
-  }
   .buscador1{
       background-color: #af6c6ee1;
-      width: fit-content;
-      text-align: center;
+      width: 40%;
       font-weight: 600;
+      display: flex;
       text-transform: uppercase;
       padding: 1%;
-      align-items: center;
-      justify-content: center;
   }
   .rotulosB{
       font-size: 2.4rem;
@@ -42,13 +37,6 @@
         background-color: #d4b7b0ee;
         width: fit-content;
         padding: 15px
-  }
-  .rotulosC{
-    display: none;
-
-  }
-  .rotulosD{
-    display: none;
   }
 
 
@@ -98,12 +86,34 @@
       bottom: 2px;
       font-weight: 900;
     }
+    
+    .orden{
+      min-width: 305px;
+
+    }
+    
 
 
     @media (max-width:420px){
       .rotulosB{
         margin-top: 50px;
       }
+      .orden{
+        max-width: 200px;
+        min-width: 200px;
+      }
+      .divFiltros{
+        width: inherit;
+      }
+      .buscador1{
+        width: 100%;
+        align-content: center;
+      }
+      .imagenesD{
+        width: 160px;
+      
+      }
+
 
 
     }
