@@ -35,7 +35,7 @@ window.addEventListener('load', function(){
 
       botFavo = document.querySelector(".favo")
       botFavo.addEventListener('click', function(e){
-        e.preventDefault()
+        
         let favoritos = localStorage.getItem('favoritos')
         if( favoritos == null ){
           favoritos = []
