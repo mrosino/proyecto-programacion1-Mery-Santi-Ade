@@ -1,64 +1,64 @@
-.nombres{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 2px;
-}
-.ade {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #D6B8B2;
-    text-align: center;
-    
-}
-.mery {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #D6B8B2;
-    text-align: center;
-    
-}
-.santi {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #D6B8B2;
-    text-align: center;
-    
-}
-.pp{
-    border-radius: 50%;
-    width: 200px;
-}
-@media (max-width:420px){
-.nombres {
-    flex-direction: column;
-    padding: 20%;
-    text-decoration: none;
-}
-.ade {
-    text-decoration: none;
-    color:#592136;
-    padding: 10%;
-    font-size: 1.2rem;
+    .nombres{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 2px;
+    }
+    .ade {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #D6B8B2;
+        text-align: center;
+        
+    }
+    .mery {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #D6B8B2;
+        text-align: center;
+        
+    }
+    .santi {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #D6B8B2;
+        text-align: center;
+        
+    }
+    .pp{
+        border-radius: 50%;
+        width: 200px;
+    }
+    @media (max-width:420px){
+    .nombres {
+        flex-direction: column;
+        padding: 20%;
+        text-decoration: none;
+    }
+    .ade {
+        text-decoration: none;
+        color:#592136;
+        padding: 10%;
+        font-size: 1.2rem;
 
-}
-.mery {
-    text-decoration: none;
-    color: #592136;
-    padding: 10%;
-    font-size: 1.2rem;
-}
-.santi {
-    text-decoration: none;
-    color: #592136;
-    padding: 10%;
-    font-size: 1.2rem;
-}
-.celu {
-    display: none;
-}
-.noCelu{
-    display: none;
-}
-}
+    }
+    .mery {
+        text-decoration: none;
+        color: #592136;
+        padding: 10%;
+        font-size: 1.2rem;
+    }
+    .santi {
+        text-decoration: none;
+        color: #592136;
+        padding: 10%;
+        font-size: 1.2rem;
+    }
+    .celu {
+        display: none;
+    }
+    .noCelu{
+        display: none;
+    }
+    }

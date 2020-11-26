@@ -16,6 +16,7 @@ window.addEventListener('load', function () {
   }
 
 
+
   fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=1')
     .then(function (respuesta) {
       return respuesta.json()
