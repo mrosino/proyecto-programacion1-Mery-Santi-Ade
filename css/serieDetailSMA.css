@@ -121,4 +121,8 @@
    .descripcion{
     text-align: justify;
    }
+   .favo{
+    height: fit-content;
+    width: fit-content;
+}
 }

@@ -36,6 +36,9 @@
 
 
 @media (max-width:420px){
+    .nombreGenero{
+        margin-top: 180px;
+    }
     .detalleInfo{
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -103,28 +103,19 @@ img{
  
 @media (max-width:420px){
     .info{
-        height: fit-content;
-        width: fit-content;
+       margin-top: 200px;
+       background-size: cover;
+       height: auto;
+       display: flex;
+       flex-direction: column;
     }
     .favo{
         height: fit-content;
         width: fit-content;
     }
-    .trailer{
-        margin-top: 45%;
-    }
     .peliculas{
         display: flex;
         flex-wrap: wrap;
-    }
-    .peliculas1{
-        display: none;
-    }
-    .imagenesPeli{
-        width: 50%;
-    }
-    .imagenesPeli1{
-        display: none;
     }
     .imagenesD{
         height: 100px; 
@@ -132,6 +123,21 @@ img{
     .slider {
         width: 87%;
         
+    }
+    .video{
+        display: none;
+    }
+    .detalles{
+        width: 70%;
+        padding: 20px;
+        text-align: center;
+    }
+    .descripcion{
+        text-align: justify;
+       }
+    .poster{
+        width: 40%;
+        margin-top: 20px;
     }
 }
 
