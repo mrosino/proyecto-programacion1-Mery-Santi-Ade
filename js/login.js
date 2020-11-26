@@ -16,7 +16,15 @@ window.addEventListener('load', function(){
     else{
       log.style.display = 'block'
     }
+    
   }
+  let logU = document.getElementById('logU')
+    if (usuario != undefined){
+      logU.style.display = 'none'
+    }
+    else{
+      logU.style.display = 'block'
+    }
   
   
 
