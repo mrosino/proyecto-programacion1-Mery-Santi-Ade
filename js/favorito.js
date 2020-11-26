@@ -30,7 +30,7 @@ function sacarDeMiLista(id) {
 //solo aparece vaciar favoritos si elementos que eliminar
 
 
-let remove = document.querySelector(".remover")
+let remove = document.querySelector(".remover2")
 let favoritosVacio = localStorage.getItem('favoritos')
 if (!favoritosVacio) {
     remove.classList.add('vacio')
