@@ -3,7 +3,17 @@ window.addEventListener('load', function () {
   let orden = new URLSearchParams(location.search).get("orden")
   let listGen = document.querySelector('.despegableGen')
   var cargando = document.querySelector('.cargando')
-
+  let usuario = localStorage.getItem('nombre')
+  let nombreUsuario = document.querySelector('.nombreUs')
+  console.log(usuario);
+  nombreUsuario.innerHTML = usuario
+  let log = document.getElementById('log')
+  if (usuario != undefined){
+    log.style.display = 'none'
+  }
+  else{
+    log.style.display = 'block'
+  }
 
   fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES')
     .then(function (respuesta) {

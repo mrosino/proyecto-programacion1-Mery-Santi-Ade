@@ -1,6 +1,16 @@
 window.addEventListener('load', function () {
   var cargando = document.querySelector('.cargando')
-
+  let usuario = localStorage.getItem('nombre')
+  let nombreUsuario = document.querySelector('.nombreUs')
+  console.log(usuario);
+  nombreUsuario.innerHTML = usuario
+  let log = document.getElementById('log')
+  if (usuario != undefined){
+    log.style.display = 'none'
+  }
+  else{
+    log.style.display = 'block'
+  }
 
   cargando.classList.add('loading')
   cargando.style.display = "block"

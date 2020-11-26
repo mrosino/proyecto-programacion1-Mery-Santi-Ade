@@ -1,6 +1,16 @@
 window.addEventListener('load', function () {
     let favoritos = JSON.parse(localStorage.getItem("favoritos"))
-
+    let usuario = localStorage.getItem('nombre')
+    let nombreUsuario = document.querySelector('.nombreUs')
+    console.log(usuario);
+    nombreUsuario.innerHTML = usuario
+    let log = document.getElementById('log')
+    if (usuario != undefined){
+      log.style.display = 'none'
+    }
+    else{
+      log.style.display = 'block'
+    }
     let peliculas = ""
     for (i = 0; i < favoritos.length; i++) {
         let id = favoritos[i].id

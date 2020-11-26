@@ -2,6 +2,18 @@ window.addEventListener('load', function () {
   var cargando = document.querySelector('.cargando')
   cargando.classList.add('loading')
   cargando.style.display = "block"
+  // Se guarda el nombre en local storage
+  let usuario = localStorage.getItem('nombre')
+  let nombreUsuario = document.querySelector('.nombreUs')
+  console.log(usuario);
+  nombreUsuario.innerHTML = usuario
+  let log = document.getElementById('log')
+  if (usuario != undefined){
+    log.style.display = 'none'
+  }
+  else{
+    log.style.display = 'block'
+  }
 
 
   fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=1')
