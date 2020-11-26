@@ -1,10 +1,7 @@
 *{
     border-radius: 3px;
 }
-.imagenesD{
-    height: 265px; 
-    width: auto; 
-}
+
 .info{
     margin-top: 10%;
     display: flex;
@@ -94,7 +91,13 @@
        margin-left: 4%;
    }
    .info{
-       margin-top: 300px;
+       margin-top: 200px;
+       background-size: cover;
+       height: auto;
+       display: flex;
+       flex-direction: column;
+       
+
    }
    .imagenesD{
     height: 100px; 
@@ -102,5 +105,20 @@
    .slider {
     width: 87%;
     
+   }
+   .poster{
+       width: 40%;
+       margin-top: 20px;
+   }
+   .video{
+       display: none;
+   }
+   .detalles{
+       width: 70%;
+       padding: 20px;
+       text-align: center;
+   }
+   .descripcion{
+    text-align: justify;
    }
 }
