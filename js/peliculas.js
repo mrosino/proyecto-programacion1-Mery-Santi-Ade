@@ -18,7 +18,7 @@ window.addEventListener('load',function(){
           else{
             let url= "https://image.tmdb.org/t/p/w500" +infoPelis.results[i].poster_path
             let id= infoPelis.results[i].id
-            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
+            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
         }
       }
         document.querySelector(".peliculas").innerHTML= peliculas
@@ -26,7 +26,8 @@ window.addEventListener('load',function(){
         $(".peliculas").slick({
             infinite: true,
             slidesToShow: 7,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
       
           })
           
@@ -45,14 +46,15 @@ window.addEventListener('load',function(){
             console.log(infoPelis1.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoPelis1.results[i].poster_path
             let id= infoPelis1.results[i].id
-            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
+            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
         }
         document.querySelector(".peliculas1").innerHTML= peliculas
         console.log(peliculas)
         $(".peliculas1").slick({
             infinite: true,
             slidesToShow: 7,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
       
           })
           
@@ -76,7 +78,7 @@ window.addEventListener('load',function(){
            // console.log(infoPelis2.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoPelis2.results[i].poster_path
             let id= infoPelis2.results[i].id
-            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
+            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
         }
       }
         document.querySelector(".peliculas2").innerHTML= peliculas
@@ -84,7 +86,8 @@ window.addEventListener('load',function(){
         $(".peliculas2").slick({
             infinite: true,
             slidesToShow: 7,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
       
           })
          
@@ -103,14 +106,15 @@ window.addEventListener('load',function(){
             console.log(infoPelis3.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoPelis3.results[i].poster_path
             let id= infoPelis3.results[i].id
-            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
+            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
         }
         document.querySelector(".peliculas3").innerHTML= peliculas
         console.log(peliculas)
         $(".peliculas3").slick({
             infinite: true,
             slidesToShow: 7,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
       
           })
           
@@ -129,14 +133,15 @@ window.addEventListener('load',function(){
             console.log(infoPelis4.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoPelis4.results[i].poster_path
             let id= infoPelis4.results[i].id
-            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
+            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
         }
         document.querySelector(".peliculas4").innerHTML= peliculas
         console.log(peliculas)
         $(".peliculas4").slick({
             infinite: true,
             slidesToShow: 7,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
       
           })
          
@@ -155,14 +160,15 @@ window.addEventListener('load',function(){
             console.log(infoPelis5.results[i])
             let url= "https://image.tmdb.org/t/p/w500" +infoPelis5.results[i].poster_path
             let id= infoPelis5.results[i].id
-            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><div class="imagenesD"> <img src="${url}" alt=""></div></div></a> `
+            peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}"> <div class="imagenes1 imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
         }
         document.querySelector(".peliculas5").innerHTML= peliculas
         console.log(peliculas)
         $(".peliculas5").slick({
             infinite: true,
             slidesToShow: 7,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
       
           })
          

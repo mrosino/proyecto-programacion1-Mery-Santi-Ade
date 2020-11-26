@@ -1,6 +1,10 @@
 *{
     border-radius: 3px;
 }
+.imagenesD{
+    height: 265px; 
+    width: auto; 
+}
 .info{
     margin-top: 10%;
     display: flex;
@@ -84,8 +88,7 @@
   }
 @media (max-width:420px){
     .video{
-        margin-top: 45%;
-        width: 200px;
+        width: 150px;
     }
     .imgreco{
         display: flex;
@@ -96,5 +99,12 @@
    }
    .info{
        margin-top: 300px;
+   }
+   .imagenesD{
+    height: 100px; 
+   }
+   .slider {
+    width: 87%;
+    
    }
 }

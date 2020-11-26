@@ -2,6 +2,10 @@
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
 }
+.imagenesD{
+    height: 265px; 
+    width: auto; 
+}
 .imagenes{
     width: 100%;
     padding: 5px;
@@ -75,5 +79,12 @@
     .gif{
         margin-top: 30%;
         width: 70%;
+    }
+    .imagenesD{
+        height: 100px; 
+    }
+    .slider {
+        width: 87%;
+        
     }
 }

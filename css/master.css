@@ -4,11 +4,8 @@
     border-radius: 3px;
 }
 .imagenesD{
-    max-height: 270px;
-    min-height: 270px;
-    min-width: 192px;
-    max-width: 192px;
-    padding: 6px;
+    height: 265px; 
+    width: auto; 
 }
 .pruebaClase img {
     width: 100%;
@@ -81,11 +78,11 @@ body {
         margin-top: 200px;
     }
     .imagenesD{
-        height: auto;
-        width: 50%;
+        height: 100px; 
     }
-
-  
-    
+    .slider {
+        width: 87%;
+        
+    }
    
  }

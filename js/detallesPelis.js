@@ -86,13 +86,14 @@ window.addEventListener('load', function(){
             
             let id= respuesta2.results[i].id
             let url= "https://image.tmdb.org/t/p/w500" +respuesta2.results[i].poster_path
-            recommendations = `${recommendations}<a class="sliderItem" class="infoReco" href="detallesPelis.html?id=${id}"><div class="imagenesD"> <img src="${url}" alt=""></div></a> `
+            recommendations = `${recommendations}<a class="sliderItem" class="infoReco" href="detallesPelis.html?id=${id}"><img class= "imagenesD" src="${url}" alt=""></a> `
         }
         document.querySelector(".seriesReco").innerHTML= recommendations
         $(".seriesReco").slick({
           infinite: true,
           slidesToShow: 7,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
 
         })
        
