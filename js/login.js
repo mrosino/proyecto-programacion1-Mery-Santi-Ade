@@ -5,9 +5,9 @@ window.addEventListener('load', function(){
   console.log(nombre);
   let nombreUsuario = document.querySelector('.nombreUs')
   nombreUsuario.innerHTML = nombre
-  let prueba = document.getElementById('prueba')
-  prueba.style.display = 'none'
-  console.log(prueba);
+  let log = document.getElementById('log')
+  log.style.display = 'none'
+  console.log(log);
 
   /*let nombreU = ""
   nombreU = `${nombreU} <span class="nombreUsuario"></span>`
