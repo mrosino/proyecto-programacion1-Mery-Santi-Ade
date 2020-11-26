@@ -103,7 +103,9 @@
     bottom: 2px;
     font-weight: 900;
   }
- 
+ .vacio{
+   display: none;
+ }
   @media (max-width:420px){
     .rotulosFav{
       margin-top: 210px;
