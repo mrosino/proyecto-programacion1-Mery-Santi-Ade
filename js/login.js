@@ -1,8 +1,9 @@
 window.addEventListener('load', function(){
   let formulario = document.querySelector('form')
-  console.log(formulario.elements);
-  let arrayFormulario = Array.form(formulario)
-  console.log(arrayFormulario);
+  let datos = location.search
+  let datosObjetos = new URLSearchParams(datos)
+  let nombre = datosObjetos.get('nombre')
+  console.log(nombre);
 
 })
 
