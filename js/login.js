@@ -1,9 +1,17 @@
 window.addEventListener('load', function(){
-  let formulario = document.querySelector('form')
   let datos = location.search
   let datosObjetos = new URLSearchParams(datos)
   let nombre = datosObjetos.get('nombre')
   console.log(nombre);
+  let nombreUsuario = document.querySelector('.nombreUs')
+  nombreUsuario.innerHTML = nombre
+  let prueba = document.getElementById('prueba')
+  prueba.style.display = 'none'
+  console.log(prueba);
+
+  /*let nombreU = ""
+  nombreU = `${nombreU} <span class="nombreUsuario"></span>`
+  document.querySelector('.nombreusuarioH').innerHTML = nombre*/
 
 })
 
