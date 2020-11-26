@@ -9,10 +9,10 @@ window.addEventListener('load', function(){
         }
 
     })
-    let name = document.getElementById('nombreU')
-    let contraseñaUsuario = document.getElementById('contraseñaU')
+    let email = document.getElementById('emailU')
+    let nombreUsuario = document.getElementById('nombreU')
     function validaciones(){
-        if(!validacionName(name)) return false
+        if(!validacionName(email)) return false
         return true
 
     }
@@ -35,16 +35,6 @@ window.addEventListener('load', function(){
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /*formulario.elements.nombreUsuario.focus()
     console.log(formulario);
     formulario.addEventListener('.botonIS', function(evento){
@@ -56,8 +46,8 @@ window.addEventListener('load', function(){
 
 
     })
-    let nombreUsuario = document.getElementById('nombreU')
-    let contraseñaU = document.getElementById('contraseñaU')
+    let nombreUsuario = document.getElementById('emailU')
+    let contraseñaU = document.getElementById('nombreU')
     function validaciones(){
         if(!validacionNombreUsuario()) return false
         return true

@@ -17,6 +17,12 @@
     flex-direction: row;
     width: 50%;
 }
+.divLogo{
+    text-align: center;
+}
+.divLogo:hover{
+    background-color: initial;
+}
 .sectionFooter article{
     display: flex;
     flex-direction: row;

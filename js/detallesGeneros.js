@@ -8,7 +8,11 @@ window.addEventListener('load', function(){
     let detalle =document.querySelector('.detalleInfo')
     let detalle1 =document.querySelector('.detalleInfo1')
     let nombreGen = document.querySelector('.nombreGenero')
+    var cargando = document.querySelector('.cargando')
 
+      cargando.classList.add('loading')
+      cargando.style.display="block"
+    
 
     nombreGen.innerHTML=`<div class="contiName"><h2 class="contiName2">A continuación podrás ver peliculas y series de ${nombre1}</h2></div>`
 
@@ -34,8 +38,8 @@ window.addEventListener('load', function(){
         return info1.json()
       })
     .then(function(respuesta1){
-        console.log(respuesta1);
-       
+        //console.log(respuesta1);
+        cargando.style.display="none"
         for (i = 0 ; i < 20 ; i++){
             let newId1 = respuesta1.results[i].id            
             let url1= "https://image.tmdb.org/t/p/w500" +respuesta1.results[i].poster_path
