@@ -1,4 +1,8 @@
 window.addEventListener('load',function(){
+  var cargando = document.querySelector('.cargando')
+  cargando.classList.add('loading')
+  cargando.style.display="block"
+
 
     fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=1')
     .then(function(respuesta){
@@ -154,6 +158,8 @@ window.addEventListener('load',function(){
     })
     .then(function(infoPelis5){
         console.log(infoPelis5.results)
+        cargando.style.display="none"
+
 
         let peliculas = ""
         for (i = 0 ; i < 14 ; i++){

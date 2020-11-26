@@ -1,4 +1,10 @@
 window.addEventListener('load',function(){
+  var cargando = document.querySelector('.cargando')
+
+
+  cargando.classList.add('loading')
+  cargando.style.display="block"
+
 
 //Series de la api en On the air
 fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=1')
@@ -137,8 +143,8 @@ fetch('https://api.themoviedb.org/3/tv/on_the_air?api_key=ad5d026c61e51047e5dd51
       
     })
     .then(function(infoSeries5){
-        console.log(infoSeries5.results)
-
+       // console.log(infoSeries5.results)
+       cargando.style.display="none"
         let series = ""
         for (i = 0 ; i < 14 ; i++){
             console.log(infoSeries5.results[i])
