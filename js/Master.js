@@ -1,177 +1,207 @@
-window.addEventListener('load',function(){
+window.addEventListener('load', function () {
   var cargando = document.querySelector('.cargando')
 
   cargando.classList.add('loading')
-  cargando.style.display="block"
+  cargando.style.display = "block"
 
   //populares pelis
-    fetch('https://api.themoviedb.org/3/movie/popular?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=1')
-    .then(function(respuesta){
+  fetch('https://api.themoviedb.org/3/movie/popular?api_key=ad5d026c61e51047e5dd51e17f8086dd&language=es-ES&page=1')
+    .then(function (respuesta) {
       return respuesta.json()
-      
-    })
-    .then(function(informacion){
-        console.log(informacion.results)
 
-        let pelisPopulares = "" //lo inicializamos en un string vacio ppara que no pueda mostrar undefined si no trae nada
-        for (i = 0 ; i < 14 ; i++){
-          let id= informacion.results[i].id
-          let url= "https://image.tmdb.org/t/p/w500" +informacion.results[i].poster_path
-          pelisPopulares = `${pelisPopulares}<a class="sliderItem" href="detallesPelis.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
-        }
-        document.querySelector(".popularesPelis").innerHTML= pelisPopulares
-        $(".popularesPelis").slick({
-          infinite: true,
-          slidesToShow: 7,
-          slidesToScroll: 1, 
-          responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
-
-        })
-        //console.log(pelisPopulares)
-        
     })
-   // populares series
-    fetch('https://api.themoviedb.org/3/tv/popular?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=1')
-    .then(function(respuesta1){
+    .then(function (informacion) {
+      console.log(informacion.results)
+
+      let pelisPopulares = "" //lo inicializamos en un string vacio ppara que no pueda mostrar undefined si no trae nada
+      for (i = 0; i < 14; i++) {
+        let id = informacion.results[i].id
+        let url = "https://image.tmdb.org/t/p/w500" + informacion.results[i].poster_path
+        pelisPopulares = `${pelisPopulares}<a class="sliderItem" href="detallesPelis.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
+      }
+      document.querySelector(".popularesPelis").innerHTML = pelisPopulares
+      $(".popularesPelis").slick({
+        infinite: true,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+          }
+        }]
+
+      })
+      //console.log(pelisPopulares)
+
+    })
+  // populares series
+  fetch('https://api.themoviedb.org/3/tv/popular?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=1')
+    .then(function (respuesta1) {
       return respuesta1.json()
-      
-    })
-    .then(function(informacion1){
-       // console.log(informacion1.results)
-
-        let seriesPopulares = ""
-        for (i = 0 ; i < 14 ; i++){
-            //console.log(informacion1.results[i])
-            let id= informacion1.results[i].id
-            let url= "https://image.tmdb.org/t/p/w500" +informacion1.results[i].poster_path
-            seriesPopulares = `${seriesPopulares}<a class="sliderItem" href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
-        }
-        document.querySelector(".popularesSeries").innerHTML= seriesPopulares
-        $(".popularesSeries").slick({
-          infinite: true,
-          slidesToShow: 7,
-          slidesToScroll: 1,
-          responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
-
-        })
-       // console.log(seriesPopulares)
-
-
 
     })
+    .then(function (informacion1) {
+      // console.log(informacion1.results)
 
-//Mejores puntuadas pelis
-fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=2')
-.then(function(respuesta2){
-  return respuesta2.json()
-  
-})
-.then(function(informacion2){
-    //console.log(informacion2.results)
- 
-    let pelisMejoresPuntuadas = ""
-    for (i = 0 ; i < 14 ; i++){
-     //   console.log(informacion2.results[i])
-        let id= informacion2.results[i].id
-        let url= "https://image.tmdb.org/t/p/w500" +informacion2.results[i].poster_path
+      let seriesPopulares = ""
+      for (i = 0; i < 14; i++) {
+        //console.log(informacion1.results[i])
+        let id = informacion1.results[i].id
+        let url = "https://image.tmdb.org/t/p/w500" + informacion1.results[i].poster_path
+        seriesPopulares = `${seriesPopulares}<a class="sliderItem" href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
+      }
+      document.querySelector(".popularesSeries").innerHTML = seriesPopulares
+      $(".popularesSeries").slick({
+        infinite: true,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+          }
+        }]
+
+      })
+      // console.log(seriesPopulares)
+
+
+
+    })
+
+  //Mejores puntuadas pelis
+  fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=2')
+    .then(function (respuesta2) {
+      return respuesta2.json()
+
+    })
+    .then(function (informacion2) {
+      //console.log(informacion2.results)
+
+      let pelisMejoresPuntuadas = ""
+      for (i = 0; i < 14; i++) {
+        //   console.log(informacion2.results[i])
+        let id = informacion2.results[i].id
+        let url = "https://image.tmdb.org/t/p/w500" + informacion2.results[i].poster_path
         pelisMejoresPuntuadas = `${pelisMejoresPuntuadas}<a class="sliderItem" href="detallesPelis.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
-                                                        
-    } 
 
-    document.querySelector(".mejoresPuntuadasPelis").innerHTML= pelisMejoresPuntuadas
-    $(".mejoresPuntuadasPelis").slick({
-      infinite: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
+      }
+
+      document.querySelector(".mejoresPuntuadasPelis").innerHTML = pelisMejoresPuntuadas
+      $(".mejoresPuntuadasPelis").slick({
+        infinite: true,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+          }
+        }]
+
+      })
+      //console.log(pelisMejoresPuntuadas)
+    })
+
+  //mejores puntuadas Series
+
+
+  fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=2')
+    .then(function (respuesta3) {
+      return respuesta3.json()
 
     })
-    //console.log(pelisMejoresPuntuadas)
-})
+    .then(function (informacion3) {
+      // console.log(informacion3.results)
 
-//mejores puntuadas Series
-
-
-fetch('https://api.themoviedb.org/3/tv/top_rated?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=2')
-.then(function(respuesta3){
-  return respuesta3.json()
-  
-})
-.then(function(informacion3){
-   // console.log(informacion3.results)
- 
-    let seriesMejoresPuntuadas = ""
-    for (i = 0 ; i < 14 ; i++){
+      let seriesMejoresPuntuadas = ""
+      for (i = 0; i < 14; i++) {
         //console.log(informacion3.results[i])
-        let id= informacion3.results[i].id
-        let url= "https://image.tmdb.org/t/p/w500" +informacion3.results[i].poster_path
+        let id = informacion3.results[i].id
+        let url = "https://image.tmdb.org/t/p/w500" + informacion3.results[i].poster_path
         seriesMejoresPuntuadas = `${seriesMejoresPuntuadas}<a class="sliderItem" href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
-      
-    }
-    document.querySelector(".mejoresPuntuadasSeries").innerHTML= seriesMejoresPuntuadas
-    $(".mejoresPuntuadasSeries").slick({
-      infinite: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
+
+      }
+      document.querySelector(".mejoresPuntuadasSeries").innerHTML = seriesMejoresPuntuadas
+      $(".mejoresPuntuadasSeries").slick({
+        infinite: true,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+          }
+        }]
+
+      })
+      //console.log(seriesMejoresPuntuadas)
+    })
+
+  //añadidas recientemente Pelis
+  fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=3')
+    .then(function (respuesta4) {
+      return respuesta4.json()
 
     })
-    //console.log(seriesMejoresPuntuadas)
-})
+    .then(function (informacion4) {
+      //console.log(informacion4.results)
 
-//añadidas recientemente Pelis
-fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=3')
-.then(function(respuesta4){
-  return respuesta4.json()
-  
-})
-.then(function(informacion4){
-    //console.log(informacion4.results)
-    
-    let pelisAñadidasRecientemente = ""
-    for (i = 0 ; i < 14 ; i++){
-      //  console.log(informacion4.results[i])
-        let id= informacion4.results[i].id
-        let url= "https://image.tmdb.org/t/p/w500" +informacion4.results[i].poster_path
+      let pelisAñadidasRecientemente = ""
+      for (i = 0; i < 14; i++) {
+        //  console.log(informacion4.results[i])
+        let id = informacion4.results[i].id
+        let url = "https://image.tmdb.org/t/p/w500" + informacion4.results[i].poster_path
         pelisAñadidasRecientemente = `${pelisAñadidasRecientemente}<a class="sliderItem" href="detallesPelis.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
-    }
-    document.querySelector(".añadidasRecientementePelis").innerHTML= pelisAñadidasRecientemente
-    $(".añadidasRecientementePelis").slick({
-      infinite: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
+      }
+      document.querySelector(".añadidasRecientementePelis").innerHTML = pelisAñadidasRecientemente
+      $(".añadidasRecientementePelis").slick({
+        infinite: true,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+          }
+        }]
+
+      })
+      //console.log(pelisAñadidasRecientemente)
+    })
+
+  //añadidas recientemente Series
+  fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=1')
+    .then(function (respuesta5) {
+      return respuesta5.json()
 
     })
-    //console.log(pelisAñadidasRecientemente)
-})
+    .then(function (informacion5) {
+      cargando.style.display = "none"
 
-//añadidas recientemente Series
-fetch('https://api.themoviedb.org/3/tv/airing_today?api_key=3b4640a2c0443153138c528fe0e85a7a&language=es-ES&page=1')
-.then(function(respuesta5){
-  return respuesta5.json()
-  
-})
-.then(function(informacion5){
-  cargando.style.display="none"
-    
-    let seriesAñadidasRecientemente = ""
-    for (i = 0 ; i < 14 ; i++){
+      let seriesAñadidasRecientemente = ""
+      for (i = 0; i < 14; i++) {
         //console.log(informacion5.results[i])
-        let id= informacion5.results[i].id
-        let url= "https://image.tmdb.org/t/p/w500" +informacion5.results[i].poster_path
+        let id = informacion5.results[i].id
+        let url = "https://image.tmdb.org/t/p/w500" + informacion5.results[i].poster_path
         seriesAñadidasRecientemente = `${seriesAñadidasRecientemente}<a class="sliderItem" href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
-      
-    }
-    document.querySelector(".añadidasRecientementeSeries").innerHTML= seriesAñadidasRecientemente
-    $(".añadidasRecientementeSeries").slick({
-      infinite: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      responsive : [{breakpoint: 1400,settings:{slidesToShow: 4,}}]
 
+      }
+      document.querySelector(".añadidasRecientementeSeries").innerHTML = seriesAñadidasRecientemente
+      $(".añadidasRecientementeSeries").slick({
+        infinite: true,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+          }
+        }]
+
+      })
+      // console.log(seriesAñadidasRecientemente)
     })
-   // console.log(seriesAñadidasRecientemente)
-})
 
 })

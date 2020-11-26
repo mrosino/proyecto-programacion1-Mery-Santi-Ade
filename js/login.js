@@ -1,27 +1,29 @@
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     let formulario = document.querySelector('form')
     console.log(formulario);
-    formulario.addEventListener('submit', function(evento){
-        if(!validaciones()){
+    formulario.addEventListener('submit', function (evento) {
+        if (!validaciones()) {
             evento.preventDefault()
-        }else{
+        } else {
             formulario.submit()
         }
 
     })
     let email = document.getElementById('emailU')
     let nombreUsuario = document.getElementById('nombreU')
-    function validaciones(){
-        if(!validacionName(email)) return false
+
+    function validaciones() {
+        if (!validacionName(email)) return false
         return true
 
     }
-    function validacionName(name){
+
+    function validacionName(name) {
         let errorName = document.getElementById('error')
-        if (name.value == ""){
+        if (name.value == "") {
             errorName.innerHTML = 'Campo vacio'
             return false
-        }else{
+        } else {
             return true
         }
     }
@@ -31,11 +33,11 @@ window.addEventListener('load', function(){
 
 
 })
-    
-    
-    
-    
-    /*formulario.elements.nombreUsuario.focus()
+
+
+
+
+/*formulario.elements.nombreUsuario.focus()
     console.log(formulario);
     formulario.addEventListener('.botonIS', function(evento){
         if(!validaciones()){

@@ -29,8 +29,7 @@ window.addEventListener('load', function () {
       if (atp == false) {
         document.querySelector(".atp").innerHTML = `La pelicula posee contenido apto para todo público`
 
-      }
-      else {
+      } else {
         document.querySelector(".atp").innerHTML = `La pelicula posee contenido no-apto para todo público`
       }
 
@@ -93,11 +92,15 @@ window.addEventListener('load', function () {
         infinite: true,
         slidesToShow: 7,
         slidesToScroll: 1,
-        responsive: [{ breakpoint: 1400, settings: { slidesToShow: 4, } }]
+        responsive: [{
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+          }
+        }]
 
       })
 
     })
 
 })
-

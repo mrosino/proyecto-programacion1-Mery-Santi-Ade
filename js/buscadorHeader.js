@@ -1,5 +1,3 @@
-
-
 //buscador normal del header
 window.addEventListener('load', function () {
   let queryString = location.search
@@ -22,24 +20,17 @@ window.addEventListener('load', function () {
 
         const elementosArray = respuestaArray[i];
         // console.log(elementosArray);
-        if(elementosArray.poster_path==null){
-  
-          resultados.innerHTML +=`<a href="detallesPelis.html?id=${elementosArray.id}">
+        if (elementosArray.poster_path == null) {
+
+          resultados.innerHTML += `<a href="detallesPelis.html?id=${elementosArray.id}">
             <img class="imagenesB" src='assets/img/3.png'>
           </a>`
-          
-        }
-        else{
+
+        } else {
           resultados.innerHTML += `<a href="detallesPelis.html?id=${elementosArray.id}"> <div class="imagenesC"><img class="imagenesB" src="https://image.tmdb.org/t/p/w500${elementosArray.poster_path}" alt=""></div></a>`
+        }
       }
-      }
-    }
-  )}
- )
-    
+    })
+})
 
 
-/*
-
-
-    } */
