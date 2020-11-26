@@ -1,76 +1,61 @@
-window.addEventListener('load', function () {
-    let formulario = document.querySelector('form')
-    console.log(formulario);
-    formulario.addEventListener('submit', function (evento) {
-        if (!validaciones()) {
-            evento.preventDefault()
-        } else {
-            formulario.submit()
+window.addEventListener('load', function(){
+    let formulario = document.querySelector('.formularioIS')
+        function validateRegisterForm(){
+            let { email, nombreUsuario} = formulario.elements
+            if (!validateEmail(email)) return false;
+            if (!validatenombreUsuario(nombreUsuario)) return false;
+            return true;
         }
-
-    })
-    let email = document.getElementById('emailU')
-    let nombreUsuario = document.getElementById('nombreU')
-
-    function validaciones() {
-        if (!validacionName(email)) return false
-        return true
-
-    }
-
-    function validacionName(name) {
-        let errorName = document.getElementById('error')
-        if (name.value == "") {
-            errorName.innerHTML = 'Campo vacio'
+        function validateEmail(email) {
+            let re = `!?¿*//$%·#-{}();:º`
+            let error = document.getElementById('errorEmail');
+      
+      
+            if (!re.test(email.value)){ 
+              
+              email.classList.add('is-invalid'); 
+              console.log(errorEmail);
+              error.innerHTML= "Debe colocar un email válido";
+              error.classList.add('alert-danger');
+              //errorEmail.classList.add('alert-danger');
+             // email.addEventListener('change',cambioNombre);
             return false
-        } else {
-            return true
-        }
-    }
+          }else{
+            error.innerHTML= "";
+            error.classList.remove('alert-danger');
+            email.classList.remove('is-invalid'); 
+            email.classList.add('is-valid');
+            return true;
+          }}
 
 
 
 
 
-})
+          function validatenombreUsuario(nombreUsuario) {
+            let errornombreUsuario = document.getElementById('errorNombreUsuario');
+            if (nombreUsuario.value.length < 3){
+              errornombreUsuario.innerHTML = "Nombre de usuario no puede tener menos de 3 digitos";
+              errornombreUsuario.classList.add('alert-danger');
+              nombreUsuario.classList.add('is-invalid');
+              return false;
+            } else{
+              errornombreUsuario.innerHTML = "";
+              errornombreUsuario.classList.remove('alert-danger');
+              nombreUsuario.classList.remove('is-invalid');
+              nombreUsuario.classList.add('is-valid');
+              return true;
+            }}
+        
+            formulario.onsubmit = function(evento) {
+                if (!validateRegisterForm()) {
+                  evento.preventDefault()
+                }else{
+                  fomulario.submit()
+                  console.log('hola');
+                  location.href = 'index.html'
+                  alert('Bienvenido!')
+                }}
+        
 
-
-
-
-/*formulario.elements.nombreUsuario.focus()
-    console.log(formulario);
-    formulario.addEventListener('.botonIS', function(evento){
-        if(!validaciones()){
-            evento.preventDefault();
-        }else{
-            formulario.submit()
-        }
-
-
-    })
-    let nombreUsuario = document.getElementById('emailU')
-    let contraseñaU = document.getElementById('nombreU')
-    function validaciones(){
-        if(!validacionNombreUsuario()) return false
-        return true
-
-    }
-    function validacionNombreUsuario(nombreUsuario){
-        let errorNombreUsuario = document.getElementById('errorN');
-        console.log(errorNombreUsuario);
-        if(nombreUsuario.value == ""){
-            errorNombreUsuario.innerHTML = 'Campo vacio';
-            errorNombreUsuario.classList.add('alert-danger')
-            NombreUsuario.classList.add('is-invalid')
-            return false;
-        }else{
-            errorNombreUsuario.innerHTML = "";
-            errorNombreUsuario.classList.remove('alert-danger')
-            nombreUsuario.classList.remove('is-invalid')
-            nombreUsuario.classList.add('is-valid')
-            return false;
-        }
-    }
-
-
-})*/
+        })
