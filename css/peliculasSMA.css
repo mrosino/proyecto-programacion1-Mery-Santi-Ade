@@ -5,6 +5,7 @@
 .imagenesD{
     height: 265px; 
     width: auto; 
+    padding: 7px;
 }
 .peliculas{
     display: flex;

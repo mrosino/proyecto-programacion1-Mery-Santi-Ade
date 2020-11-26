@@ -2,18 +2,10 @@
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
 }
-
-.imagenesA{
-  max-height: 270px;
-  min-height: 270px;
-  width: auto;
-  text-align: center;
-  justify-content: center;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  min-width: 182.4px;
-  padding: 1%;
+.imagenesD{
+  height: 265px; 
+  width: 182px; 
+  padding: 7px;
 }
 .imagenesA:hover {
   border-radius: 10px;
@@ -21,8 +13,14 @@
   padding: 5px;
 
 }
-
-
+.resultado1{
+  text-align: center;
+  
+}
+.resultado2{
+  text-align: center;
+ 
+}
 .form-group{
     background-color: transparent;
 }

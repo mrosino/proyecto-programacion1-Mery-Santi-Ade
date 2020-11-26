@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
         console.log(infoSeries.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries.results[i].poster_path
         let id = infoSeries.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
+        series = `${series}<a href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
       }
       document.querySelector(".series").innerHTML = series
       console.log(series)
@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
         console.log(infoSeries1.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries1.results[i].poster_path
         let id = infoSeries1.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
+        series = `${series}<a href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
       }
       document.querySelector(".series1").innerHTML = series
       console.log(series)
@@ -82,7 +82,7 @@ window.addEventListener('load', function () {
         console.log(infoSeries2.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries2.results[i].poster_path
         let id = infoSeries2.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
+        series = `${series}<a href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
       }
       document.querySelector(".series2").innerHTML = series
       console.log(series)
@@ -113,7 +113,7 @@ window.addEventListener('load', function () {
         console.log(infoSeries3.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries3.results[i].poster_path
         let id = infoSeries3.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><img  class="imagenesD" src="${url}" alt=""></div></a> `
+        series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
       }
       document.querySelector(".series3").innerHTML = series
       console.log(series)
@@ -144,7 +144,7 @@ window.addEventListener('load', function () {
         console.log(infoSeries4.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries4.results[i].poster_path
         let id = infoSeries4.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><img class="imagenesD" src="${url}" alt=""></div></a> `
+        series = `${series}<a href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
       }
       document.querySelector(".series4").innerHTML = series
       console.log(series)
@@ -175,7 +175,7 @@ window.addEventListener('load', function () {
         console.log(infoSeries5.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries5.results[i].poster_path
         let id = infoSeries5.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"> <div class="imagenes imagenesC"><img  class="imagenesD" src="${url}" alt=""></div></a> `
+        series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
       }
       document.querySelector(".series5").innerHTML = series
       console.log(series)

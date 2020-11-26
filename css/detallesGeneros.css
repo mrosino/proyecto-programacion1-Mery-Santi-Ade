@@ -5,6 +5,11 @@
    font-family: 'Lato', sans-serif;
    letter-spacing: 2px;
    }
+.imagenesD{
+    height: 265px; 
+    width: auto; 
+    padding: 7px;
+}
 .contiName{
     text-align: center;
 }
@@ -15,16 +20,13 @@
     width: fit-content;
     padding: 15px
 }
-.imagenesGen{
-    width: 90%;
-    padding: 7px;
-}
 .detallesGen{
     text-align: center;
 }
 .detalleInfo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
 }
 .detalleInfo1{
     display: grid;
@@ -42,6 +44,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-}
+     }
+    .imagenesD{
+        height: 195px; 
+        width: auto; 
+        padding: 3px;
+    }
+
 }
 
