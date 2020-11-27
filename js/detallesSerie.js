@@ -27,10 +27,10 @@ window.addEventListener('load', function () {
 
 
       if (atp == false) {
-        document.querySelector(".atp").innerHTML = `La pelicula posee contenido apto para todo público`
+        document.querySelector(".atp").innerHTML = `La serie posee contenido apto para todo público`
 
       } else {
-        document.querySelector(".atp").innerHTML = `La pelicula posee contenido no-apto para todo público`
+        document.querySelector(".atp").innerHTML = `La serie posee contenido no apto para todo público`
       }
 
       botFavo = document.querySelector(".favo")
@@ -118,13 +118,14 @@ window.addEventListener('load', function () {
         
       reviews.results.forEach(review => {
         if (reviews.results == 0) {
-            comenta.innerHTML += `<div class="noReview"><h2>Sin reseña hasta el momento</h2></div>`
+            comenta.innerHTML = `<div class="noReview"><h2>Sin reseña hasta el momento</h2></div>`
 
             
         }else{
             
-             comenta.innerHTML += `
+             comenta.innerHTML = `
                 <div class="parteCritica">
+                <h2 class="rotulosRR">Reviews</h2>
                     <article class="datosCritica"><h3 class="dato1">Author:</h3><p class="dato2Critica">${review.author}</p></article>
                     <article class="datosCritica"><h3 class="dato1">Puntuation:</h3><p class="dato2Critica">${review.author_details.rating}</p></article>
                     <p class="infoCritica">${review.content}</p>

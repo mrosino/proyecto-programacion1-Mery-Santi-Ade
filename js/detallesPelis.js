@@ -116,14 +116,15 @@ window.addEventListener('load', function () {
       reviews1.results.forEach(review1 => {
       
 
-      if (reviews1.length < 1) {
+      if (reviews1.length == 0) {
         
           comenta.innerHTML = `<div class="noReview"><h2>Sin reseña hasta el momento</h2></div>`
           
       }
       else{
-           comenta.innerHTML += `
+           comenta.innerHTML = `
               <div class="parteCritica">
+              <h2 class="rotulosRR">Reviews</h2>
                   <article class="datosCritica"><h3 class="dato1">Author:</h3><p class="dato2Critica">${review1.author}</p></article>
                   <article class="datosCritica"><h3 class="dato1">Puntuation:</h3><p class="dato2Critica">${review1.author_details.rating}</p></article>
                   <p class="infoCritica">${review1.content}</p>
