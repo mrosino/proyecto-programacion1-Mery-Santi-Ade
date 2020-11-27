@@ -1,7 +1,8 @@
 window.addEventListener('load', function () {
   let queryString = window.location.search
   let datoURL = new URLSearchParams(queryString);
-  let id = datoURL.get('id');
+  var id = datoURL.get('id');
+  
 
   // Detalle pelicula
   fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES`)
@@ -82,10 +83,10 @@ window.addEventListener('load', function () {
     .then(function (respuesta2) {
       let recommendations = ""
       for (i = 0; i < 14; i++) {
-
-        let id = respuesta2.results[i].id
+        
+        let idNUevo = respuesta2.results[i].id
         let url = "https://image.tmdb.org/t/p/w500" + respuesta2.results[i].poster_path
-        recommendations = `${recommendations}<a class="sliderItem" class="infoReco" href="detallesPelis.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
+        recommendations = `${recommendations}<a class="sliderItem" class="infoReco" href="detallesPelis.html?id=${idNUevo}"><img class="imagenesD" src="${url}" alt=""></a> `
       }
       document.querySelector(".seriesReco").innerHTML = recommendations
       $(".seriesReco").slick({
@@ -105,28 +106,34 @@ window.addEventListener('load', function () {
     })
     // fetch para reviews
   let comenta = document.querySelector('.comenta');
-  fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES&page=1`)
+  fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=3b4640a2c0443153138c528fe0e85a7a`)
+
   .then(function(respuesta){
       return respuesta.json()
   })
-  .then(function(reviews){
-      console.log(reviews);
+  .then(function(reviews1){
+    console.log(reviews1);
+      reviews1.results.forEach(review1 => {
+      
 
-      if (reviews.results == 0) {
-          comenta.innerHTML += `<div class="noReview"><h2>Sin reseña hasta el momento</h2></div>`
-
+      if (reviews1.length < 1) {
+        
+          comenta.innerHTML = `<div class="noReview"><h2>Sin reseña hasta el momento</h2></div>`
           
-      }else{
-          reviews.results.forEach(review => {
+      }
+      else{
            comenta.innerHTML += `
               <div class="parteCritica">
-                  <article class="datosCritica"><h3 class="dato1">Author:</h3><p class="dato2Critica">${review.author}</p></article>
-                  <article class="datosCritica"><h3 class="dato1">Puntuation:</h3><p class="dato2Critica">${review.author_details.rating}</p></article>
-                  <p class="infoCritica">${review.content}</p>
+                  <article class="datosCritica"><h3 class="dato1">Author:</h3><p class="dato2Critica">${review1.author}</p></article>
+                  <article class="datosCritica"><h3 class="dato1">Puntuation:</h3><p class="dato2Critica">${review1.author_details.rating}</p></article>
+                  <p class="infoCritica">${review1.content}</p>
               </div>
               `
-          })
+          
       }
-      
+    }) 
   })  
 })
+
+
+ 

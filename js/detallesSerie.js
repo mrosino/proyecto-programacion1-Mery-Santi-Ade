@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
   let queryString = window.location.search
   let datoURL = new URLSearchParams(queryString);
-  let id = datoURL.get('id');
+  var id = datoURL.get('id');
 // fetch para traer detalles de la serie 
   fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES`)
     .then(function (info) {
@@ -109,19 +109,20 @@ window.addEventListener('load', function () {
 
 // fetch para reviews
   let comenta = document.querySelector('.comenta');
-    fetch(`https://api.themoviedb.org/3/tv/${id}/reviews?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES&page=1`)
+ fetch(` https://api.themoviedb.org/3/tv/${id}/reviews?api_key=3b4640a2c0443153138c528fe0e85a7a`)
+ 
     .then(function(respuesta){
         return respuesta.json()
     })
     .then(function(reviews){
-        console.log(reviews);
-
+        
+      reviews.results.forEach(review => {
         if (reviews.results == 0) {
             comenta.innerHTML += `<div class="noReview"><h2>Sin reseña hasta el momento</h2></div>`
 
             
         }else{
-            reviews.results.forEach(review => {
+            
              comenta.innerHTML += `
                 <div class="parteCritica">
                     <article class="datosCritica"><h3 class="dato1">Author:</h3><p class="dato2Critica">${review.author}</p></article>
@@ -129,9 +130,8 @@ window.addEventListener('load', function () {
                     <p class="infoCritica">${review.content}</p>
                 </div>
                 `
-            })
+            
         }
-        
-    })  
-
-})
+      })
+    })
+  })
