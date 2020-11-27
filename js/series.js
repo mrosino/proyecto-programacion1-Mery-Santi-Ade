@@ -30,7 +30,15 @@ window.addEventListener('load', function () {
         console.log(infoSeries.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries.results[i].poster_path
         let id = infoSeries.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
+        if (infoSeries.results[i].poster_path == null) {
+
+          series = `<a href="detallesSeries.html?id=${id}">
+            <img class="imagenesD" src='assets/img/3.png'>
+          </a>`
+
+        } else {
+          series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
+        }
       }
       document.querySelector(".series").innerHTML = series
       console.log(series)
@@ -61,10 +69,18 @@ window.addEventListener('load', function () {
         console.log(infoSeries1.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries1.results[i].poster_path
         let id = infoSeries1.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
+        if (infoSeries1.results[i].poster_path == null) {
+
+          series = `<a href="detallesSeries.html?id=${id}">
+            <img class="imagenesD" src='assets/img/3.png'>
+          </a>`
+
+        } else {
+          series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
+        }
       }
       document.querySelector(".series1").innerHTML = series
-      console.log(series)
+     // console.log(series)
       $(".series1").slick({
         infinite: true,
         slidesToShow: 7,
@@ -85,14 +101,22 @@ window.addEventListener('load', function () {
 
     })
     .then(function (infoSeries2) {
-      console.log(infoSeries2.results)
+     // console.log(infoSeries2.results)
 
       let series = ""
       for (i = 0; i < 14; i++) {
-        console.log(infoSeries2.results[i])
+        //console.log(infoSeries2.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries2.results[i].poster_path
         let id = infoSeries2.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
+        if (infoSeries2.results[i].poster_path == null) {
+
+          series = `<a href="detallesSeries.html?id=${id}">
+            <img class="imagenesD" src='assets/img/3.png'>
+          </a>`
+
+        } else {
+          series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
+        }
       }
       document.querySelector(".series2").innerHTML = series
       console.log(series)
@@ -116,14 +140,22 @@ window.addEventListener('load', function () {
 
     })
     .then(function (infoSeries3) {
-      console.log(infoSeries3.results)
+      //console.log(infoSeries3.results)
 
       let series = ""
       for (i = 0; i < 14; i++) {
         console.log(infoSeries3.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries3.results[i].poster_path
         let id = infoSeries3.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
+        if (infoSeries.results3[i].poster_path == null) {
+
+          series = `<a href="detallesSeries.html?id=${id}">
+            <img class="imagenesD" src='assets/img/3.png'>
+          </a>`
+
+        } else {
+          series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
+        }
       }
       document.querySelector(".series3").innerHTML = series
       console.log(series)
@@ -154,7 +186,15 @@ window.addEventListener('load', function () {
         console.log(infoSeries4.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries4.results[i].poster_path
         let id = infoSeries4.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"><img class="imagenesD" src="${url}" alt=""></a> `
+        if (infoSeries4.results[i].poster_path == null) {
+
+          series = `<a href="detallesSeries.html?id=${id}">
+            <img class="imagenesD" src='assets/img/3.png'>
+          </a>`
+
+        } else {
+          series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
+        }
       }
       document.querySelector(".series4").innerHTML = series
       console.log(series)
@@ -185,7 +225,15 @@ window.addEventListener('load', function () {
         console.log(infoSeries5.results[i])
         let url = "https://image.tmdb.org/t/p/w500" + infoSeries5.results[i].poster_path
         let id = infoSeries5.results[i].id
-        series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
+        if (infoSeries5.results[i].poster_path == null) {
+
+          series = `<a href="detallesSeries.html?id=${id}">
+            <img class="imagenesD" src='assets/img/3.png'>
+          </a>`
+
+        } else {
+          series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
+        }
       }
       document.querySelector(".series5").innerHTML = series
       console.log(series)
@@ -204,3 +252,13 @@ window.addEventListener('load', function () {
     })
 
 })
+/*
+ if (infoSeries.results[i].poster_path == null) {
+
+          series = `<a href="detallesPelis.html?id=${id}">
+            <img class="imagenesD" src='assets/img/3.png'>
+          </a>`
+
+        } else {
+          series = `${series}<a href="detallesSeries.html?id=${id}"><img  class="imagenesD" src="${url}" alt=""></a> `
+        }*/
