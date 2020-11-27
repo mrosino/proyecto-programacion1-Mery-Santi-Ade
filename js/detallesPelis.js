@@ -103,4 +103,30 @@ window.addEventListener('load', function () {
 
 
     })
+    // fetch para reviews
+  let comenta = document.querySelector('.comenta');
+  fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES&page=1`)
+  .then(function(respuesta){
+      return respuesta.json()
+  })
+  .then(function(reviews){
+      console.log(reviews);
+
+      if (reviews.results == 0) {
+          comenta.innerHTML += `<div class="noReview"><h2>Sin reseña hasta el momento</h2></div>`
+
+          
+      }else{
+          reviews.results.forEach(review => {
+           comenta.innerHTML += `
+              <div class="parteCritica">
+                  <article class="datosCritica"><h3 class="dato1">Author:</h3><p class="dato2Critica">${review.author}</p></article>
+                  <article class="datosCritica"><h3 class="dato1">Puntuation:</h3><p class="dato2Critica">${review.author_details.rating}</p></article>
+                  <p class="infoCritica">${review.content}</p>
+              </div>
+              `
+          })
+      }
+      
+  })  
 })
