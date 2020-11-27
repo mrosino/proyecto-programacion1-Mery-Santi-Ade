@@ -33,7 +33,7 @@ window.addEventListener('load', function () {
         let id = infoPelis.results[i].id
         if (infoPelis.results[i].poster_path == null) {
              peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}">
-             <img class="imagenesD" src='assets/img/3.png'>
+             <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
            </a>`
 
         } else {
@@ -73,7 +73,7 @@ window.addEventListener('load', function () {
         let id = infoPelis1.results[i].id
         if (infoPelis1.results[i].poster_path == null) {
           peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}">
-          <img class="imagenesD" src='assets/img/3.png'>
+          <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
         </a>`
 
      } else {       
@@ -113,7 +113,7 @@ window.addEventListener('load', function () {
           let id = infoPelis2.results[i].id
           if (infoPelis2.results[i].poster_path == null) {
             peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}">
-            <img class="imagenesD" src='assets/img/3.png'>
+            <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
           </a>`
   
        } else {       
@@ -153,7 +153,7 @@ window.addEventListener('load', function () {
         let id = infoPelis3.results[i].id
         if (infoPelis3.results[i].poster_path == null) {
           peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}">
-          <img class="imagenesD" src='assets/img/3.png'>
+          <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
         </a>`
 
      } else {       
@@ -193,7 +193,7 @@ window.addEventListener('load', function () {
         let id = infoPelis4.results[i].id
         if (infoPelis4.results[i].poster_path == null) {
           peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}">
-          <img class="imagenesD" src='assets/img/3.png'>
+          <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
         </a>`
 
      } else {       
@@ -235,7 +235,7 @@ window.addEventListener('load', function () {
         let id = infoPelis5.results[i].id
         if (infoPelis5.results[i].poster_path == null) {
           peliculas = `${peliculas}<a href="detallesPelis.html?id=${id}">
-          <img class="imagenesD" src='assets/img/3.png'>
+          <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
         </a>`
 
      } else {       

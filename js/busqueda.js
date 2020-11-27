@@ -52,7 +52,7 @@ window.addEventListener('load', function () {
         if (data.results[i].poster_path == null) {
 
           contenedorPelis.innerHTML += `<a href="detallesPelis.html?id=${data.results[i].id}">
-            <img class="imagenesD" src='assets/img/3.png'>
+            <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
           </a>`
 
         } else {
@@ -77,7 +77,7 @@ window.addEventListener('load', function () {
         if (data.results[i].poster_path == null) {
 
           contenedorSeries.innerHTML += `<a href="detallesPelis.html?id=${data.results[i].id}">
-        <img class="imagenesD" src='assets/img/3.png'>
+        <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
       </a>`
 
         } else {

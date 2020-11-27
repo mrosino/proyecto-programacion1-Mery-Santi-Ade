@@ -32,7 +32,7 @@ window.addEventListener('load', function () {
         // console.log(elementosArray);
         if (elementosArray.poster_path == null) {
 
-          resultados.innerHTML += `<a href="detallesPelis.html?id=${elementosArray.id}"><img class="imagenesB" src='assets/img/3.png'></a>`
+          resultados.innerHTML += `<a href="detallesPelis.html?id=${elementosArray.id}"><img class="imagenesB" src="assets/img/3.png" alt="vidrio roto"></a>`
 
         } else {
           resultados.innerHTML += `<a href="detallesPelis.html?id=${elementosArray.id}"><img class="imagenesB" src="https://image.tmdb.org/t/p/w500${elementosArray.poster_path}" alt=""></div></a>`

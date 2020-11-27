@@ -33,7 +33,7 @@ window.addEventListener('load', function () {
         if (infoSeries.results[i].poster_path == null) {
 
           series = `<a href="detallesSeries.html?id=${id}">
-            <img class="imagenesD" src='assets/img/3.png'>
+            <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
           </a>`
 
         } else {
@@ -72,7 +72,7 @@ window.addEventListener('load', function () {
         if (infoSeries1.results[i].poster_path == null) {
 
           series = `<a href="detallesSeries.html?id=${id}">
-            <img class="imagenesD" src='assets/img/3.png'>
+            <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
           </a>`
 
         } else {
@@ -111,7 +111,7 @@ window.addEventListener('load', function () {
         if (infoSeries2.results[i].poster_path == null) {
 
           series = `<a href="detallesSeries.html?id=${id}">
-            <img class="imagenesD" src='assets/img/3.png'>
+            <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
           </a>`
 
         } else {
@@ -150,7 +150,7 @@ window.addEventListener('load', function () {
         if (infoSeries.results3[i].poster_path == null) {
 
           series = `<a href="detallesSeries.html?id=${id}">
-            <img class="imagenesD" src='assets/img/3.png'>
+            <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
           </a>`
 
         } else {
@@ -189,7 +189,7 @@ window.addEventListener('load', function () {
         if (infoSeries4.results[i].poster_path == null) {
 
           series = `<a href="detallesSeries.html?id=${id}">
-            <img class="imagenesD" src='assets/img/3.png'>
+            <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
           </a>`
 
         } else {
@@ -228,7 +228,7 @@ window.addEventListener('load', function () {
         if (infoSeries5.results[i].poster_path == null) {
 
           series = `<a href="detallesSeries.html?id=${id}">
-            <img class="imagenesD" src='assets/img/3.png'>
+            <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
           </a>`
 
         } else {
@@ -256,7 +256,7 @@ window.addEventListener('load', function () {
  if (infoSeries.results[i].poster_path == null) {
 
           series = `<a href="detallesPelis.html?id=${id}">
-            <img class="imagenesD" src='assets/img/3.png'>
+            <img class="imagenesD" src="assets/img/3.png" alt="vidrio roto">
           </a>`
 
         } else {
