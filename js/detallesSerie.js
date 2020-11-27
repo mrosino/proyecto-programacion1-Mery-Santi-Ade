@@ -2,7 +2,7 @@ window.addEventListener('load', function () {
   let queryString = window.location.search
   let datoURL = new URLSearchParams(queryString);
   let id = datoURL.get('id');
-
+// fetch para traer detalles de la serie 
   fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES`)
     .then(function (info) {
       return info.json()
@@ -61,6 +61,8 @@ window.addEventListener('load', function () {
 
     })
 
+//video
+
   fetch(`https://api.themoviedb.org/3/tv/${id}/videos?api_key=35c3a4bec2a3c008c9fa7737b86aadc1`)
     .then(function (videos) {
       return videos.json()
@@ -72,6 +74,8 @@ window.addEventListener('load', function () {
 
       document.querySelector(".video").innerHTML = "<div class='videoQ'><iframe width='700' height='450' src='https://www.youtube.com/embed/" + key + "' frameborder='0' allowfullscreen></iframe></div>"
     })
+
+// Recomendadas
 
   fetch(`https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-ES&page=1`)
     .then(function (recommendations) {
@@ -102,5 +106,32 @@ window.addEventListener('load', function () {
       })
 
     })
+
+// fetch para reviews
+  let comenta = document.querySelector('.comenta');
+    fetch(`https://api.themoviedb.org/3/tv/${id}/reviews?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=es-ES&page=1`)
+    .then(function(respuesta){
+        return respuesta.json()
+    })
+    .then(function(reviews){
+        console.log(reviews);
+
+        if (reviews.results == 0) {
+            comenta.innerHTML += `<div class="noReview"><h2>Sin reseña hasta el momento</h2></div>`
+
+            
+        }else{
+            reviews.results.forEach(review => {
+             comenta.innerHTML += `
+                <div class="parteCritica">
+                    <article class="datosCritica"><h3 class="dato1">Author:</h3><p class="dato2Critica">${review.author}</p></article>
+                    <article class="datosCritica"><h3 class="dato1">Puntuation:</h3><p class="dato2Critica">${review.author_details.rating}</p></article>
+                    <p class="infoCritica">${review.content}</p>
+                </div>
+                `
+            })
+        }
+        
+    })  
 
 })

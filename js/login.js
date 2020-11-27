@@ -6,7 +6,7 @@
     let usuario = localStorage.getItem('uNombre')
     let logU = document.getElementById('logU')
     logU.style.display = 'none'
-    if (nombre && !usuario){
+    if (nombre && !usuario){ 
       localStorage.setItem('uNombre',nombre)
       console.log(usuario);
       let nombreUsuario = document.querySelector('.nombreUs')
@@ -15,12 +15,12 @@
         log.style.display = 'none' 
         let logU = document.getElementById('logU')
         logU.style.display = 'block' 
-        location.reload()
+        location.reload() 
     }else if(usuario) {
       let nombreUsuario = document.querySelector('.nombreUs')
       nombreUsuario.innerHTML = usuario
       let log = document.getElementById('log')
-        log.style.display = 'none'
+        log.style.display = 'none'  
         let logU = document.getElementById('logU')
         logU.style.display = 'block'
     }

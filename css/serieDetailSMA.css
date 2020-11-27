@@ -1,6 +1,10 @@
 *{
     border-radius: 3px;
 }
+.imagenesD{
+    height: 265px; 
+    width: auto; 
+}
 
 .info{
     margin-top: 10%;
@@ -31,12 +35,8 @@
     padding: 6px;
 }
 .video {
-  margin-top: 50px;
-  text-align: center;
-  max-height: 700px;
-  min-height: 700px;
-  min-width: 450px;
-  max-width: 450px;
+    margin-top: 50px;
+    text-align: center;
 }
 .seriesReco {
     display: flex;
@@ -44,7 +44,6 @@
 }
 .slider {
     width: 95%;
-    
 }
 .sliderItem {
     margin:10px;
@@ -81,6 +80,12 @@
     bottom: 2px;
     font-weight: 900;
   }
+  .noReview{
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    font-size: 20px;
+  }
 
   @media (max-width:420px){
     .imgreco{
@@ -100,8 +105,8 @@
 
    }
    .imagenesD{
-    height: auto; 
-   }
+    height: 100px; 
+}
    .slider {
     width: 87%;
     

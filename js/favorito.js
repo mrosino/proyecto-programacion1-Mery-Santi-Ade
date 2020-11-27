@@ -46,7 +46,7 @@ if (!favoritosVacio) {
     remove.classList.add('vacio')
 } else {
     remove.addEventListener('click', function () {
-        localStorage.clear()
+        localStorage.removeItem('favoritos')
         location.href = 'favorito.html'
 
     })

@@ -100,6 +100,12 @@ img{
     bottom: 2px;
     font-weight: 900;
   }
+  .noReview{
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    font-size: 20px;
+  }
  
 @media (max-width:420px){
     .info{
