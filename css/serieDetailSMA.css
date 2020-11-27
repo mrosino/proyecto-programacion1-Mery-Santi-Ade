@@ -1,6 +1,10 @@
 *{
     border-radius: 3px;
 }
+.imagenesD{
+    height: 265px; 
+    width: auto; 
+}
 
 .info{
     margin-top: 10%;
@@ -100,8 +104,8 @@
 
    }
    .imagenesD{
-    height: auto; 
-   }
+    height: 100px; 
+}
    .slider {
     width: 87%;
     

@@ -61,6 +61,8 @@ window.addEventListener('load', function () {
 
     })
 
+//video
+
   fetch(`https://api.themoviedb.org/3/tv/${id}/videos?api_key=35c3a4bec2a3c008c9fa7737b86aadc1`)
     .then(function (videos) {
       return videos.json()
@@ -72,6 +74,8 @@ window.addEventListener('load', function () {
 
       document.querySelector(".video").innerHTML = "<div class='videoQ'><iframe width='700' height='450' src='https://www.youtube.com/embed/" + key + "' frameborder='0' allowfullscreen></iframe></div>"
     })
+
+// Recomendadas
 
   fetch(`https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=35c3a4bec2a3c008c9fa7737b86aadc1&language=en-ES&page=1`)
     .then(function (recommendations) {
