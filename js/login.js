@@ -27,7 +27,6 @@
     logU.addEventListener('click',function(){
       if (usuario){
         localStorage.removeItem('uNombre')
-        location.href = 'index.html'
       }
     })
   
